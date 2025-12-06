@@ -51,6 +51,8 @@ class HttpClient:
                         continue
                     return None
                 
+                # Явно указываем UTF-8 для азербайджанских символов (ə, ş, ç, ı, ö, ü, ğ)
+                resp.encoding = 'utf-8'
                 return resp.text
                 
             except requests.RequestException as e:

@@ -1,0 +1,58 @@
+services:
+  db:
+    image: postgres:17
+    container_name: report_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: newsdb
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypass
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U myuser -d newsdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  scraper:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.scraper
+    container_name: report_scraper
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: newsdb
+      DB_USER: myuser
+      DB_PASS: mypass
+    # Можно переопределить даты через command
+    # command: ["python", "main.py", "--start-date", "2024-01-01", "--log-level", "DEBUG"]
+
+  # Trend.az scraper
+  scraper_trend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.scraper
+    container_name: trend_scraper
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: newsdb
+      DB_USER: myuser
+      DB_PASS: mypass
+    command: ["python", "main_trend.py", "--mode", "id-range", "--start-id", "4126700", "--end-id", "4100000", "--direction", "desc"]
+    profiles:
+      - trend
+
+volumes:
+  pgdata:
+

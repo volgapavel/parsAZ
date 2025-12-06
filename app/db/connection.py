@@ -17,8 +17,9 @@ def create_connection(config: DBConfig, max_retries: int = 5, retry_delay: float
     for attempt in range(max_retries):
         try:
             conn = psycopg2.connect(config.dsn)
+            conn.set_client_encoding('UTF8')
             conn.autocommit = True
-            logger.info("Database connection established")
+            logger.info("Database connection established (UTF-8)")
             return conn
         except psycopg2.Error as e:
             logger.warning(f"DB connection attempt {attempt + 1}/{max_retries} failed: {e}")
