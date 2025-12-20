@@ -1,0 +1,3282 @@
+[
+  {
+    "article_id": "192",
+    "title": "İstanbulda saxta spirtli içkidən zəhərlənmə nəticəsində ölənlərin sayı 23 nəfərə",
+    "entities": {
+      "persons": [],
+      "organizations": [],
+      "locations": [],
+      "dates": [
+        {
+          "name": "23-",
+          "confidence": 0.9732636213302612,
+          "context": "zəhərlənməsi hadisəsi baş verib, zəhərlənənlərdən 23-ü dünyasını dəyişib. 32 nəfərin reanimasiyada müal",
+          "type": "date",
+          "source": "localdoc"
+        }
+      ],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "23",
+          "confidence": 0.977130651473999,
+          "context": "tli içkidən zəhərlənmə nəticəsində ölənlərin sayı 23 nəfərə çatıb. Reportxəbər verir ki, bu barədə İst",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "66",
+          "confidence": 0.9919453263282776,
+          "context": "iyi məlumat yayıb. Son 48 saat ərzində ümumilikdə 66 alkoqol zəhərlənməsi hadisəsi baş verib, zəhərlən",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "23-",
+          "confidence": 0.9732636213302612,
+          "context": "zəhərlənməsi hadisəsi baş verib, zəhərlənənlərdən 23-ü dünyasını dəyişib. 32 nəfərin reanimasiyada müal",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "32",
+          "confidence": 0.9853166937828064,
+          "context": "ş verib, zəhərlənənlərdən 23-ü dünyasını dəyişib. 32 nəfərin reanimasiyada müalicəsi davam etdirilir, ",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "19",
+          "confidence": 0.9715519547462463,
+          "context": "ulda saxta spirtli içkidən zəhərlənmə nəticəsində 19 nəfərin öldüyübildirilirdi.",
+          "type": "date",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "23",
+          "type": "date",
+          "name": "23"
+        },
+        {
+          "id": "66",
+          "type": "date",
+          "name": "66"
+        },
+        {
+          "id": "23-",
+          "type": "date",
+          "name": "23-"
+        },
+        {
+          "id": "32",
+          "type": "date",
+          "name": "32"
+        },
+        {
+          "id": "19",
+          "type": "date",
+          "name": "19"
+        }
+      ],
+      "edges": []
+    },
+    "success": true
+  },
+  {
+    "article_id": "99",
+    "title": "Çadda prezident sarayına hücumda 19 nəfər ölüb",
+    "entities": {
+      "persons": [
+        {
+          "name": "Mahamat",
+          "confidence": 0.9756473302841187,
+          "context": " təşkil edir. Şəhər sakinləri də Çadın Prezidenti Mahamat İdriss Debi İtnoya dəstək nümayişi üçün küçələrə ",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Mahamat",
+          "confidence": 0.9756473302841187,
+          "context": " təşkil edir. Şəhər sakinləri də Çadın Prezidenti Mahamat İdriss Debi İtnoya dəstək nümayişi üçün küçələrə ",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Mahamat",
+          "type": "person",
+          "name": "Mahamat"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "sarayına",
+          "target_entity": "olmaqla",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "sarayına edilən olmaqla",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "ordusu",
+          "target_entity": "edib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "ordusu hücumu edib",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "29",
+    "title": "“İnter” “Atalanta”nı məğlub edərək, İtaliya Superkubokunun finalına yüksəlib",
+    "entities": {
+      "persons": [
+        {
+          "name": "Atalanta",
+          "confidence": 0.6011577844619751,
+          "context": "İtaliya Superkubokunun yarımfinal matçında İnter Atalantanı 2:0 hesabı ilə məğlub edib. Reportun məlumatına",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Yuventus",
+          "confidence": 0.9587944746017456,
+          "context": "dır. İkinci yarımfinalda İtaliya Kubokunun qalibi Yuventus yanvarın 3-də ölkənin vitse-çempionu Milanla qarş",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Milan",
+          "confidence": 0.8147180080413818,
+          "context": "ibi Yuventus yanvarın 3-də ölkənin vitse-çempionu Milanla qarşılaşacaq. Final yanvarın 6-da baş tutacaq. ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "İnter",
+          "confidence": 0.6630802154541016,
+          "context": "6-da baş tutacaq. İtaliyanın son üç Superkubokunu İnter qazanıb, komandanın ümumilikdə səkkiz titulu var.",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Atalanta",
+          "confidence": 0.6011577844619751,
+          "context": "İtaliya Superkubokunun yarımfinal matçında İnter Atalantanı 2:0 hesabı ilə məğlub edib. Reportun məlumatına",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "49",
+          "confidence": 0.9863982796669006,
+          "context": "rtun məlumatına görə, hər iki qolu Denzel Dumfris 49 və 61-ci dəqiqələrdə vurub. İnter İtaliya Superku",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "61",
+          "confidence": 0.9798291325569153,
+          "context": "əlumatına görə, hər iki qolu Denzel Dumfris 49 və 61-ci dəqiqələrdə vurub. İnter İtaliya Superkubokund",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "Yuventus",
+          "confidence": 0.9587944746017456,
+          "context": "dır. İkinci yarımfinalda İtaliya Kubokunun qalibi Yuventus yanvarın 3-də ölkənin vitse-çempionu Milanla qarş",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Milan",
+          "confidence": 0.8147180080413818,
+          "context": "ibi Yuventus yanvarın 3-də ölkənin vitse-çempionu Milanla qarşılaşacaq. Final yanvarın 6-da baş tutacaq. ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "İnter",
+          "confidence": 0.6630802154541016,
+          "context": "6-da baş tutacaq. İtaliyanın son üç Superkubokunu İnter qazanıb, komandanın ümumilikdə səkkiz titulu var.",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Atalanta",
+          "type": "person",
+          "name": "Atalanta"
+        },
+        {
+          "id": "49",
+          "type": "date",
+          "name": "49"
+        },
+        {
+          "id": "61",
+          "type": "date",
+          "name": "61"
+        },
+        {
+          "id": "Yuventus",
+          "type": "person",
+          "name": "Yuventus"
+        },
+        {
+          "id": "Milan",
+          "type": "person",
+          "name": "Milan"
+        },
+        {
+          "id": "İnter",
+          "type": "person",
+          "name": "İnter"
+        }
+      ],
+      "edges": []
+    },
+    "success": true
+  },
+  {
+    "article_id": "150",
+    "title": "Xorvatiya DSK: Zoran Milanoviç seçkilərdə 74,66 % səslə qalibdir",
+    "entities": {
+      "persons": [
+        {
+          "name": "Zoran",
+          "confidence": 0.9967329502105713,
+          "context": " -nin məlumatlarına əsasən ölkənin hazırkı lideri Zoran Milanoviç prezident seçkilərinin ikinci turunda s",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Milanoviç",
+          "confidence": 0.9926183223724365,
+          "context": "məlumatlarına əsasən ölkənin hazırkı lideri Zoran Milanoviç prezident seçkilərinin ikinci turunda səslərin 74",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Draqan",
+          "confidence": 0.9957618117332458,
+          "context": "Partiyası tərəfindən dəstəklənən müstəqil namizəd Draqan Primoratz isə 378 172 səs 25,34  toplayıb. Qeyd e",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Zoran",
+          "confidence": 0.9967329502105713,
+          "context": " -nin məlumatlarına əsasən ölkənin hazırkı lideri Zoran Milanoviç prezident seçkilərinin ikinci turunda s",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Milanoviç",
+          "confidence": 0.9926183223724365,
+          "context": "məlumatlarına əsasən ölkənin hazırkı lideri Zoran Milanoviç prezident seçkilərinin ikinci turunda səslərin 74",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Draqan",
+          "confidence": 0.9957618117332458,
+          "context": "Partiyası tərəfindən dəstəklənən müstəqil namizəd Draqan Primoratz isə 378 172 səs 25,34  toplayıb. Qeyd e",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Zoran",
+          "type": "person",
+          "name": "Zoran"
+        },
+        {
+          "id": "Milanoviç",
+          "type": "person",
+          "name": "Milanoviç"
+        },
+        {
+          "id": "Draqan",
+          "type": "person",
+          "name": "Draqan"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "məlumatlarına",
+          "target_entity": "lideri",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "məlumatlarına hazırkı lideri",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "barədə",
+          "target_entity": "verilib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "barədə respublikanın verilib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "namizəd",
+          "target_entity": "toplayıb",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "namizəd isə toplayıb",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "52",
+    "title": "KDR-in şərqində M23 üsyançıları Masisi şəhərini ələ keçiriblər",
+    "entities": {
+      "persons": [
+        {
+          "name": "sinin",
+          "confidence": 0.6444030404090881,
+          "context": "övbəsində Okapi radiostansiyası qeyd edib ki, Masisinin ələ keçirilməsi ilə M23-ün Şimali Kivunun paytaxt",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "sinin",
+          "confidence": 0.6444030404090881,
+          "context": "övbəsində Okapi radiostansiyası qeyd edib ki, Masisinin ələ keçirilməsi ilə M23-ün Şimali Kivunun paytaxt",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "sinin",
+          "type": "person",
+          "name": "sinin"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "üsyançı",
+          "target_entity": "şərqində",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "üsyançı qrupu şərqində",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "verir",
+          "target_entity": "yayıb",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "verir barədə yayıb",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "162",
+    "title": "Aİ Şurası İsveçrənin hərbi Şengenə qoşulmasını təsdiqləyib",
+    "entities": {
+      "persons": [
+        {
+          "name": "Bern",
+          "confidence": 0.9777424931526184,
+          "context": "in layihəyə dəvət olunmasına imkan verəcək. Rəsmi Bern 2024-cü ilin sentyabrında hərbi Şengenə qoşulmaq ",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bern",
+          "confidence": 0.9777424931526184,
+          "context": "in layihəyə dəvət olunmasına imkan verəcək. Rəsmi Bern 2024-cü ilin sentyabrında hərbi Şengenə qoşulmaq ",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bern",
+          "type": "person",
+          "name": "Bern"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "verir",
+          "target_entity": "edib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "verir qərarı edib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "proqramının",
+          "target_entity": "edir",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "proqramının əsasını edir",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "ərazisindən",
+          "target_entity": "sadələşdirmək",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "ərazisindən prosedurlarını sadələşdirmək",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "197",
+    "title": "ABŞ Qəzzada atəşkəsin əldə ediməsi üçün Türkiyə Prezidentindən kömək istəyib",
+    "entities": {
+      "persons": [
+        {
+          "name": "Rəcəb",
+          "confidence": 0.5512073040008545,
+          "context": "görüşlər keçirib və bu mövzuda Türkiyə Prezidenti Rəcəb Tayyib Ərdoğandan kömək istəyib. ReportHaber Glob",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "yib",
+          "confidence": 0.5883428454399109,
+          "context": "keçirib və bu mövzuda Türkiyə Prezidenti Rəcəb Tayyib Ərdoğandan kömək istəyib. ReportHaber Globala ist",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Antoni",
+          "confidence": 0.7787012457847595,
+          "context": "ər verir ki, belə bir bəyanatla ABŞ Dövlət katibi Antoni Blinken çıxış edib. Biz digər aktorlarla yanaşı P",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Ərdoğan",
+          "confidence": 0.5589714050292969,
+          "context": "çıxış edib. Biz digər aktorlarla yanaşı Prezident Ərdoğanın yanına getdik və ondan HƏMASı yenidən masaya gə",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Rəcəb",
+          "confidence": 0.5512073040008545,
+          "context": "görüşlər keçirib və bu mövzuda Türkiyə Prezidenti Rəcəb Tayyib Ərdoğandan kömək istəyib. ReportHaber Glob",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "yib",
+          "confidence": 0.5883428454399109,
+          "context": "keçirib və bu mövzuda Türkiyə Prezidenti Rəcəb Tayyib Ərdoğandan kömək istəyib. ReportHaber Globala ist",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Antoni",
+          "confidence": 0.7787012457847595,
+          "context": "ər verir ki, belə bir bəyanatla ABŞ Dövlət katibi Antoni Blinken çıxış edib. Biz digər aktorlarla yanaşı P",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Ərdoğan",
+          "confidence": 0.5589714050292969,
+          "context": "çıxış edib. Biz digər aktorlarla yanaşı Prezident Ərdoğanın yanına getdik və ondan HƏMASı yenidən masaya gə",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Rəcəb",
+          "type": "person",
+          "name": "Rəcəb"
+        },
+        {
+          "id": "yib",
+          "type": "person",
+          "name": "yib"
+        },
+        {
+          "id": "Antoni",
+          "type": "person",
+          "name": "Antoni"
+        },
+        {
+          "id": "Ərdoğan",
+          "type": "person",
+          "name": "Ərdoğan"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "mürəkkəb",
+          "target_entity": "deyil",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "mürəkkəb təəccüblü deyil",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "117",
+    "title": "Avropa ölkələrinin Rusiyadan mayeləşdirilmiş təbii qaz idxalı 2024-cü ildə rekor",
+    "entities": {
+      "persons": [
+        {
+          "name": "Vaibhav",
+          "confidence": 0.9996466636657715,
+          "context": "alaraq öz mənfəətlərini güdürlər,  Crea analitiki Vaibhav Raqunandan The Guardiana söyləyib.",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Raqunandan",
+          "confidence": 0.9904018640518188,
+          "context": "z mənfəətlərini güdürlər,  Crea analitiki Vaibhav Raqunandan The Guardiana söyləyib.",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "4",
+          "confidence": 0.8229339122772217,
+          "context": "məlumatına görə, ötən il Avropa ölkələri həmçinin 49,5 milyard kubmetr Rusiya boru kəməri qazı alıb. ",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "Vaibhav",
+          "confidence": 0.9996466636657715,
+          "context": "alaraq öz mənfəətlərini güdürlər,  Crea analitiki Vaibhav Raqunandan The Guardiana söyləyib.",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Raqunandan",
+          "confidence": 0.9904018640518188,
+          "context": "z mənfəətlərini güdürlər,  Crea analitiki Vaibhav Raqunandan The Guardiana söyləyib.",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "4",
+          "type": "date",
+          "name": "4"
+        },
+        {
+          "id": "Vaibhav",
+          "type": "person",
+          "name": "Vaibhav"
+        },
+        {
+          "id": "Raqunandan",
+          "type": "person",
+          "name": "Raqunandan"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "Göstəricilərin",
+          "target_entity": "sadədir",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "Göstəricilərin artmasının sadədir",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "14",
+    "title": "Fələstin “Al Jazeera”nın ölkədəki yayımını dayandırıb",
+    "entities": {
+      "persons": [
+        {
+          "name": "Ramallah",
+          "confidence": 0.9912495613098145,
+          "context": " ediblər. Bununla belə, sözügedən qadağanın rəsmi Ramallahın nəzarətində olmayan Qəzza zolağında keçərli olm",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "tər",
+          "confidence": 0.8251358866691589,
+          "context": "yəndələrindən ibarət Fələstin Nazirlər Komitəsi Qətərdə yerləşən Al Jazeera media şəbəkəsinin Fələstind",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "tər",
+          "confidence": 0.8251358866691589,
+          "context": "yəndələrindən ibarət Fələstin Nazirlər Komitəsi Qətərdə yerləşən Al Jazeera media şəbəkəsinin Fələstind",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "F",
+          "confidence": 0.6309093236923218,
+          "context": "edib,  agentlik diqqətə çatdırıb. Qeyd olunub ki, FƏTH iqtidarı telekanal ilə əlaqəli bütün jurnalist",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Ramallah",
+          "confidence": 0.9912495613098145,
+          "context": " ediblər. Bununla belə, sözügedən qadağanın rəsmi Ramallahın nəzarətində olmayan Qəzza zolağında keçərli olm",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "tər",
+          "type": "location",
+          "name": "tər"
+        },
+        {
+          "id": "F",
+          "type": "person",
+          "name": "F"
+        },
+        {
+          "id": "Ramallah",
+          "type": "person",
+          "name": "Ramallah"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "yerli",
+          "target_entity": "pozması",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "yerli qanunları pozması",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "nəzarətində",
+          "target_entity": "edilir",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "nəzarətində olmayan edilir",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "210",
+    "title": "Müharibəyə getdiklərini açıqlayan rusiyalı məmur və deputatların təxminən 80 %-i",
+    "entities": {
+      "persons": [
+        {
+          "name": "Nova",
+          "confidence": 0.6729698181152344,
+          "context": " macal tapıblar. Report xəbər verir ki, bu barədə Novaya Qazeta. Yevropanın VIP cəbhə başlıqlıməqaləsind",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Viktor",
+          "confidence": 0.9989461302757263,
+          "context": "əzifəli könüllü general-polkovnik rütbəli senator Viktor Bondaryovdur. Onun yenidən xidmətə qəbul edilib-e",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Bondaryov",
+          "confidence": 0.8763764500617981,
+          "context": " könüllü general-polkovnik rütbəli senator Viktor Bondaryovdur. Onun yenidən xidmətə qəbul edilib-edilmədiyi ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Vahid",
+          "confidence": 0.9372143745422363,
+          "context": "eç yerdə məlumat dərc edilməyib. Dövlət Dumasında Vahid Rusiyanı təmsil edən deputat Dmitri Sablin rəsmi ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Dmitri",
+          "confidence": 0.9746710658073425,
+          "context": "vlət Dumasında Vahid Rusiyanı təmsil edən deputat Dmitri Sablin rəsmi olaraq 2022-ci ilin martından savaşd",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Sablin",
+          "confidence": 0.9612841606140137,
+          "context": "ROM  Kaskad bölməsinin qurucusu və komandiri olan Sablin jurnalistlərin araşdırmasına görə, bu müddət ərzi",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [
+        {
+          "name": "18-",
+          "confidence": 0.90580815076828,
+          "context": "qlarını bəyan edən dövlət qulluqçularından yalnız 18-i həqiqətən cəbhəyə gedib. Bunlar əsasən cinayət t",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "40-",
+          "confidence": 0.7916913628578186,
+          "context": "nalistlərin araşdırmasına görə, bu müddət ərzində 40-dan çox qanun layihəsinin həmmüəllifi olub. Həmçin",
+          "type": "date",
+          "source": "localdoc"
+        }
+      ],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Nova",
+          "confidence": 0.6729698181152344,
+          "context": " macal tapıblar. Report xəbər verir ki, bu barədə Novaya Qazeta. Yevropanın VIP cəbhə başlıqlıməqaləsind",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "18-",
+          "confidence": 0.90580815076828,
+          "context": "qlarını bəyan edən dövlət qulluqçularından yalnız 18-i həqiqətən cəbhəyə gedib. Bunlar əsasən cinayət t",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "62",
+          "confidence": 0.9920698404312134,
+          "context": "imsəmə yayınmaq istəyənlərdir. Xidmətə gedən daha 62 nəfər güzəştli şərtlər alıb. Cəbhədəki məmurların",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "20",
+          "confidence": 0.8785884380340576,
+          "context": " altı aydan çox xidmət etməyib. Rusiya dövlətinin 20 nümayəndəsi müharibəyə getmək niyyətini açıqladıq",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "31",
+          "confidence": 0.9863525629043579,
+          "context": "nlardan üçü həlak olub, daha iki nəfər yaralanıb. 31 dövlət qulluqçusu hələ də xidmətini davam etdirir",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "23",
+          "confidence": 0.7136189341545105,
+          "context": "ldə olub  31 müraciət. Ötən il belə halların sayı 23 olub. 2023-cü ildə niyyətlilərin sayı təxminən ik",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "Viktor",
+          "confidence": 0.9989461302757263,
+          "context": "əzifəli könüllü general-polkovnik rütbəli senator Viktor Bondaryovdur. Onun yenidən xidmətə qəbul edilib-e",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Bondaryov",
+          "confidence": 0.8763764500617981,
+          "context": " könüllü general-polkovnik rütbəli senator Viktor Bondaryovdur. Onun yenidən xidmətə qəbul edilib-edilmədiyi ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Vahid",
+          "confidence": 0.9372143745422363,
+          "context": "eç yerdə məlumat dərc edilməyib. Dövlət Dumasında Vahid Rusiyanı təmsil edən deputat Dmitri Sablin rəsmi ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Dmitri",
+          "confidence": 0.9746710658073425,
+          "context": "vlət Dumasında Vahid Rusiyanı təmsil edən deputat Dmitri Sablin rəsmi olaraq 2022-ci ilin martından savaşd",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Sablin",
+          "confidence": 0.9612841606140137,
+          "context": "ROM  Kaskad bölməsinin qurucusu və komandiri olan Sablin jurnalistlərin araşdırmasına görə, bu müddət ərzi",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "40-",
+          "confidence": 0.7916913628578186,
+          "context": "nalistlərin araşdırmasına görə, bu müddət ərzində 40-dan çox qanun layihəsinin həmmüəllifi olub. Həmçin",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "49",
+          "confidence": 0.9931632280349731,
+          "context": "da qalıblar. Ümumilikdə müharibəyə getmək istəyən 49 dövlət qulluqçusu bu variantı seçib. Daha 10 nəfə",
+          "type": "date",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Nova",
+          "type": "person",
+          "name": "Nova"
+        },
+        {
+          "id": "18-",
+          "type": "date",
+          "name": "18-"
+        },
+        {
+          "id": "62",
+          "type": "date",
+          "name": "62"
+        },
+        {
+          "id": "20",
+          "type": "date",
+          "name": "20"
+        },
+        {
+          "id": "31",
+          "type": "date",
+          "name": "31"
+        },
+        {
+          "id": "23",
+          "type": "date",
+          "name": "23"
+        },
+        {
+          "id": "Viktor",
+          "type": "person",
+          "name": "Viktor"
+        },
+        {
+          "id": "Bondaryov",
+          "type": "person",
+          "name": "Bondaryov"
+        },
+        {
+          "id": "Vahid",
+          "type": "person",
+          "name": "Vahid"
+        },
+        {
+          "id": "Dmitri",
+          "type": "person",
+          "name": "Dmitri"
+        },
+        {
+          "id": "Sablin",
+          "type": "person",
+          "name": "Sablin"
+        },
+        {
+          "id": "40-",
+          "type": "date",
+          "name": "40-"
+        },
+        {
+          "id": "49",
+          "type": "date",
+          "name": "49"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "bölməsinin",
+          "target_entity": "görə",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "bölməsinin qurucusu görə",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "könüllü",
+          "target_entity": "da",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "könüllü dəstəsinə da",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "könüllü",
+          "target_entity": "öz",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "könüllü dəstəsinə öz",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "yerini",
+          "target_entity": "olmayıb",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "yerini müəyyən olmayıb",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "963",
+    "title": "Prezident İlham Əliyev almaniyalı həmkarına başsağlığı verib",
+    "entities": {
+      "persons": [],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": []
+    },
+    "knowledge_graph": {
+      "nodes": [],
+      "edges": []
+    },
+    "success": true
+  },
+  {
+    "article_id": "1046",
+    "title": "Prezident İlham Əliyev Avropa İttifaqı Şurasının Prezidenti ilə görüşüb",
+    "entities": {
+      "persons": [
+        {
+          "name": "Şarl",
+          "confidence": 0.9195876121520996,
+          "context": "yabrın 11-də Avropa İttifaqı Şurasının Prezidenti Şarl Mişel ilə görüşüb. AZƏRTAC xəbər verir ki, COP29-",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Mişel",
+          "confidence": 0.9754462838172913,
+          "context": " çatdıran və bununla bağlı uğurlar arzulayan Şarl Mişel bu tədbirdə iqlim dəyişmələri ilə əlaqədar vacib ",
+          "type": "person",
+          "source": "localdoc",
+          "aliases": [
+            "Mişelin"
+          ]
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Şarl",
+          "confidence": 0.9195876121520996,
+          "context": "yabrın 11-də Avropa İttifaqı Şurasının Prezidenti Şarl Mişel ilə görüşüb. AZƏRTAC xəbər verir ki, COP29-",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Mişel",
+          "confidence": 0.9754462838172913,
+          "context": " çatdıran və bununla bağlı uğurlar arzulayan Şarl Mişel bu tədbirdə iqlim dəyişmələri ilə əlaqədar vacib ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Mişelin",
+          "confidence": 0.9413978457450867,
+          "context": "akirə olundu. Dövlətimizin başçısı Prezident Şarl Mişelin Ermənistanla Azərbaycan arasında danışıqlar prose",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Şarl",
+          "type": "person",
+          "name": "Şarl"
+        },
+        {
+          "id": "Mişel",
+          "type": "person",
+          "name": "Mişel"
+        },
+        {
+          "id": "Mişelin",
+          "type": "person",
+          "name": "Mişelin"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "arasında",
+          "target_entity": "vurğuladı",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "arasında edərək vurğuladı",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "arasında",
+          "target_entity": "ki",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "arasında edərək ki",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "1018",
+    "title": "Prezident İlham Əliyev: Azərbaycan Cənubi Qafqazda dayanıqlı sülh üçün əlverişli",
+    "entities": {
+      "persons": [],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "44",
+          "confidence": 0.9868811368942261,
+          "context": "Azərbaycan 2020-ci ildə 44 günlük Vətən müharibəsi və 2023-cü ildə birgünlük",
+          "type": "date",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "44",
+          "type": "date",
+          "name": "44"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "davamlı",
+          "target_entity": "şərait",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "davamlı sabitlik şərait",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "ətraf",
+          "target_entity": "yetirir",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "ətraf mühitə yetirir",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "969",
+    "title": "Prezident İlham Əliyev Rusiyanın Tatarıstan Respublikasının Rəisi ilə görüşüb",
+    "entities": {
+      "persons": [
+        {
+          "name": "Rüstəm",
+          "confidence": 0.9971960783004761,
+          "context": " Federasiyasının Tatarıstan Respublikasının Rəisi Rüstəm Minnixanov birgə nahar ediblər.",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Minnixanov",
+          "confidence": 0.9997209310531616,
+          "context": "i uğurlar arzulamaq mənim üçün çox xoşdur. Rüstəm Minnixanov dedi: Cənab Prezident, çox sağ olun. Bu, yüksək m",
+          "type": "person",
+          "source": "localdoc",
+          "aliases": [
+            "Minnixanovun"
+          ]
+        },
+        {
+          "name": "Şaymiyev",
+          "confidence": 0.9981493949890137,
+          "context": "liyev və birinci Prezidentimiz Mintimer Şaripoviç Şaymiyev bizim inkişaf etdirdiyimiz həmin kursun əsasını q",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Rüstəm",
+          "confidence": 0.9971960783004761,
+          "context": " Federasiyasının Tatarıstan Respublikasının Rəisi Rüstəm Minnixanov birgə nahar ediblər.",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Minnixanov",
+          "confidence": 0.9997209310531616,
+          "context": "i uğurlar arzulamaq mənim üçün çox xoşdur. Rüstəm Minnixanov dedi: Cənab Prezident, çox sağ olun. Bu, yüksək m",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Minnixanovun",
+          "confidence": 0.9996285438537598,
+          "context": "siyasının Tatarıstan Respublikasının Rəisi Rüstəm Minnixanovun Azərbaycanın Dostluq ordeni ilə təltifedilmə məra",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Şaymiyev",
+          "confidence": 0.9981493949890137,
+          "context": "liyev və birinci Prezidentimiz Mintimer Şaripoviç Şaymiyev bizim inkişaf etdirdiyimiz həmin kursun əsasını q",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Rüstəm",
+          "type": "person",
+          "name": "Rüstəm"
+        },
+        {
+          "id": "Minnixanov",
+          "type": "person",
+          "name": "Minnixanov"
+        },
+        {
+          "id": "Minnixanovun",
+          "type": "person",
+          "name": "Minnixanovun"
+        },
+        {
+          "id": "Şaymiyev",
+          "type": "person",
+          "name": "Şaymiyev"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "bizim",
+          "target_entity": "kursun",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "bizim inkişaf kursun",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "984",
+    "title": "Prezident İlham Əliyev Rəcəb Tayyib Ərdoğana zəng edib",
+    "entities": {
+      "persons": [
+        {
+          "name": "Əminə",
+          "confidence": 0.9990445971488953,
+          "context": "mizin başçısı Prezident Rəcəb Tayyib Ərdoğanın və Əminə xanım Ərdoğanın Azərbaycanda keçirilmiş COP29 kon",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Əminə",
+          "confidence": 0.9990445971488953,
+          "context": "mizin başçısı Prezident Rəcəb Tayyib Ərdoğanın və Əminə xanım Ərdoğanın Azərbaycanda keçirilmiş COP29 kon",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Əminə",
+          "type": "person",
+          "name": "Əminə"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "arasında",
+          "target_entity": "strateji",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "arasında qardaşlıq strateji",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "ərazi",
+          "target_entity": "suverenliyinə",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "ərazi bütövlüyünə suverenliyinə",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "ərazi",
+          "target_entity": "ediblər",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "ərazi bütövlüyünə ediblər",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "962",
+    "title": "Leyla Əliyeva Keniya Prezidenti ilə görüşüb",
+    "entities": {
+      "persons": [
+        {
+          "name": "Leyla",
+          "confidence": 0.9452175498008728,
+          "context": "Heydər Əliyev Fondunun vitse-prezidenti Leyla Əliyeva Nayrobi şəhərində Keniya Respublikasının ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Mehriban",
+          "confidence": 0.9247463345527649,
+          "context": " o cümlədən Azərbaycanın Birinci vitse-prezidenti Mehriban Əliyevanın rəhbərlik etdiyi Heydər Əliyev Fondu i",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Ruto",
+          "confidence": 0.968970537185669,
+          "context": "ı üzrə əməkdaşlıq ediləcəyini bildirib. Prezident Ruto ölkəmizin noyabr ayında BMT-nin İqlim Dəyişmələri",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "iya",
+          "confidence": 0.8867352604866028,
+          "context": "la ev sahibliyi etdiyini deyib. Azərbaycan ilə Keniya arasında mövcud dostluq və əməkdaşlıq münasibətlə",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Leyla",
+          "confidence": 0.9452175498008728,
+          "context": "Heydər Əliyev Fondunun vitse-prezidenti Leyla Əliyeva Nayrobi şəhərində Keniya Respublikasının ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Mehriban",
+          "confidence": 0.9247463345527649,
+          "context": " o cümlədən Azərbaycanın Birinci vitse-prezidenti Mehriban Əliyevanın rəhbərlik etdiyi Heydər Əliyev Fondu i",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Ruto",
+          "confidence": 0.968970537185669,
+          "context": "ı üzrə əməkdaşlıq ediləcəyini bildirib. Prezident Ruto ölkəmizin noyabr ayında BMT-nin İqlim Dəyişmələri",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "iya",
+          "confidence": 0.8867352604866028,
+          "context": "la ev sahibliyi etdiyini deyib. Azərbaycan ilə Keniya arasında mövcud dostluq və əməkdaşlıq münasibətlə",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Leyla",
+          "type": "person",
+          "name": "Leyla"
+        },
+        {
+          "id": "Mehriban",
+          "type": "person",
+          "name": "Mehriban"
+        },
+        {
+          "id": "Ruto",
+          "type": "person",
+          "name": "Ruto"
+        },
+        {
+          "id": "iya",
+          "type": "location",
+          "name": "iya"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "əlaqələr",
+          "target_entity": "olunub",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "əlaqələr müxtəlif olunub",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "uğurla",
+          "target_entity": "deyib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "uğurla etdiyini deyib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "dəvətə",
+          "target_entity": "edib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "dəvətə görə edib",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "967",
+    "title": "Azərbaycan D-8 təşkilatının üzvü seçilib",
+    "entities": {
+      "persons": [
+        {
+          "name": "Əli",
+          "confidence": 0.9256843328475952,
+          "context": "də ölkəmizi Azərbaycan Respublikasının Baş naziri Əli Əsədovun rəhbərlik etdiyi nümayəndə heyəti təmsil",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əsədovun",
+          "confidence": 0.9966375827789307,
+          "context": "lkəmizi Azərbaycan Respublikasının Baş naziri Əli Əsədovun rəhbərlik etdiyi nümayəndə heyəti təmsil edib. Üz",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Qahirə",
+          "confidence": 0.8634149432182312,
+          "context": "ulda keçirilmiş IX Zirvə görüşündə təmsil olunub. Qahirə şəhərində keçirilən XI Sammitdə ölkəmizi Azərbayc",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Qahirə",
+          "confidence": 0.8634149432182312,
+          "context": "ulda keçirilmiş IX Zirvə görüşündə təmsil olunub. Qahirə şəhərində keçirilən XI Sammitdə ölkəmizi Azərbayc",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əli",
+          "confidence": 0.9256843328475952,
+          "context": "də ölkəmizi Azərbaycan Respublikasının Baş naziri Əli Əsədovun rəhbərlik etdiyi nümayəndə heyəti təmsil",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əsədovun",
+          "confidence": 0.9966375827789307,
+          "context": "lkəmizi Azərbaycan Respublikasının Baş naziri Əli Əsədovun rəhbərlik etdiyi nümayəndə heyəti təmsil edib. Üz",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "60",
+          "confidence": 0.9529147744178772,
+          "context": "alisinin sayının ümumilikdə dünya müsəlmanlarının 60 faizini təşkil edən və böyük iqtisadi potensiala ",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "ir",
+          "confidence": 0.4064960479736328,
+          "context": "nbulda Banqladeş, İndoneziya, İran, Malayziya, Misir, Nigeriya və Pakistanın əməkdaşlığı ilə təşkil ed",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "8",
+          "confidence": 0.9708786606788635,
+          "context": "nsında atılıb. 1997-ci il iyunun 15-də İstanbulda 8 ölkənin dövlət və hökumət başçılarının sammitində",
+          "type": "buildingnum",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Qahirə",
+          "type": "location",
+          "name": "Qahirə"
+        },
+        {
+          "id": "Əli",
+          "type": "person",
+          "name": "Əli"
+        },
+        {
+          "id": "Əsədovun",
+          "type": "person",
+          "name": "Əsədovun"
+        },
+        {
+          "id": "60",
+          "type": "date",
+          "name": "60"
+        },
+        {
+          "id": "ir",
+          "type": "location",
+          "name": "ir"
+        },
+        {
+          "id": "8",
+          "type": "buildingnum",
+          "name": "8"
+        }
+      ],
+      "edges": []
+    },
+    "success": true
+  },
+  {
+    "article_id": "993",
+    "title": "Bakıdan Sen Martin xalqının birliyinə və müstəqilliyinə çağırış edilib",
+    "entities": {
+      "persons": [
+        {
+          "name": "Franklin",
+          "confidence": 0.9964194297790527,
+          "context": "ılışında çıxış edən Sen Martin parlamentinin üzvü Franklin Meyers bildirib ki, istər Fransanın, istərsə də N",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Pərvanə",
+          "confidence": 0.9999066591262817,
+          "context": "təşəkkür edib. Çıxış edən Milli Məclisin deputatı Pərvanə Vəliyeva deyib ki, kolonializmin Sen Martin adası",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Vəliyeva",
+          "confidence": 0.9990715384483337,
+          "context": " edib. Çıxış edən Milli Məclisin deputatı Pərvanə Vəliyeva deyib ki, kolonializmin Sen Martin adasındakı təs",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Rhoda",
+          "confidence": 0.725663423538208,
+          "context": "b. Sonra One Saint Martin təşkilatının prezidenti Rhoda Arrindell Sen Martində ikili müstəmləkəçilik irsi",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Niderland",
+          "confidence": 0.6113920211791992,
+          "context": "zağa gedib. O bildirib ki, adanın xalqı Fransa və Niderland arasında bağlanmış müqavilənin nəticələrindən həl",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Franklin",
+          "confidence": 0.9964194297790527,
+          "context": "ılışında çıxış edən Sen Martin parlamentinin üzvü Franklin Meyers bildirib ki, istər Fransanın, istərsə də N",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Pərvanə",
+          "confidence": 0.9999066591262817,
+          "context": "təşəkkür edib. Çıxış edən Milli Məclisin deputatı Pərvanə Vəliyeva deyib ki, kolonializmin Sen Martin adası",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Vəliyeva",
+          "confidence": 0.9990715384483337,
+          "context": " edib. Çıxış edən Milli Məclisin deputatı Pərvanə Vəliyeva deyib ki, kolonializmin Sen Martin adasındakı təs",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Niderland",
+          "confidence": 0.6113920211791992,
+          "context": "zağa gedib. O bildirib ki, adanın xalqı Fransa və Niderland arasında bağlanmış müqavilənin nəticələrindən həl",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Rhoda",
+          "confidence": 0.725663423538208,
+          "context": "b. Sonra One Saint Martin təşkilatının prezidenti Rhoda Arrindell Sen Martində ikili müstəmləkəçilik irsi",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Franklin",
+          "type": "person",
+          "name": "Franklin"
+        },
+        {
+          "id": "Pərvanə",
+          "type": "person",
+          "name": "Pərvanə"
+        },
+        {
+          "id": "Vəliyeva",
+          "type": "person",
+          "name": "Vəliyeva"
+        },
+        {
+          "id": "Niderland",
+          "type": "location",
+          "name": "Niderland"
+        },
+        {
+          "id": "Rhoda",
+          "type": "person",
+          "name": "Rhoda"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "deyən",
+          "target_entity": "edib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "deyən görə edib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "deputatı",
+          "target_entity": "təsirləri",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "deputatı kolonializmin təsirləri",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "arasında",
+          "target_entity": "çəkir",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "arasında bağlanmış çəkir",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "gəlmək",
+          "target_entity": "zəiflədilib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "gəlmək qabiliyyəti zəiflədilib",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "1049",
+    "title": "Bu gün Bakıda COP29 başlayır",
+    "entities": {
+      "persons": [],
+      "organizations": [],
+      "locations": [],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": []
+    },
+    "knowledge_graph": {
+      "nodes": [],
+      "edges": []
+    },
+    "success": true
+  },
+  {
+    "article_id": "938",
+    "title": "Azərbaycan Respublikasının Prezidenti İlham Əliyevin Dünya Azərbaycanlılarının H",
+    "entities": {
+      "persons": [],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Qazax",
+          "confidence": 0.9996969699859619,
+          "context": "r baş vermişdir. Onların arasında ən vacib məsələ Qazax rayonunun 1990-cı illərin əvvəllərində işğal altı",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Qazax",
+          "confidence": 0.9996969699859619,
+          "context": "r baş vermişdir. Onların arasında ən vacib məsələ Qazax rayonunun 1990-cı illərin əvvəllərində işğal altı",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Qazax",
+          "type": "location",
+          "name": "Qazax"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "inamla",
+          "target_entity": "etmişdir",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "inamla inkişaf etmişdir",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "son",
+          "target_entity": "baş",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "son dörd baş",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "işğalçılıq",
+          "target_entity": "alınmalıdır",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "işğalçılıq siyasəti alınmalıdır",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "özümə",
+          "target_entity": "ki",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "özümə borc ki",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "8969",
+    "title": "Həyat yoldaşını qətlə yetirməkdə təqsirləndirilən şəxsə hökm oxunub",
+    "entities": {
+      "persons": [
+        {
+          "name": "Raidə",
+          "confidence": 0.9998653531074524,
+          "context": "htiyatsızlıqdan qətlə yetirməkdə təqsirləndirilən Raidə Mahmudovanın cinayət işi üzrə məhkəmə prosesi yek",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Mahmudova",
+          "confidence": 0.9998338222503662,
+          "context": "çirilən prosesdə hökm oxunub. Hökmə əsasən, Raidə Mahmudova 1 il 6 ay müddətə azadlıqdan məhrum edilib. O, cə",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.9962266683578491,
+          "context": "Bakı. Trend: Həyat yoldaşını ehtiyatsızlıqdan qətlə ye",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.9962266683578491,
+          "context": "Bakı. Trend: Həyat yoldaşını ehtiyatsızlıqdan qətlə ye",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Raidə",
+          "confidence": 0.9998653531074524,
+          "context": "htiyatsızlıqdan qətlə yetirməkdə təqsirləndirilən Raidə Mahmudovanın cinayət işi üzrə məhkəmə prosesi yek",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Mahmudova",
+          "confidence": 0.9998338222503662,
+          "context": "çirilən prosesdə hökm oxunub. Hökmə əsasən, Raidə Mahmudova 1 il 6 ay müddətə azadlıqdan məhrum edilib. O, cə",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        },
+        {
+          "id": "Raidə",
+          "type": "person",
+          "name": "Raidə"
+        },
+        {
+          "id": "Mahmudova",
+          "type": "person",
+          "name": "Mahmudova"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "Trend",
+          "target_entity": "yekunlaşıb",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "Trend təqsirləndirilən yekunlaşıb",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "9005",
+    "title": "Cinayət törətməkdə şübhəli bilinən 50 nəfər saxlanılıb - DİN",
+    "entities": {
+      "persons": [],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.8121497631072998,
+          "context": "Bakı.Trend: Oktyabrın 7-də ölkə ərazisində cinayət tör",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.8121497631072998,
+          "context": "Bakı.Trend: Oktyabrın 7-də ölkə ərazisində cinayət tör",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "50",
+          "confidence": 0.859103798866272,
+          "context": "lkə ərazisində cinayət törətməkdə şübhəli bilinən 50 nəfər saxlanılıb. Bu barədə Trend-ə DİN-dən məlum",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "42",
+          "confidence": 0.8444674611091614,
+          "context": "b ki, oktyabrın 7-də ölkə ərazisində qeydə alınan 42, əvvəlki dövrlərdən bağlı qalan 2 cinayətin açılm",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "2",
+          "confidence": 0.8609581589698792,
+          "context": "ə qeydə alınan 42, əvvəlki dövrlərdən bağlı qalan 2 cinayətin açılması polis əməkdaşları tərəfindən t",
+          "type": "buildingnum",
+          "source": "localdoc"
+        },
+        {
+          "name": "70",
+          "confidence": 0.8892498016357422,
+          "context": "nub. Həmçinin, axtarışda olduğuna görə ümumilikdə 70, o cümlədən borclu şəxs qismində axtarışda olan 6",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "64",
+          "confidence": 0.9706051349639893,
+          "context": "0, o cümlədən borclu şəxs qismində axtarışda olan 64 nəfər saxlanılaraq aidiyyəti üzrə təhvil verilib.",
+          "type": "date",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        },
+        {
+          "id": "50",
+          "type": "date",
+          "name": "50"
+        },
+        {
+          "id": "42",
+          "type": "date",
+          "name": "42"
+        },
+        {
+          "id": "2",
+          "type": "buildingnum",
+          "name": "2"
+        },
+        {
+          "id": "70",
+          "type": "date",
+          "name": "70"
+        },
+        {
+          "id": "64",
+          "type": "date",
+          "name": "64"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "əlaqəli",
+          "target_entity": "götürülməsi",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "əlaqəli qanunsuz götürülməsi",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "8911",
+    "title": "Sənaye və istehsal sektoruna kredit qoyuluşları 10%-ə yaxın artıb",
+    "entities": {
+      "persons": [],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.9896469712257385,
+          "context": "Bakı. Trend: Bu ilin sentyabrın 1-nə Azərbaycanda fəal",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.9896469712257385,
+          "context": "Bakı. Trend: Bu ilin sentyabrın 1-nə Azərbaycanda fəal",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "kredit",
+          "target_entity": "edib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "kredit portfeli edib",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "8954",
+    "title": "Xocalının Xanyurdu kəndinə növbəti köç olub (FOTO)",
+    "entities": {
+      "persons": [
+        {
+          "name": "nyurdu",
+          "confidence": 0.7241805791854858,
+          "context": "Xocalı. Trend: Oktyabrın 8-də Xocalının Xanyurdu kəndinə növbəti köç həyata keçirilib. Xankəndi şə",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Xanyurdu",
+          "confidence": 0.948721170425415,
+          "context": "əti məskunlaşan 69 nəfərdən ibarət 18 ailə bu gün Xanyurdu kəndinə qayıdıb. Bildirilib ki, rəsmilər, sakinlə",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "urdu",
+          "confidence": 0.5561420917510986,
+          "context": "arlarını onlara təqdim ediblər. Qeyd edək ki, Xanyurdu kəndində sakinlər üçün müasir standartlara uyğun ",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Xocalı",
+          "confidence": 0.8198736906051636,
+          "context": "Xocalı. Trend: Oktyabrın 8-də Xocalının Xanyurdu kəndinə",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Xankəndi",
+          "confidence": 0.9926292896270752,
+          "context": "ın Xanyurdu kəndinə növbəti köç həyata keçirilib. Xankəndi şəhərində, Ağdərə və Xocalı rayonlarında Bərpa, T",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "dərə",
+          "confidence": 0.6695114374160767,
+          "context": "vbəti köç həyata keçirilib. Xankəndi şəhərində, Ağdərə və Xocalı rayonlarında Bərpa, Tikinti və İdarəetm",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Xocalı",
+          "confidence": 0.8198736906051636,
+          "context": "Xocalı. Trend: Oktyabrın 8-də Xocalının Xanyurdu kəndinə",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "nyurdu",
+          "confidence": 0.7241805791854858,
+          "context": "Xocalı. Trend: Oktyabrın 8-də Xocalının Xanyurdu kəndinə növbəti köç həyata keçirilib. Xankəndi şə",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Xankəndi",
+          "confidence": 0.9926292896270752,
+          "context": "ın Xanyurdu kəndinə növbəti köç həyata keçirilib. Xankəndi şəhərində, Ağdərə və Xocalı rayonlarında Bərpa, T",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Ağ",
+          "confidence": 0.41289106011390686,
+          "context": "növbəti köç həyata keçirilib. Xankəndi şəhərində, Ağdərə və Xocalı rayonlarında Bərpa, Tikinti və İdar",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "dərə",
+          "confidence": 0.6695114374160767,
+          "context": "vbəti köç həyata keçirilib. Xankəndi şəhərində, Ağdərə və Xocalı rayonlarında Bərpa, Tikinti və İdarəetm",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "69",
+          "confidence": 0.993354320526123,
+          "context": "q ki, bugünədək Xocalı rayonunun Xanyurdu kəndinə 69 ailədən ibarət 237 nəfər keçmiş məcburi köçkün kö",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "18",
+          "confidence": 0.8696826100349426,
+          "context": "nlarında müvəqqəti məskunlaşan 69 nəfərdən ibarət 18 ailə bu gün Xanyurdu kəndinə qayıdıb. Bildirilib ",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "Xanyurdu",
+          "confidence": 0.948721170425415,
+          "context": "əti məskunlaşan 69 nəfərdən ibarət 18 ailə bu gün Xanyurdu kəndinə qayıdıb. Bildirilib ki, rəsmilər, sakinlə",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "urdu",
+          "confidence": 0.5561420917510986,
+          "context": "arlarını onlara təqdim ediblər. Qeyd edək ki, Xanyurdu kəndində sakinlər üçün müasir standartlara uyğun ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "23",
+          "confidence": 0.9208741188049316,
+          "context": "calı rayonunun Xanyurdu kəndinə 69 ailədən ibarət 237 nəfər keçmiş məcburi köçkün köçürülüb.",
+          "type": "date",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Xocalı",
+          "type": "location",
+          "name": "Xocalı"
+        },
+        {
+          "id": "nyurdu",
+          "type": "person",
+          "name": "nyurdu"
+        },
+        {
+          "id": "Xankəndi",
+          "type": "location",
+          "name": "Xankəndi"
+        },
+        {
+          "id": "Ağ",
+          "type": "person",
+          "name": "Ağ"
+        },
+        {
+          "id": "dərə",
+          "type": "location",
+          "name": "dərə"
+        },
+        {
+          "id": "69",
+          "type": "date",
+          "name": "69"
+        },
+        {
+          "id": "18",
+          "type": "date",
+          "name": "18"
+        },
+        {
+          "id": "Xanyurdu",
+          "type": "person",
+          "name": "Xanyurdu"
+        },
+        {
+          "id": "urdu",
+          "type": "person",
+          "name": "urdu"
+        },
+        {
+          "id": "23",
+          "type": "date",
+          "name": "23"
+        }
+      ],
+      "edges": []
+    },
+    "success": true
+  },
+  {
+    "article_id": "8874",
+    "title": "HDQ komandanı Rusiyada Xəzər dənizində regional təhlükəsizlik müzakirələrində iş",
+    "entities": {
+      "persons": [
+        {
+          "name": "Şahin",
+          "confidence": 0.9901871681213379,
+          "context": " Respublikası HDQ komandanı 1-ci dərəcəli kapitan Şahin Məmmədovun rəhbərlik etdiyi nümayəndə heyətinin i",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Məmmədov",
+          "confidence": 0.9350797533988953,
+          "context": "blikası HDQ komandanı 1-ci dərəcəli kapitan Şahin Məmmədovun rəhbərlik etdiyi nümayəndə heyətinin iştirak et",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.981741726398468,
+          "context": "Bakı. Trend: Rusiya Federasiyasının Sankt-Peterburq şə",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Sankt-Peterburq",
+          "confidence": 0.9453331232070923,
+          "context": "Bakı. Trend: Rusiya Federasiyasının Sankt-Peterburq şəhərində Xəzəryanı ölkələrin Hərbi Dəniz Qüvvələ",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.981741726398468,
+          "context": "Bakı. Trend: Rusiya Federasiyasının Sankt-Peterburq şə",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Sankt-Peterburq",
+          "confidence": 0.9453331232070923,
+          "context": "Bakı. Trend: Rusiya Federasiyasının Sankt-Peterburq şəhərində Xəzəryanı ölkələrin Hərbi Dəniz Qüvvələ",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Şahin",
+          "confidence": 0.9901871681213379,
+          "context": " Respublikası HDQ komandanı 1-ci dərəcəli kapitan Şahin Məmmədovun rəhbərlik etdiyi nümayəndə heyətinin i",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Məmmədov",
+          "confidence": 0.9350797533988953,
+          "context": "blikası HDQ komandanı 1-ci dərəcəli kapitan Şahin Məmmədovun rəhbərlik etdiyi nümayəndə heyətinin iştirak et",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        },
+        {
+          "id": "Sankt-Peterburq",
+          "type": "location",
+          "name": "Sankt-Peterburq"
+        },
+        {
+          "id": "Şahin",
+          "type": "person",
+          "name": "Şahin"
+        },
+        {
+          "id": "Məmmədov",
+          "type": "person",
+          "name": "Məmmədov"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "Trend",
+          "target_entity": "keçirilib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "Trend komandanlarının keçirilib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "yanaşı",
+          "target_entity": "artırılması",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "yanaşı dənizində artırılması",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "8951",
+    "title": "Xorvatiya normallaşma istiqamətində əldə edilən irəliləyişi qətiyyətlə dəstəkləy",
+    "entities": {
+      "persons": [
+        {
+          "name": "Sahibə",
+          "confidence": 0.9994951486587524,
+          "context": "nin sədri Qordan Yandrokoviç Milli Məclisin sədri Sahibə Qafarova ilə birgə keçirdiyi mətbuat konfransında",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qafarova",
+          "confidence": 0.9997375011444092,
+          "context": "ri Qordan Yandrokoviç Milli Məclisin sədri Sahibə Qafarova ilə birgə keçirdiyi mətbuat konfransında deyib. B",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qordan",
+          "confidence": 0.9998555183410645,
+          "context": "əbər verir ki, bunu Xorvatiya Parlamentinin sədri Qordan Yandrokoviç Milli Məclisin sədri Sahibə Qafarova ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Yandrokoviç",
+          "confidence": 0.9993577003479004,
+          "context": "rir ki, bunu Xorvatiya Parlamentinin sədri Qordan Yandrokoviç Milli Məclisin sədri Sahibə Qafarova ilə birgə ke",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əli",
+          "confidence": 0.8946543335914612,
+          "context": "fə Xorvatiyaya rəsmi səfər edib. Bu gün Baş nazir Əli Əsədovla görüş əsnasında da ikitərəfli iqtisadi v",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əsədov",
+          "confidence": 0.9972320795059204,
+          "context": "orvatiyaya rəsmi səfər edib. Bu gün Baş nazir Əli Əsədovla görüş əsnasında da ikitərəfli iqtisadi və təsis",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.9830275774002075,
+          "context": "Bakı. Trend: Görüşdə Sahibə Qafarova ilə ikitərəfli mü",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "rvatiya",
+          "confidence": 0.7079288959503174,
+          "context": "deyə o bildirib. Parlament sədri vurğulayıb ki, Xorvatiya münasibətlərin normallaşması istiqamətində indiyə",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.9830275774002075,
+          "context": "Bakı. Trend: Görüşdə Sahibə Qafarova ilə ikitərəfli mü",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Sahibə",
+          "confidence": 0.9994951486587524,
+          "context": "nin sədri Qordan Yandrokoviç Milli Məclisin sədri Sahibə Qafarova ilə birgə keçirdiyi mətbuat konfransında",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qafarova",
+          "confidence": 0.9997375011444092,
+          "context": "ri Qordan Yandrokoviç Milli Məclisin sədri Sahibə Qafarova ilə birgə keçirdiyi mətbuat konfransında deyib. B",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "or",
+          "confidence": 0.5721638202667236,
+          "context": "n müxtəlif istiqamətləri, həm Azərbaycan, həm də Xorvatiyanın qonşuluğundakı vəziyyət, habelə cari geo",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "rvatiya",
+          "confidence": 0.7079288959503174,
+          "context": "deyə o bildirib. Parlament sədri vurğulayıb ki, Xorvatiya münasibətlərin normallaşması istiqamətində indiyə",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qordan",
+          "confidence": 0.9998555183410645,
+          "context": "əbər verir ki, bunu Xorvatiya Parlamentinin sədri Qordan Yandrokoviç Milli Məclisin sədri Sahibə Qafarova ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Yandrokoviç",
+          "confidence": 0.9993577003479004,
+          "context": "rir ki, bunu Xorvatiya Parlamentinin sədri Qordan Yandrokoviç Milli Məclisin sədri Sahibə Qafarova ilə birgə ke",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əli",
+          "confidence": 0.8946543335914612,
+          "context": "fə Xorvatiyaya rəsmi səfər edib. Bu gün Baş nazir Əli Əsədovla görüş əsnasında da ikitərəfli iqtisadi v",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əsədov",
+          "confidence": 0.9972320795059204,
+          "context": "orvatiyaya rəsmi səfər edib. Bu gün Baş nazir Əli Əsədovla görüş əsnasında da ikitərəfli iqtisadi və təsis",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Q",
+          "confidence": 0.9477130174636841,
+          "context": "potensialı daha ətraflı müzakirə edəcəyəm, - deyə Q.Yandrokoviç qeyd edib.",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": ".",
+          "confidence": 0.35948872566223145,
+          "context": "otensialı daha ətraflı müzakirə edəcəyəm, - deyə Q.Yandrokoviç qeyd edib.",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        },
+        {
+          "id": "Sahibə",
+          "type": "person",
+          "name": "Sahibə"
+        },
+        {
+          "id": "Qafarova",
+          "type": "person",
+          "name": "Qafarova"
+        },
+        {
+          "id": "or",
+          "type": "location",
+          "name": "or"
+        },
+        {
+          "id": "rvatiya",
+          "type": "location",
+          "name": "rvatiya"
+        },
+        {
+          "id": "Qordan",
+          "type": "person",
+          "name": "Qordan"
+        },
+        {
+          "id": "Yandrokoviç",
+          "type": "person",
+          "name": "Yandrokoviç"
+        },
+        {
+          "id": "Əli",
+          "type": "person",
+          "name": "Əli"
+        },
+        {
+          "id": "Əsədov",
+          "type": "person",
+          "name": "Əsədov"
+        },
+        {
+          "id": "Q",
+          "type": "person",
+          "name": "Q"
+        },
+        {
+          "id": ".",
+          "type": "person",
+          "name": "."
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "həmçinin",
+          "target_entity": "bildirib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "həmçinin danışıqlarının bildirib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "sülh",
+          "target_entity": "bildirib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "sülh danışıqlarının bildirib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "nazir",
+          "target_entity": "nailiyyətləri",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "nazir əməkdaşlığımızdakı nailiyyətləri",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "8890",
+    "title": "Azərbaycan və ABŞ elmi mərkəzi Xəzər regionunda nəqliyyat və iqtisadi əməkdaşlığ",
+    "entities": {
+      "persons": [
+        {
+          "name": "Rəhman",
+          "confidence": 0.9995515942573547,
+          "context": ", rəqəmsal inkişaf və nəqliyyat nazirinin müavini Rəhman Hümmətov ABŞ-nin nüfuzlu elmi-tədqiqat mərkəzi  C",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Hümmətov",
+          "confidence": 0.9996918439865112,
+          "context": "fı bu baxımdan xüsusi əhəmiyyət kəsb edir. Rəhman Hümmətov, həmçinin Caspian Policy Centerin Xəzər regionund",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əfqan",
+          "confidence": 0.9995265603065491,
+          "context": "zi  Caspian Policy Centerin İdarə Heyətinin sədri Əfqan Niftinin rəhbərlik etdiyi nümayəndə heyəti ilə gö",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.971974790096283,
+          "context": "Bakı. Trend: Azərbaycan və Amerika Birləşmiş Ştatların",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.971974790096283,
+          "context": "Bakı. Trend: Azərbaycan və Amerika Birləşmiş Ştatların",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Rəhman",
+          "confidence": 0.9995515942573547,
+          "context": ", rəqəmsal inkişaf və nəqliyyat nazirinin müavini Rəhman Hümmətov ABŞ-nin nüfuzlu elmi-tədqiqat mərkəzi  C",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Hümmətov",
+          "confidence": 0.9996918439865112,
+          "context": "fı bu baxımdan xüsusi əhəmiyyət kəsb edir. Rəhman Hümmətov, həmçinin Caspian Policy Centerin Xəzər regionund",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Əfqan",
+          "confidence": 0.9995265603065491,
+          "context": "zi  Caspian Policy Centerin İdarə Heyətinin sədri Əfqan Niftinin rəhbərlik etdiyi nümayəndə heyəti ilə gö",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "ft",
+          "confidence": 0.6147024035453796,
+          "context": "ian Policy Centerin İdarə Heyətinin sədri Əfqan Niftinin rəhbərlik etdiyi nümayəndə heyəti ilə görüşüb",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        },
+        {
+          "id": "Rəhman",
+          "type": "person",
+          "name": "Rəhman"
+        },
+        {
+          "id": "Hümmətov",
+          "type": "person",
+          "name": "Hümmətov"
+        },
+        {
+          "id": "Əfqan",
+          "type": "person",
+          "name": "Əfqan"
+        },
+        {
+          "id": "ft",
+          "type": "person",
+          "name": "ft"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "Trend",
+          "target_entity": "aparılıb",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "Trend inkişaf aparılıb",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "8900",
+    "title": "İslam Əməkdaşlıq Təşkilatının KOB-lar Şəbəkəsi yaradılıb (FOTO)",
+    "entities": {
+      "persons": [
+        {
+          "name": "Mərakeşin",
+          "confidence": 0.959365725517273,
+          "context": "ürkiyəni KOSGEB, Səudiyyə Ərəbistanının MONSHAAT, Mərakeşin Morocco PME, həmçinin İordaniya, Pakistan, Qırğız",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "RIC",
+          "confidence": 0.5472049117088318,
+          "context": "İqtisadi, Sosial Araşdırmalar və Təlim Mərkəzi SESRIC icra edəcəkdir.",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.7902739644050598,
+          "context": "Bakı.Trend: Bakıda keçirilən Azərbaycan Halal Biznes A",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qır",
+          "confidence": 0.5015915632247925,
+          "context": "akeşin Morocco PME, həmçinin İordaniya, Pakistan, Qırğızıstan, Çad və Kot-dİvuarın müvafiq qurumlarının",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [
+        {
+          "name": "9,9",
+          "confidence": 0.3607909381389618,
+          "context": ". Bildirilib ki, İƏT ölkələrində isə şirkətlərin 99,9-ni KOB-lar təşkil edir və onların məşğulluqda pay",
+          "type": "date",
+          "source": "localdoc"
+        }
+      ],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.7902739644050598,
+          "context": "Bakı.Trend: Bakıda keçirilən Azərbaycan Halal Biznes A",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Mərakeşin",
+          "confidence": 0.959365725517273,
+          "context": "ürkiyəni KOSGEB, Səudiyyə Ərəbistanının MONSHAAT, Mərakeşin Morocco PME, həmçinin İordaniya, Pakistan, Qırğız",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "İ",
+          "confidence": 0.3759861886501312,
+          "context": "tanının MONSHAAT, Mərakeşin Morocco PME, həmçinin İordaniya, Pakistan, Qırğızıstan, Çad və Kot-dİvuar",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qır",
+          "confidence": 0.5015915632247925,
+          "context": "akeşin Morocco PME, həmçinin İordaniya, Pakistan, Qırğızıstan, Çad və Kot-dİvuarın müvafiq qurumlarının",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "9",
+          "confidence": 0.7149794101715088,
+          "context": "r. Bildirilib ki, İƏT ölkələrində isə şirkətlərin 99,9-ni KOB-lar təşkil edir və onların məşğulluqda ",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "9,9",
+          "confidence": 0.3607909381389618,
+          "context": ". Bildirilib ki, İƏT ölkələrində isə şirkətlərin 99,9-ni KOB-lar təşkil edir və onların məşğulluqda pay",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "93",
+          "confidence": 0.6304619312286377,
+          "context": "i KOB-lar təşkil edir və onların məşğulluqda payı 93-dən çox, əlavə dəyərdə isə 85-ə yaxındır. İƏT KOB",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "",
+          "confidence": 0.6335658431053162,
+          "context": "k, İqtisadi, Sosial Araşdırmalar və Təlim Mərkəzi SESRIC icra edəcəkdir.",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "RIC",
+          "confidence": 0.5472049117088318,
+          "context": "İqtisadi, Sosial Araşdırmalar və Təlim Mərkəzi SESRIC icra edəcəkdir.",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        },
+        {
+          "id": "Mərakeşin",
+          "type": "person",
+          "name": "Mərakeşin"
+        },
+        {
+          "id": "İ",
+          "type": "person",
+          "name": "İ"
+        },
+        {
+          "id": "Qır",
+          "type": "location",
+          "name": "Qır"
+        },
+        {
+          "id": "9",
+          "type": "date",
+          "name": "9"
+        },
+        {
+          "id": "9,9",
+          "type": "date",
+          "name": "9,9"
+        },
+        {
+          "id": "93",
+          "type": "date",
+          "name": "93"
+        },
+        {
+          "id": "RIC",
+          "type": "person",
+          "name": "RIC"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "ediblər",
+          "target_entity": "dəstək",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "ediblər iclasda dəstək",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "ediblər",
+          "target_entity": "təşkilat",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "ediblər iclasda təşkilat",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "KOSGEB",
+          "target_entity": "edib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "KOSGEB qurumlarının edib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "katibliyi",
+          "target_entity": "Statistik",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "katibliyi funksiyasını Statistik",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "8984",
+    "title": "TDT-nin Qəbələ Zirvəsi – Türk inteqrasiyasının yeni mərhələsi",
+    "entities": {
+      "persons": [
+        {
+          "name": "Azər",
+          "confidence": 0.9989835023880005,
+          "context": "imi dəyərləndirilir. Bu sözləri Trend-ə politoloq Azər Qarayev bildirib. Politoloq bildirib ki, Zirvə hə",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qarayev",
+          "confidence": 0.9979701042175293,
+          "context": "urulmuş sabitlik modelinin nümunəsinə çevrilib. A.Qarayev vurğulayıb ki, bu, təkcə Azərbaycan üçün deyil, T",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.973641037940979,
+          "context": "Bakı.Trend: Qəbələdə Türk Dövlətləri Təşkilatının TDT ",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qəbələ",
+          "confidence": 0.9973695278167725,
+          "context": " ancaq milli güc və birgə əməkdaşlıqla mümkündür. Qəbələ Zirvəsində Zəngəzur dəhlizinin açılması və Orta D",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.973641037940979,
+          "context": "Bakı.Trend: Qəbələdə Türk Dövlətləri Təşkilatının TDT ",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qəbələ",
+          "confidence": 0.9973695278167725,
+          "context": " ancaq milli güc və birgə əməkdaşlıqla mümkündür. Qəbələ Zirvəsində Zəngəzur dəhlizinin açılması və Orta D",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Azər",
+          "confidence": 0.9989835023880005,
+          "context": "imi dəyərləndirilir. Bu sözləri Trend-ə politoloq Azər Qarayev bildirib. Politoloq bildirib ki, Zirvə hə",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "Qarayev",
+          "confidence": 0.9979701042175293,
+          "context": "urulmuş sabitlik modelinin nümunəsinə çevrilib. A.Qarayev vurğulayıb ki, bu, təkcə Azərbaycan üçün deyil, T",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "A",
+          "confidence": 0.9299692511558533,
+          "context": " qurulmuş sabitlik modelinin nümunəsinə çevrilib. A.Qarayev vurğulayıb ki, bu, təkcə Azərbaycan üçün ",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        },
+        {
+          "id": "Qəbələ",
+          "type": "location",
+          "name": "Qəbələ"
+        },
+        {
+          "id": "Azər",
+          "type": "person",
+          "name": "Azər"
+        },
+        {
+          "id": "Qarayev",
+          "type": "person",
+          "name": "Qarayev"
+        },
+        {
+          "id": "A",
+          "type": "person",
+          "name": "A"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "gələcəkdə",
+          "target_entity": "etdirir",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "gələcəkdə ortaq etdirir",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "sazişinin",
+          "target_entity": "Minsk",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "sazişinin paraflanması Minsk",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "sazişinin",
+          "target_entity": "açıqlamalar",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "sazişinin paraflanması açıqlamalar",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "sazişinin",
+          "target_entity": "formalaşdırıb",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "sazişinin paraflanması formalaşdırıb",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "regionda",
+          "target_entity": "səbəb",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "regionda diplomatik səbəb",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "tranzit",
+          "target_entity": "kimi",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "tranzit enerji kimi",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "arasında",
+          "target_entity": "möhkəmləndirir",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "arasında strateji möhkəmləndirir",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  },
+  {
+    "article_id": "8990",
+    "title": "Gəncə avtomobil zavodu İB-i yerli istehsalın inkişafı istiqamətində vacib addım ",
+    "entities": {
+      "persons": [
+        {
+          "name": "KAMAZ",
+          "confidence": 0.9271067380905151,
+          "context": "ii Sərvətlər Nazirliyinin sifarişinə uyğun olaraq KAMAZ-ın bazasında 45 ədəd 20 kubmetr tutumlu kommunal ",
+          "type": "person",
+          "source": "localdoc"
+        }
+      ],
+      "organizations": [],
+      "locations": [
+        {
+          "name": "Bakı",
+          "confidence": 0.9965178966522217,
+          "context": "Bakı. Trend: Azərbaycanın avtomobil sənayesində flaqma",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Gəncə",
+          "confidence": 0.9966375827789307,
+          "context": " demək kifayətdir ki, Azərbaycanda 14 300-dən çox Gəncə avtomobil zavodunun istehsal etdiyi traktorlar öl",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Şuşa",
+          "confidence": 0.9997415542602539,
+          "context": "bus hazırda işğaldan azad edilən torpaqlarımızda, Şuşada xidmət göstərir. Bu müddətdə 6 avtobus, 113 kom",
+          "type": "location",
+          "source": "localdoc"
+        }
+      ],
+      "dates": [],
+      "events": [],
+      "positions": [],
+      "all": [
+        {
+          "name": "Bakı",
+          "confidence": 0.9965178966522217,
+          "context": "Bakı. Trend: Azərbaycanın avtomobil sənayesində flaqma",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "Gəncə",
+          "confidence": 0.9966375827789307,
+          "context": " demək kifayətdir ki, Azərbaycanda 14 300-dən çox Gəncə avtomobil zavodunun istehsal etdiyi traktorlar öl",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "KAMAZ",
+          "confidence": 0.9271067380905151,
+          "context": "ii Sərvətlər Nazirliyinin sifarişinə uyğun olaraq KAMAZ-ın bazasında 45 ədəd 20 kubmetr tutumlu kommunal ",
+          "type": "person",
+          "source": "localdoc"
+        },
+        {
+          "name": "45",
+          "confidence": 0.9892417788505554,
+          "context": "iyinin sifarişinə uyğun olaraq KAMAZ-ın bazasında 45 ədəd 20 kubmetr tutumlu kommunal maşınları yığıla",
+          "type": "date",
+          "source": "localdoc"
+        },
+        {
+          "name": "4",
+          "confidence": 0.9828875660896301,
+          "context": " Çox fərəhləndirici haldır ki, müəssisədə yığılan 4 elektrobus hazırda işğaldan azad edilən torpaqlar",
+          "type": "buildingnum",
+          "source": "localdoc"
+        },
+        {
+          "name": "Şuşa",
+          "confidence": 0.9997415542602539,
+          "context": "bus hazırda işğaldan azad edilən torpaqlarımızda, Şuşada xidmət göstərir. Bu müddətdə 6 avtobus, 113 kom",
+          "type": "location",
+          "source": "localdoc"
+        },
+        {
+          "name": "6",
+          "confidence": 0.9043564796447754,
+          "context": "paqlarımızda, Şuşada xidmət göstərir. Bu müddətdə 6 avtobus, 113 kombayn, 900-ə yaxın trakror qoşqula",
+          "type": "buildingnum",
+          "source": "localdoc"
+        }
+      ]
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "Bakı",
+          "type": "location",
+          "name": "Bakı"
+        },
+        {
+          "id": "Gəncə",
+          "type": "location",
+          "name": "Gəncə"
+        },
+        {
+          "id": "KAMAZ",
+          "type": "person",
+          "name": "KAMAZ"
+        },
+        {
+          "id": "45",
+          "type": "date",
+          "name": "45"
+        },
+        {
+          "id": "4",
+          "type": "buildingnum",
+          "name": "4"
+        },
+        {
+          "id": "Şuşa",
+          "type": "location",
+          "name": "Şuşa"
+        },
+        {
+          "id": "6",
+          "type": "buildingnum",
+          "name": "6"
+        }
+      ],
+      "edges": [
+        {
+          "source_entity": "sifarişinə",
+          "target_entity": "bazasında",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "sifarişinə uyğun bazasında",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "sifarişinə",
+          "target_entity": "kubmetr",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "sifarişinə uyğun kubmetr",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "sifarişinə",
+          "target_entity": "verilib",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "sifarişinə uyğun verilib",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "müəssisədə",
+          "target_entity": "avadanlıqları",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "müəssisədə plazma avadanlıqları",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "uyğun",
+          "target_entity": "MTZ",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "uyğun müəssisədə MTZ",
+          "source_method": "spacy"
+        },
+        {
+          "source_entity": "arasında",
+          "target_entity": "imzaladı",
+          "relation_type": "WORKS_FOR",
+          "confidence": 0.72,
+          "evidence": "arasında texnikasının imzaladı",
+          "source_method": "spacy"
+        }
+      ]
+    },
+    "success": true
+  }
+]

@@ -1,0 +1,566 @@
+{
+  "evaluated_articles": 30,
+  "missing_in_predictions": 0,
+  "metrics": {
+    "person": {
+      "precision": 0.4746,
+      "recall": 0.6087,
+      "f1": 0.5333,
+      "tp": 28,
+      "fp": 31,
+      "fn": 18,
+      "support": 46
+    },
+    "overall": {
+      "precision": 0.5488,
+      "recall": 0.1495,
+      "f1": 0.235,
+      "tp": 45,
+      "fp": 37,
+      "fn": 256,
+      "support": 301
+    },
+    "organization": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 137,
+      "support": 137
+    },
+    "location": {
+      "precision": 0.7391,
+      "recall": 0.1441,
+      "f1": 0.2411,
+      "tp": 17,
+      "fp": 6,
+      "fn": 101,
+      "support": 118
+    }
+  },
+  "errors_sample": [
+    {
+      "article_id": "192",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "istanbul valiliyi",
+        "report"
+      ]
+    },
+    {
+      "article_id": "192",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "istanbul"
+      ]
+    },
+    {
+      "article_id": "99",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "afp",
+        "boko haram",
+        "report",
+        "çad hökuməti",
+        "çad ordusu"
+      ]
+    },
+    {
+      "article_id": "99",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "ncamena",
+        "çad"
+      ]
+    },
+    {
+      "article_id": "29",
+      "entity_type": "persons",
+      "false_positives": [
+        "atalanta",
+        "inter",
+        "milan",
+        "yuventus"
+      ],
+      "false_negatives": [
+        "denzel dumfris"
+      ]
+    },
+    {
+      "article_id": "29",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "atalanta",
+        "inter",
+        "milan",
+        "report",
+        "yuventus"
+      ]
+    },
+    {
+      "article_id": "29",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "italiya"
+      ]
+    },
+    {
+      "article_id": "150",
+      "entity_type": "persons",
+      "false_positives": [
+        "zoran"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "150",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "dövlət seçki komissiyası dsk",
+        "report",
+        "xorvatiya demokratik birliyi partiyası"
+      ]
+    },
+    {
+      "article_id": "150",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "xorvatiya"
+      ]
+    },
+    {
+      "article_id": "52",
+      "entity_type": "persons",
+      "false_positives": [
+        "sinin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "52",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "actualite",
+        "m23 23 mart hərəkatı",
+        "okapi radiostansiyası",
+        "report"
+      ]
+    },
+    {
+      "article_id": "52",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "konqo demokratik respublikası kdr",
+        "luşebere",
+        "masisi",
+        "qoma",
+        "şimali kivu"
+      ]
+    },
+    {
+      "article_id": "162",
+      "entity_type": "persons",
+      "false_positives": [
+        "bern"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "162",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "ai şurası",
+        "avropa ittifaqı",
+        "nato",
+        "pesco"
+      ]
+    },
+    {
+      "article_id": "162",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "avropa",
+        "bern",
+        "isveçrə"
+      ]
+    },
+    {
+      "article_id": "197",
+      "entity_type": "persons",
+      "false_positives": [
+        "rəcəb",
+        "ərdoğan"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "197",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "abş",
+        "fələstin",
+        "haber global",
+        "həmas",
+        "israil",
+        "report"
+      ]
+    },
+    {
+      "article_id": "197",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "qəzza",
+        "qəzza zolağı",
+        "türkiyə"
+      ]
+    },
+    {
+      "article_id": "117",
+      "entity_type": "persons",
+      "false_positives": [
+        "vaibhav"
+      ],
+      "false_negatives": [
+        "yanerik fenrix"
+      ]
+    },
+    {
+      "article_id": "117",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "avropa ittifaqı",
+        "bruegel",
+        "crea",
+        "report",
+        "rystad energy",
+        "the guardian"
+      ]
+    },
+    {
+      "article_id": "117",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "avropa",
+        "avropa ittifaqı",
+        "norveç",
+        "rusiya"
+      ]
+    },
+    {
+      "article_id": "14",
+      "entity_type": "persons",
+      "false_positives": [
+        "ramallah"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "14",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "al jazeera",
+        "daxili işlər nazirliyi",
+        "fələstin dövləti",
+        "fələstin nazirlər komitəsi",
+        "fəth",
+        "israil müdafiə qüvvələri",
+        "mədəniyyət nazirliyi",
+        "report",
+        "telekommunikasiya nazirliyi",
+        "wafa"
+      ]
+    },
+    {
+      "article_id": "14",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "fələstin",
+        "israil",
+        "qəzza zolağı",
+        "ramallah"
+      ]
+    },
+    {
+      "article_id": "210",
+      "entity_type": "persons",
+      "false_positives": [
+        "dmitri",
+        "nova",
+        "vahid",
+        "viktor"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "210",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "bars belqorod",
+        "dövlət duması",
+        "nato",
+        "novaya qazeta yevropa",
+        "qrom kaskad",
+        "report",
+        "rusiya silahlı qüvvələri",
+        "vahid rusiya"
+      ]
+    },
+    {
+      "article_id": "210",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "belqorod vilayəti",
+        "rusiya",
+        "türkiyə",
+        "ukrayna"
+      ]
+    },
+    {
+      "article_id": "963",
+      "entity_type": "persons",
+      "false_positives": [],
+      "false_negatives": [
+        "frankvalter ştaynmayer",
+        "ilham əliyev"
+      ]
+    },
+    {
+      "article_id": "963",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan respublikası",
+        "azərtac"
+      ]
+    },
+    {
+      "article_id": "963",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "almaniya",
+        "azərbaycan",
+        "maqdeburq"
+      ]
+    },
+    {
+      "article_id": "1046",
+      "entity_type": "persons",
+      "false_positives": [
+        "şarl"
+      ],
+      "false_negatives": [
+        "ilham əliyev"
+      ]
+    },
+    {
+      "article_id": "1046",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "avropa ittifaqı",
+        "avropa ittifaqı şurası",
+        "azərtac",
+        "cop29"
+      ]
+    },
+    {
+      "article_id": "1046",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan",
+        "ermənistan"
+      ]
+    },
+    {
+      "article_id": "1018",
+      "entity_type": "persons",
+      "false_positives": [],
+      "false_negatives": [
+        "ilham əliyev"
+      ]
+    },
+    {
+      "article_id": "1018",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "asiya siyasi partiyaları beynəlxalq konfransı icapp",
+        "azərtac"
+      ]
+    },
+    {
+      "article_id": "1018",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan",
+        "cənubi qafqaz"
+      ]
+    },
+    {
+      "article_id": "969",
+      "entity_type": "persons",
+      "false_positives": [
+        "rüstəm"
+      ],
+      "false_negatives": [
+        "heydər əliyev",
+        "ilham əliyev"
+      ]
+    },
+    {
+      "article_id": "969",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan respublikası",
+        "azərtac",
+        "dostluq ordeni",
+        "rusiya federasiyası",
+        "tatarıstan respublikası"
+      ]
+    },
+    {
+      "article_id": "969",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan",
+        "rusiya",
+        "tatarıstan"
+      ]
+    },
+    {
+      "article_id": "984",
+      "entity_type": "persons",
+      "false_positives": [],
+      "false_negatives": [
+        "ilham əliyev",
+        "rəcəb tayyib ərdoğan"
+      ]
+    },
+    {
+      "article_id": "984",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan respublikası",
+        "cop29",
+        "türkiyə respublikası"
+      ]
+    },
+    {
+      "article_id": "984",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan",
+        "cənubi qafqaz",
+        "suriya",
+        "türkiyə",
+        "yaxın şərq"
+      ]
+    },
+    {
+      "article_id": "962",
+      "entity_type": "persons",
+      "false_positives": [],
+      "false_negatives": [
+        "ilham əliyev"
+      ]
+    },
+    {
+      "article_id": "962",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərtac",
+        "bmtnin iqlim dəyişmələri üzrə çərçivə konvensiyası",
+        "cop29",
+        "heydər əliyev fondu"
+      ]
+    },
+    {
+      "article_id": "962",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "afrika",
+        "azərbaycan",
+        "nayrobi"
+      ]
+    },
+    {
+      "article_id": "967",
+      "entity_type": "persons",
+      "false_positives": [
+        "əsədovun"
+      ],
+      "false_negatives": [
+        "əli əsədov"
+      ]
+    },
+    {
+      "article_id": "967",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərtac",
+        "d8",
+        "inkişaf etməkdə olan səkkiz ölkənin iqtisadi əməkdaşlıq təşkilatı",
+        "sesric",
+        "xarici işlər nazirliyi"
+      ]
+    },
+    {
+      "article_id": "967",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan",
+        "banqladeş",
+        "indoneziya",
+        "iran",
+        "istanbul",
+        "malayziya",
+        "misir",
+        "nigeriya",
+        "pakistan",
+        "türkiyə"
+      ]
+    },
+    {
+      "article_id": "993",
+      "entity_type": "persons",
+      "false_positives": [
+        "pərvanə"
+      ],
+      "false_negatives": [
+        "abbas abbasov"
+      ]
+    }
+  ]
+}
