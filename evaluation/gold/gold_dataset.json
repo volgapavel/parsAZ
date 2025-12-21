@@ -1,0 +1,1026 @@
+[
+  {
+    "article_id": "192",
+    "source": "report.az",
+    "link": "https://report.az/region-xeberleri/istanbulda-saxta-spirtli-ickiden-zeherlenme-neticesinde-olenlerin-sayi-23-nefere-catib",
+    "pub_date": "2025-01-15 19:36:00.000",
+    "title": "İstanbulda saxta spirtli içkidən zəhərlənmə nəticəsində ölənlərin sayı 23 nəfərə çatıb",
+    "content": "İstanbulda saxta spirtli içkidən zəhərlənmə nəticəsində ölənlərin sayı 23 nəfərə çatıb.\n\n\"Report\"xəbər verir ki, bu barədə İstanbul valiliyi məlumat yayıb.\n\n\"Son 48 saat ərzində ümumilikdə 66 alkoqol zəhərlənməsi hadisəsi baş verib, zəhərlənənlərdən 23-ü dünyasını dəyişib. 32 nəfərin reanimasiyada müalicəsi davam etdirilir\", - məlumatda deyilir.\n\nBundan əvvəl İstanbulda saxta spirtli içkidən zəhərlənmə nəticəsində 19 nəfərin öldüyübildirilirdi.",
+    "gold_entities": {
+      "persons": [],
+      "organizations": [
+        "Report",
+        "İstanbul valiliyi"
+      ],
+      "locations": [
+        "İstanbul"
+      ],
+      "positions": [],
+      "dates": [
+        "Son 48 saat"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "99",
+    "source": "report.az",
+    "link": "https://report.az/diger-olkeler/cadda-prezident-sarayina-hucumda-19-nefer-olub",
+    "pub_date": "2025-01-08 22:50:00.000",
+    "title": "Çadda prezident sarayına hücumda 19 nəfər ölüb",
+    "content": "Çadın paytaxtı Ncamena şəhərinin mərkəzində prezident sarayına edilən hücumda 18-i terrorçu olmaqla, azı 19 nəfər ölüb.\n\n“Report”xəbər verir ki, bu barədə AFP agentliyi Çad hökumətinin məlumatlarına istinadən məlumat yayıb.\n\nŞəhərin mərkəzinə gedən bütün yollar bağlanıb, tanklar və polislər sarayın mühafizəsini təşkil edir. Şəhər sakinləri də Çadın Prezidenti Mahamat İdriss Debi İtnoya dəstək nümayişi üçün küçələrə çıxıblar.\n\nQeyd edək ki,“Boko Haram” terror qruplaşmasının üzvləri Çadın paytaxtında prezident sarayına hücum ediblər. Çad ordusu hücumu dəf edib.",
+    "gold_entities": {
+      "persons": [
+        "Mahamat İdriss Debi İtno"
+      ],
+      "organizations": [
+        "Report",
+        "AFP",
+        "Çad hökuməti",
+        "Boko Haram",
+        "Çad ordusu"
+      ],
+      "locations": [
+        "Çad",
+        "Ncamena"
+      ],
+      "positions": [
+        "Çadın Prezidenti"
+      ],
+      "dates": []
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "29",
+    "source": "report.az",
+    "link": "https://report.az/futbol-xeberleri/inter-atalanta-ni-meglub-ederek-italiya-superkubokunun-finalina-yukselib",
+    "pub_date": "2025-01-02 22:07:00.000",
+    "title": "“İnter” “Atalanta”nı məğlub edərək, İtaliya Superkubokunun finalına yüksəlib",
+    "content": "İtaliya Superkubokunun yarımfinal matçında \"İnter\" \"Atalanta\"nı 2:0 hesabı ilə məğlub edib.\n\n\"Report\"un məlumatına görə, hər iki qolu Denzel Dumfris (49 və 61-ci dəqiqələrdə) vurub.\n\n“İnter” İtaliya Superkubokunda ölkənin hazırkı çempionu kimi iştirak edir. “Atalanta” İtaliya Kubokunun finalçısıdır. İkinci yarımfinalda İtaliya Kubokunun qalibi “Yuventus” yanvarın 3-də ölkənin vitse-çempionu “Milan”la qarşılaşacaq. Final yanvarın 6-da baş tutacaq.\n\nİtaliyanın son üç Superkubokunu \"İnter\" qazanıb, komandanın ümumilikdə səkkiz titulu var. Bu göstərici üzrə rekordçu 9 dəfə kuboku qazanan \"Yuventus\"dur. “Milan” yeddi dəfə qalib olub.",
+    "gold_entities": {
+      "persons": [
+        "Denzel Dumfris"
+      ],
+      "organizations": [
+        "Report",
+        "İnter",
+        "Atalanta",
+        "Yuventus",
+        "Milan"
+      ],
+      "locations": [
+        "İtaliya"
+      ],
+      "positions": [],
+      "dates": [
+        "yanvarın 3-də",
+        "yanvarın 6-da"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "150",
+    "source": "report.az",
+    "link": "https://report.az/diger-olkeler/xorvatiya-dsk-zoran-milanovic-seckilerde-74-66-sesle-qalibdir",
+    "pub_date": "2025-01-12 21:34:00.000",
+    "title": "Xorvatiya DSK: Zoran Milanoviç seçkilərdə 74,66 % səslə qalibdir",
+    "content": "Xorvatiyanın seçki məntəqələrinin 99,48 %-nin məlumatlarına əsasən ölkənin hazırkı lideri Zoran Milanoviç prezident seçkilərinin ikinci turunda səslərin 74,66 %-ni toplayıb.\n\n“Report”un xəbərinə görə, bu barədə respublikanın Dövlət Seçki Komissiyasından (DSK) məlumat verilib.\n\nMəlumata görə, 6 720 seçki məntəqəsindən 6 755-dən alınan məlumatlara əsasən Milanoviç 1 114 383 seçici səsini (74,66 %) toplayıb. Hakim \"Xorvatiya Demokratik Birliyi\" Partiyası tərəfindən dəstəklənən müstəqil namizəd Draqan Primoratz isə 378 172 səs (25,34 %) toplayıb.\n\nQeyd edilir ki, seçici fəallığı 44,16 % təşkil edib.\n\nMilanoviç ötən il dekabrın 29-da keçirilən ilk turda seçicilərin 49,09 %-nin, onun əsas rəqibi Primoratz isə 19,35 %-nin dəstəyini qazanıb.",
+    "gold_entities": {
+      "persons": [
+        "Zoran Milanoviç",
+        "Draqan Primoratz"
+      ],
+      "organizations": [
+        "Report",
+        "Dövlət Seçki Komissiyası (DSK)",
+        "Xorvatiya Demokratik Birliyi Partiyası"
+      ],
+      "locations": [
+        "Xorvatiya"
+      ],
+      "positions": [
+        "prezident",
+        "müstəqil namizəd"
+      ],
+      "dates": [
+        "dekabrın 29-da"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "52",
+    "source": "report.az",
+    "link": "https://report.az/diger-olkeler/kdr-in-serqinde-m23-usyancilari-masisi-seherini-ele-keciribler",
+    "pub_date": "2025-01-04 22:25:00.000",
+    "title": "KDR-in şərqində M23 üsyançıları Masisi şəhərini ələ keçiriblər",
+    "content": "M23 (23 Mart Hərəkatı) üsyançı qrupu Konqo Demokratik Respublikasının (KDR) şərqində Şimali Kivu əyalətinin eyniadlı rayonunun inzibati mərkəzi olan Masisi şəhərini ələ keçirib.\n\n“Report”xəbər verir ki, bu barədə Konqo xəbər portalı “Actualite” məlumat yayıb.\n\nBildirilib ki, hökumət qüvvələri və onları dəstəkləyən yerli hökumətyönlü könüllü dəstələri şiddətli döyüşdən sonra şəhəri tərk ediblər.\n\nPortalın məlumatına görə, üsyançılar eyni zamanda Masisi rayonunda Luşebere şəhərini də ələ keçiriblər. Hər iki şəhərin sakinləri üsyançıların zorakılığından qorxaraq evlərini tərk edirlər.\n\nÖz növbəsində Okapi radiostansiyası qeyd edib ki, Masisinin ələ keçirilməsi ilə M23-ün Şimali Kivunun paytaxtı Qoma şəhərinə hücum etmək imkanı yaranır. Bu şəhərlər arasındakı məsafə 80 kilometrdir. Qomada təxminən 2 milyon insan yaşayır.",
+    "gold_entities": {
+      "persons": [],
+      "organizations": [
+        "Report",
+        "M23 (23 Mart Hərəkatı)",
+        "Actualite",
+        "Okapi radiostansiyası"
+      ],
+      "locations": [
+        "Konqo Demokratik Respublikası (KDR)",
+        "Şimali Kivu",
+        "Masisi",
+        "Luşebere",
+        "Qoma"
+      ],
+      "positions": [],
+      "dates": []
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "162",
+    "source": "report.az",
+    "link": "https://report.az/diger-olkeler/ai-surasi-isvecrenin-herbi-sengene-qosulmasini-tesdiqleyib",
+    "pub_date": "2025-01-13 22:03:00.000",
+    "title": "Aİ Şurası İsveçrənin hərbi Şengenə qoşulmasını təsdiqləyib",
+    "content": "Avropa İttifaqı İsveçrənin hərbi Şengen proqramına qoşulmaq dəvətini rəsmən təsdiqləyib. Bu proqramın məqsədi qoşunları sərhədlərdə gecikmə olmadan Avropanın hər yerində sürətlə yerləşdirməkdir.\n\n“Report”xəbər verir ki, bu barədə qərarı Aİ Şurası qəbul edib.\n\nQeyd olunub ki, Aİ Şurası İsveçrənin Daimi Strukturlaşdırılmış Müdafiə Tərəfdaşlığı çərçivəsində hərbi mobillik layihəsində iştirakının proqramın şərtlərinə cavab verdiyini və əhəmiyyətli əlavə dəyər gətirəcəyini təsdiq edən qərara müsbət yanaşıb.\n\nBu qərar İsveçrənin layihəyə dəvət olunmasına imkan verəcək. Rəsmi Bern 2024-cü ilin sentyabrında hərbi Şengenə qoşulmaq üçün müraciət edib.\n\n“Hərbi Şengen” kimi tanınan hərbi mobillik layihəsi PESCO proqramının əsasını təşkil edir. O, NATO qoşunlarının Avropa ərazisindən ötürülməsi prosedurlarını maksimum dərəcədə sadələşdirmək və standartlaşdırmaq məqsədi daşıyır. Layihə 2018-ci ildə Aİ və NATO tərəfindən hazırlanıb.",
+    "gold_entities": {
+      "persons": [],
+      "organizations": [
+        "Avropa İttifaqı",
+        "Aİ Şurası",
+        "PESCO",
+        "NATO"
+      ],
+      "locations": [
+        "İsveçrə",
+        "Avropa",
+        "Bern"
+      ],
+      "positions": [],
+      "dates": [
+        "2024-cü ilin sentyabrında",
+        "2018-ci ildə"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "197",
+    "source": "report.az",
+    "link": "https://report.az/diger-olkeler/abs-qezzada-ateskesin-elde-edimesi-ucun-turkiye-prezidentinden-komek-isteyib",
+    "pub_date": "2025-01-16 21:38:00.000",
+    "title": "ABŞ Qəzzada atəşkəsin əldə ediməsi üçün Türkiyə Prezidentindən kömək istəyib",
+    "content": "ABŞ tərəfi “HƏMAS”ın danışıqlar masasına qaytarılması ilə bağlı regional aktorlarla çoxlu görüşlər keçirib və bu mövzuda Türkiyə Prezidenti Rəcəb Tayyib Ərdoğandan kömək istəyib.\n\n“Report”“Haber Global”a istinadən xəbər verir ki, belə bir bəyanatla ABŞ Dövlət katibi Antoni Blinken çıxış edib.\n\n“Biz digər aktorlarla yanaşı Prezident Ərdoğanın yanına getdik və ondan “HƏMAS”ı yenidən masaya gətirmək və razılaşmanı yekunlaşdırmağa çalışmaq üçün nüfuzundan və təsirindən istifadə etməsini istədik. O da bunu etdi”, - deyə o qeyd edib.\n\nBu arada Blinken Qəzzada İsrail və “HƏMAS” arasında atəşkəsin bazar günü həyata keçirilməyə başlayacağına tam əmin olduğunu bildirib:\n\n“Mən tam əminəm ki, atəşkəs bazar günü həyata keçiriləcək və bunu gözləyirəm. Belə mürəkkəb və həssas danışıqlar prosesində bəzi problemlərin yaranması təəccüblü deyil. Hazırda bu problemləri tez bir zamanda həll edirik”.\n\nQeyd edək ki,Fələstinin HƏMAS hərəkatı ilə İsrail Qəzza zolağında atəşkəs və anklavda saxlanılan girovların fələstinli məhbuslarla dəyişdirilməsi haqqında saziş imzalayıb.",
+    "gold_entities": {
+      "persons": [
+        "Rəcəb Tayyib Ərdoğan",
+        "Antoni Blinken"
+      ],
+      "organizations": [
+        "ABŞ",
+        "HƏMAS",
+        "Haber Global",
+        "İsrail",
+        "Fələstin",
+        "Report"
+      ],
+      "locations": [
+        "Qəzza",
+        "Qəzza zolağı",
+        "Türkiyə"
+      ],
+      "positions": [
+        "Türkiyə Prezidenti",
+        "ABŞ Dövlət katibi"
+      ],
+      "dates": [
+        "bazar günü"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "117",
+    "source": "report.az",
+    "link": "https://report.az/diger-olkeler/avropa-olkelerinin-rusiyadan-mayelesdirilmis-tebii-qaz-idxali-2024-cu-ilde-rekord-hedde-catib",
+    "pub_date": "2025-01-09 20:04:00.000",
+    "title": "Avropa ölkələrinin Rusiyadan mayeləşdirilmiş təbii qaz idxalı 2024-cü ildə rekord həddə çatıb",
+    "content": "Rusiyanın Avropa ölkələrinə mayeləşdirilmiş təbii qaz (MTQ) ixracı 2024-cü ildə rekord həddə – 24,2 milyard kubmetrə çatıb.\n\n“Report”“The Guardian”a istinadən xəbər verir ki, bu barədə Norveçin “Rystad Energy” konsaltinq şirkəti məlumat yayıb.\n\nŞirkətin hesablamalarına görə, bu göstərici 2023-cü illə müqayisədə təxminən 12 % artıb. Başqa hesablama metodologiyasından istifadə edən “Crea” analitik mərkəzi isə tədarükün 14 % artdığını bildirib.\n\nÖtən həftə Avropanın “Bruegel” analitik mərkəzi Rusiya MTQ-sinin Avropa İttifaqı ölkələrinə tədarükünün əvvəlki ildəki 17,8 milyard kubmetrlə müqayisədə 21,5 milyard kubmetrə çataraq 21 % artdığını açıqlayıb.\n\n“Rystad Energy”nin məlumatına görə, ötən il Avropa ölkələri həmçinin 49,5 milyard kubmetr Rusiya boru kəməri qazı alıb. Şirkətin analitiki Yan-Erik Fenrix qeyd edib ki, bu həcmin bir hissəsi sonradan digər ölkələrə yenidən satılıb.\n\n“Göstəricilərin artmasının səbəbi yetərincə sadədir. Rusiya MTQ-si digər təchizatçıların təklifləri ilə müqayisədə endirimlə satılır. MTQ-yə qarşı sanksiyaların olmaması səbəbindən şirkətlər ən aşağı qiymətləri təklif edən təchizatçıdan əhəmiyyətli həcmdə qaz alaraq öz mənfəətlərini güdürlər”, – “Crea” analitiki Vaibhav Raqunandan “The Guardian”a söyləyib.",
+    "gold_entities": {
+      "persons": [
+        "Yan-Erik Fenrix",
+        "Vaibhav Raqunandan"
+      ],
+      "organizations": [
+        "Report",
+        "The Guardian",
+        "Rystad Energy",
+        "Crea",
+        "Bruegel",
+        "Avropa İttifaqı"
+      ],
+      "locations": [
+        "Avropa",
+        "Rusiya",
+        "Norveç",
+        "Avropa İttifaqı"
+      ],
+      "positions": [
+        "analitik"
+      ],
+      "dates": [
+        "2024-cü ildə",
+        "2023-cü ildə",
+        "ötən həftə",
+        "ötən il"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "14",
+    "source": "report.az",
+    "link": "https://report.az/media-xeber/felestin-al-jazeera-nin-olkedeki-yayimini-dayandirib",
+    "pub_date": "2025-01-01 23:21:00.000",
+    "title": "Fələstin “Al Jazeera”nın ölkədəki yayımını dayandırıb",
+    "content": "Fələstin Dövlətinin iqtidarı “Al Jazeera” telekanalını “təxribat xarakterli məzmun” yayımlamaqda ittiham edərək onun fəaliyyətini müvəqqəti dayandırıb.\n\n“Report”xəbər verir ki, bu barədə ölkənin Fələstin Xəbər və İnformasiya Agentliyi (WAFA)məlumatyayıb.\n\n“Mədəniyyət, Daxili İşlər və Telekommunikasiya Nazirliklərinin nümayəndələrindən ibarət Fələstin Nazirlər Komitəsi Qətərdə yerləşən “Al Jazeera” media şəbəkəsinin Fələstindəki yayım fəaliyyətinin dayandırıldığını elan edib”, – agentlik diqqətə çatdırıb.\n\nQeyd olunub ki, FƏTH iqtidarı telekanal ilə əlaqəli “bütün jurnalistlərin, işçilərin və bağlı kanalların işinin müvəqqəti dayandırılmasına qərar verib”.\n\n“Qərar, şəbəkə Fələstində tətbiq olunan qanun və qaydalara zidd hesab edilən hüquqi statusunu həll edənə qədər qüvvədə qalacaq”, – məlumatda vurğulanıb.\n\nBildirilib ki, yayım fəaliyyətinin dayandırılmasının səbəbi yerli telekanalın yerli qanunları “dəfələrlə pozması” olub: “İqtidar orqanları kanalı təxribat xarakterli məzmun yayımlamaqda, dezinformasiya yaymaqda və Fələstinin daxili işlərinə müdaxilə etməkdə ittiham edərək bunun bölgədə ixtilaf və qeyri-sabitlik yaratdığını iddia ediblər”.\n\nBununla belə, sözügedən qadağanın rəsmi Ramallahın nəzarətində olmayan Qəzza zolağında keçərli olmayacağı güman edilir.\n\n“Al Jazeera” qəbul edilmiş qərarı “işğal olunmuş ərazilərdə baş verən hadisələri işıqlandırmaqdan çəkindirmək cəhdi” adlandırıb və iqtidarı bu qərarı ləğv etməyə, jurnalistlərə sərbəst fəaliyyət göstərmək imkanı verməyəçağırıb.\n\nQeyd edək ki, ötən ilin sentyabrında İsrail Müdafiə Qüvvələri Ramallahda “Al Jazeera”nın ofisinə basqın edərək onu bağlayıb. Ondan aylar öncə isə İsrail sözügedən telekanalın yəhudi ölkəsindəki fəaliyyətini yasaqlamışdı.",
+    "gold_entities": {
+      "persons": [],
+      "organizations": [
+        "Report",
+        "Fələstin Dövləti",
+        "Al Jazeera",
+        "WAFA",
+        "Fələstin Nazirlər Komitəsi",
+        "Mədəniyyət Nazirliyi",
+        "Daxili İşlər Nazirliyi",
+        "Telekommunikasiya Nazirliyi",
+        "FƏTH",
+        "İsrail Müdafiə Qüvvələri"
+      ],
+      "locations": [
+        "Fələstin",
+        "Qətər",
+        "Ramallah",
+        "Qəzza zolağı",
+        "İsrail"
+      ],
+      "positions": [],
+      "dates": [
+        "ötən ilin sentyabrında"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "210",
+    "source": "report.az",
+    "link": "https://report.az/region-xeberleri/muharibeye-getdiklerini-aciqlayan-rusiyali-memur-ve-deputatlarin-texminen-80-i-arxa-cebhede-qalib-ve-eve-qayidib",
+    "pub_date": "2025-01-17 21:20:00.000",
+    "title": "Müharibəyə getdiklərini açıqlayan rusiyalı məmur və deputatların təxminən 80 %-i arxa cəbhədə qalıb və evə qayıdıb",
+    "content": "Ukraynada müharibə başlayandan bəri Rusiyanın federal və regional səviyyədə 108 məmuru və deputatı cəbhəyə getməyə hazır olduqlarını açıqlasalar da, onların əksəriyyəti “VIP hissələrdə” qalıb və sağ-salamat evə qayıdıblar. Bəzi qanunvericilər hətta Türkiyəyə istirahətə getməyə və onlarla qanun layihəsinin həmmüəllifi olmağa macal tapıblar.\n\n“Report” xəbər verir ki, bu barədə “Novaya Qazeta. Yevropa”nın \"VIP cəbhə\" başlıqlıməqaləsindəqeyd olunub.\n\nNəşrin hesablamalarına görə, müharibəyə getməyə hazır olduqlarını bəyan edən dövlət qulluqçularından yalnız 18-i həqiqətən cəbhəyə gedib. Bunlar əsasən cinayət təqibindən (çox vaxt dələduzluq və mənimsəmə) yayınmaq istəyənlərdir. Xidmətə gedən daha 62 nəfər güzəştli şərtlər alıb. Cəbhədəki məmurların yarısı altı aydan çox xidmət etməyib. Rusiya dövlətinin 20 nümayəndəsi müharibəyə getmək niyyətini açıqladıqdan sonra heç nə etməyib.\n\nMəmur və deputatlardan daxil olan müraciətlərin əksəriyyəti 2022-ci ildə olub – 31 müraciət. Ötən il belə halların sayı 23 olub. 2023-cü ildə niyyətlilərin sayı təxminən iki dəfə az olub. Ən yüksəkvəzifəli “könüllü” general-polkovnik rütbəli senator Viktor Bondaryovdur. Onun yenidən xidmətə qəbul edilib-edilmədiyi bəlli deyil, çünki bu barədə heç yerdə məlumat dərc edilməyib.\n\nDövlət Dumasında “Vahid Rusiya”nı təmsil edən deputat Dmitri Sablin rəsmi olaraq 2022-ci ilin martından savaşdadır. “QROM – Kaskad” bölməsinin qurucusu və komandiri olan Sablin jurnalistlərin araşdırmasına görə, bu müddət ərzində 40-dan çox qanun layihəsinin həmmüəllifi olub. Həmçinin Sablin dəfələrlə NATO ölkəsi olan Türkiyədə istirahət edərkən görülüb. Ümumilikdə Duma deputatlarından 18-i müharibəyə getməyə hazır olduqlarını bildiriblər.\n\n2024-cü ildə Belqorod vilayətindən altı məmur və bir deputat savaşa gedib. Onlar “BARS – Belqorod” könüllü dəstəsinə qoşulsalar da, döyüş zonasına getməyiblər və öz regionlarında qalıblar. Ümumilikdə müharibəyə getmək istəyən 49 dövlət qulluqçusu bu variantı seçib. Daha 10 nəfərin xidmət yerini müəyyən etmək mümkün olmayıb. Qeyd olunub ki, cəmi 11 məmur və deputat nizami hərbi hissələrə gəlib.\n\nNəşr vurğulayıb ki, Rusiya Silahlı Qüvvələrində ümumi əsaslarla cəmi səkkiz dövlət nümayəndəsi olub – onlardan üçü həlak olub, daha iki nəfər yaralanıb.\n\n31 dövlət qulluqçusu hələ də xidmətini davam etdirir, doqquz nəfər isə altı aydan az əvvəl xidmətə gedib, ona görə də onların orada uzun müddət qalıb-qalmayacaqlarını dəqiq demək olmaz.",
+    "gold_entities": {
+      "persons": [
+        "Viktor Bondaryov",
+        "Dmitri Sablin"
+      ],
+      "organizations": [
+        "Report",
+        "Novaya Qazeta. Yevropa",
+        "Dövlət Duması",
+        "Vahid Rusiya",
+        "QROM – Kaskad",
+        "NATO",
+        "BARS – Belqorod",
+        "Rusiya Silahlı Qüvvələri"
+      ],
+      "locations": [
+        "Ukrayna",
+        "Rusiya",
+        "Türkiyə",
+        "Belqorod vilayəti"
+      ],
+      "positions": [
+        "senator",
+        "deputat",
+        "general-polkovnik"
+      ],
+      "dates": [
+        "2022-ci ildə",
+        "2023-cü ildə",
+        "2024-cü ildə",
+        "2022-ci ilin martından"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "963",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14984",
+    "pub_date": "2024-12-21 00:00:00.000",
+    "title": "Prezident İlham Əliyev almaniyalı həmkarına başsağlığı verib",
+    "content": "Azərbaycan Respublikasının Prezidenti İlham Əliyev Almaniyanın Maqdeburq şəhərində baş vermiş faciəli hadisə ilə əlaqədar Prezident Frank-Valter Ştaynmayerə başsağlığı verib.\n\nAZƏRTAC xəbər verir ki, dövlətimizin başçısı başsağlığı məktubunda qeyd edib: “Maqdeburq şəhərindəki Milad yarmarkasında baş vermiş faciəli hadisə nəticəsində insanların həlak olması və xəsarət alması xəbəri bizi son dərəcə sarsıtdı”.\n\nDövlətimizin başçısı faciə ilə əlaqədar Frank-Valter Ştaynmayerə, həlak olanların ailələrinə və yaxınlarına, bütün Almaniya xalqına şəxsən öz adından və Azərbaycan xalqı adından dərin hüznlə başsağlığı verib, yaralananlara şəfa diləyib.",
+    "gold_entities": {
+      "persons": [
+        "İlham Əliyev",
+        "Frank-Valter Ştaynmayer"
+      ],
+      "organizations": [
+        "AZƏRTAC",
+        "Azərbaycan Respublikası"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Almaniya",
+        "Maqdeburq"
+      ],
+      "positions": [
+        "Azərbaycan Respublikasının Prezidenti",
+        "Prezident"
+      ],
+      "dates": []
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "1046",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14730",
+    "pub_date": "2024-11-11 00:00:00.000",
+    "title": "Prezident İlham Əliyev Avropa İttifaqı Şurasının Prezidenti ilə görüşüb",
+    "content": "Azərbaycan Respublikasının Prezidenti İlham Əliyev noyabrın 11-də Avropa İttifaqı Şurasının Prezidenti Şarl Mişel ilə görüşüb.\n\nAZƏRTAC xəbər verir ki, COP29-un Azərbaycanda keçirilməsi münasibətilə təbriklərini çatdıran və bununla bağlı uğurlar arzulayan Şarl Mişel bu tədbirdə iqlim dəyişmələri ilə əlaqədar vacib qərarların qəbul ediləcəyinə ümidvarlığını ifadə etdi.\n\nO, Avropa İttifaqının gündəliyində də iqlim dəyişmələrinin prioritet və vacib mövzulardan biri olduğunu dedi.\n\nSöhbət zamanı Avropa İttifaqı ilə Azərbaycan arasında əlaqələrin inkişaf perspektivləri müzakirə olundu.\n\nDövlətimizin başçısı Prezident Şarl Mişelin Ermənistanla Azərbaycan arasında danışıqlar prosesində oynadığı vasitəçilik rolunun yüksək qiymətləndirildiyini qeyd edərək vurğuladı ki, məhz onun vasitəçiliyi dövründə Ermənistanla Azərbaycan arasında danışıqlar prosesinin strukturu və vacib istiqamətlər üzrə gündəliyi formalaşıb.",
+    "gold_entities": {
+      "persons": [
+        "İlham Əliyev",
+        "Şarl Mişel"
+      ],
+      "organizations": [
+        "AZƏRTAC",
+        "Avropa İttifaqı",
+        "Avropa İttifaqı Şurası",
+        "COP29"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Ermənistan"
+      ],
+      "positions": [
+        "Azərbaycan Respublikasının Prezidenti",
+        "Avropa İttifaqı Şurasının Prezidenti"
+      ],
+      "dates": [
+        "noyabrın 11-də"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "1018",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14820",
+    "pub_date": "2024-11-22 00:00:00.000",
+    "title": "Prezident İlham Əliyev: Azərbaycan Cənubi Qafqazda dayanıqlı sülh üçün əlverişli şərait yaradıb",
+    "content": "Azərbaycan 2020-ci ildə 44 günlük Vətən müharibəsi və 2023-cü ildə birgünlük antiterror əməliyyatı nəticəsində öz ərazi bütövlüyünü və suverenliyini tam bərpa etməklə Cənubi Qafqazda dayanıqlı sülh, davamlı sabitlik və etibarlı təhlükəsizlik üçün əlverişli şərait, eyni zamanda, daha geniş coğrafiyada yeni əməkdaşlıq əlaqələrinin qurulması üçün mühüm imkanlar yaratmışdır.\n\nAZƏRTAC xəbər verir ki, bu sözlər Azərbaycan Prezidenti İlham Əliyevin Asiya Siyasi Partiyaları Beynəlxalq Konfransı (ICAPP) 12-ci Baş Assambleyasının iştirakçılarına ünvanladığı məktubda qeyd edilib.\n\nDövlətimizin başçısının məktubunda bildirilib ki, konstruktiv sülh gündəliyini təşviq edən Azərbaycan bu istiqamətdə əhəmiyyətli təklif və təşəbbüslər irəli sürür, daim prinsipial mövqedən çıxış edərək milli maraqlara uyğun və beynəlxalq hüququn norma və prinsiplərinə əsaslanan səmərəli fəaliyyət həyata keçirir.\n\n“Məlumdur ki, silahlı münaqişələr insan itkisinə, sosial infrastrukturun dağılmasına, bir çox hallarda iqtisadi tənəzzülə və ciddi təhlükəsizlik problemlərinə səbəb olmaqla yanaşı, ətraf mühitə də onilliklər boyu davam edən böyük zərər yetirir”, - deyə Azərbaycan Prezidentinin məktubunda vurğulanıb.",
+    "gold_entities": {
+      "persons": [
+        "İlham Əliyev"
+      ],
+      "organizations": [
+        "AZƏRTAC",
+        "Asiya Siyasi Partiyaları Beynəlxalq Konfransı (ICAPP)"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Cənubi Qafqaz"
+      ],
+      "positions": [
+        "Azərbaycan Prezidenti"
+      ],
+      "dates": [
+        "2020-ci ildə",
+        "2023-cü ildə"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "969",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14967",
+    "pub_date": "2024-12-17 00:00:00.000",
+    "title": "Prezident İlham Əliyev Rusiyanın Tatarıstan Respublikasının Rəisi ilə görüşüb",
+    "content": "Azərbaycan Respublikasının Prezidenti İlham Əliyev dekabrın 17-də Rusiya Federasiyasının Tatarıstan Respublikasının Rəisi Rüstəm Minnixanov ilə görüşüb.\n\nAZƏRTAC xəbər verir ki, əvvəlcə Rusiya Federasiyasının Tatarıstan Respublikasının Rəisi Rüstəm Minnixanovun Azərbaycanın “Dostluq” ordeni ilə təltifedilmə mərasimi oldu. Prezident İlham Əliyevin Sərəncamına əsasən, Azərbaycan Respublikası ilə Rusiya Federasiyası arasında dostluq və əməkdaşlıq əlaqələrinin inkişafında xüsusi xidmətlərinə görə Rüstəm Minnixanov “Dostluq” ordeni ilə təltif edilib.\n\nPrezident İlham Əliyev dedi: Layiq olduğunuz mükafat münasibətilə Sizi təbrik edirəm. Uzun illərdir ki, Siz ənənəvi əlaqələrimizin möhkəmlənməsi üçün çox iş görürsünüz. Ona görə də belə yüksək mükafatı Sizə təqdim etmək və yeni uğurlar arzulamaq mənim üçün çox xoşdur.\n\nRüstəm Minnixanov dedi: Cənab Prezident, çox sağ olun. Bu, yüksək mükafatdır. Biz Rusiya-Azərbaycan münasibətləri çərçivəsində əlaqələrimizi yüksək qiymətləndiririk. Tatarıstan burada xüsusi yerə malikdir. Tarixən belə alınıb ki, qardaş xalqlarımız və ən başlıcası, liderlərimiz – Azərbaycanın Lideri Heydər Əliyev və birinci Prezidentimiz Mintimer Şaripoviç Şaymiyev bizim inkişaf etdirdiyimiz həmin kursun əsasını qoyublar.\n\nSonra Azərbaycan Respublikasının Prezidenti İlham Əliyev və Rusiya Federasiyasının Tatarıstan Respublikasının Rəisi Rüstəm Minnixanov birgə nahar ediblər.",
+    "gold_entities": {
+      "persons": [
+        "İlham Əliyev",
+        "Rüstəm Minnixanov",
+        "Heydər Əliyev",
+        "Mintimer Şaripoviç Şaymiyev"
+      ],
+      "organizations": [
+        "AZƏRTAC",
+        "Azərbaycan Respublikası",
+        "Rusiya Federasiyası",
+        "Tatarıstan Respublikası",
+        "Dostluq ordeni"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Rusiya",
+        "Tatarıstan"
+      ],
+      "positions": [
+        "Azərbaycan Respublikasının Prezidenti",
+        "Rusiya Federasiyasının Tatarıstan Respublikasının Rəisi",
+        "Azərbaycanın Lideri",
+        "birinci Prezidentimiz"
+      ],
+      "dates": [
+        "dekabrın 17-də"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "984",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14922",
+    "pub_date": "2024-12-10 00:00:00.000",
+    "title": "Prezident İlham Əliyev Rəcəb Tayyib Ərdoğana zəng edib",
+    "content": "Azərbaycan Respublikasının Prezidenti İlham Əliyev dekabrın 10-da Türkiyə Respublikasının Prezidenti Rəcəb Tayyib Ərdoğana zəng edib.\n\nSöhbət zamanı dövlət başçıları Azərbaycan ilə Türkiyə arasında qardaşlıq və dostluq münasibətlərinin strateji müttəfiqlik zəminində inkişaf etdiyini bir daha vurğulayıblar.\n\nDövlətimizin başçısı Prezident Rəcəb Tayyib Ərdoğanın və Əminə xanım Ərdoğanın Azərbaycanda keçirilmiş COP29 konfransının liderlər sammitində fəal iştirakını məmnuniyyətlə qeyd edərək, geniştərkibli Türkiyə nümayəndə heyətinin konfransın işinə əsaslı töhfələr verdiyini vurğulayıb.\n\nPrezident Rəcəb Tayyib Ərdoğan öz növbəsində COP29-un uğurla keçirilməsi və danışıqlar prosesində əldə olunmuş nəticələr münasibətilə Prezident İlham Əliyevə təbriklərini çatdırıb.\n\nTelefon danışığı əsnasında Cənubi Qafqaz və Yaxın Şərq regionuna aid məsələlərə toxunulub, xüsusilə Suriyada Əsəd rejiminin çökməsindən sonra yaranmış vəziyyət müzakirə olunub.\n\nDövlət başçıları bu münasibətlə Suriya xalqına təbriklərini, Suriya dövlətinin ərazi bütövlüyünə və suverenliyinə dəstəklərini ifadə ediblər.\n\nPrezident İlham Əliyev bundan sonra Türkiyənin yaxın dəstəyi ilə Suriyada sabitlik dövrünün başlayacağına ümidvar olduğunu bildirərək, Azərbaycanın qardaş Türkiyə ilə birlikdə Suriya xalqının üzləşdiyi humanitar problemlərin aradan qaldırılmasına dəstək verməyə hazır olduğunu qeyd edib.\n\nPrezident Rəcəb Tayyib Ərdoğan bütün sahələrdə olduğu kimi Suriya xalqına humanitar yardım və dəstək məsələsində də Azərbaycan və Türkiyənin birgə fəaliyyət göstərəcəyini məmnuniyyətlə qeyd edib.\n\nSöhbət əsnasında Azərbaycan və Türkiyə arasında qardaşlıq və strateji müttəfiqlik münasibətlərinin inkişaf perspektivlərinə dair fikir mübadiləsi aparılıb.",
+    "gold_entities": {
+      "persons": [
+        "İlham Əliyev",
+        "Rəcəb Tayyib Ərdoğan",
+        "Əminə xanım Ərdoğan"
+      ],
+      "organizations": [
+        "Azərbaycan Respublikası",
+        "Türkiyə Respublikası",
+        "COP29"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Türkiyə",
+        "Cənubi Qafqaz",
+        "Yaxın Şərq",
+        "Suriya"
+      ],
+      "positions": [
+        "Azərbaycan Respublikasının Prezidenti",
+        "Türkiyə Respublikasının Prezidenti"
+      ],
+      "dates": [
+        "dekabrın 10-da"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "962",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14987",
+    "pub_date": "2024-12-21 00:00:00.000",
+    "title": "Leyla Əliyeva Keniya Prezidenti ilə görüşüb",
+    "content": "Heydər Əliyev Fondunun vitse-prezidenti Leyla Əliyeva Nayrobi şəhərində Keniya Respublikasının Prezidenti Uilyam Samoei Ruto ilə görüşüb.\n\nAZƏRTAC xəbər verir ki, Leyla Əliyeva Azərbaycan Respublikasının Prezidenti İlham Əliyevin salamlarını Keniya Prezidentinə çatdırıb.\n\nGörüşdə iki ölkə arasında əlaqələr, o cümlədən Azərbaycanın Birinci vitse-prezidenti Mehriban Əliyevanın rəhbərlik etdiyi Heydər Əliyev Fondu ilə müxtəlif sahələrdə əməkdaşlıq imkanları müzakirə olunub. İkitərəfli əlaqələrin genişləndirilməsinin vacibliyini vurğulayan Leyla Əliyeva Fondun “Afrika ölkələrində təhsil və mədəniyyətin inkişafı” layihəsi çərçivəsində həyata keçiriləcək layihələrin əhəmiyyətini qeyd edib. Təhsil, səhiyyə, ətraf mühitin qorunması, iqlim dəyişikliyi ilə mübarizə və mədəniyyət sahələrində layihələrin, habelə təhsil üzrə mübadilə proqramlarının həyata keçiriləcəyini, incəsənət nümunələrinin beynəlxalq layihələrdə birgə təqdimatı üzrə əməkdaşlıq ediləcəyini bildirib.\n\nPrezident Ruto ölkəmizin noyabr ayında BMT-nin İqlim Dəyişmələri üzrə Çərçivə Konvensiyasının Tərəflər Konfransının 29-cu sessiyasına (COP29) uğurla ev sahibliyi etdiyini deyib. Azərbaycan ilə Keniya arasında mövcud dostluq və əməkdaşlıq münasibətlərinin dinamik inkişafından məmnunluğunu ifadə edib.\n\nO, iqlim fəaliyyəti, enerji, ticarət və sərmayələr, turizm, təhsil və digər sahələr daxil olmaqla, müxtəlif istiqamətlərdə əməkdaşlığı inkişaf etdirmək və tərəfdaşlığı genişləndirmək üçün böyük potensialın olduğunu bildirib. Dövlət səviyyəsində, o cümlədən Heydər Əliyev Fondunun dəstəyi ilə təhsil, mədəniyyət, səhiyyə və digər humanitar sahələrdə həyata keçirilən layihələrin əlaqələrin inkişafında mühüm rol oynadığını vurğulayıb.\n\nGörüşdə Azərbaycan Respublikasının Prezidenti İlham Əliyevin Keniya Respublikasının Prezidenti Uilyam Samoei Rutoya ölkəmizə səfərə dəvət məktubu təqdim edilib.\n\nPrezident Ruto dəvətə görə təşəkkür edib, onu məmnuniyyətlə qəbul etdiyini bildirib.",
+    "gold_entities": {
+      "persons": [
+        "Leyla Əliyeva",
+        "Uilyam Samoei Ruto",
+        "İlham Əliyev",
+        "Mehriban Əliyeva"
+      ],
+      "organizations": [
+        "AZƏRTAC",
+        "Heydər Əliyev Fondu",
+        "COP29",
+        "BMT-nin İqlim Dəyişmələri üzrə Çərçivə Konvensiyası"
+      ],
+      "locations": [
+        "Nayrobi",
+        "Keniya",
+        "Azərbaycan",
+        "Afrika"
+      ],
+      "positions": [
+        "Heydər Əliyev Fondunun vitse-prezidenti",
+        "Keniya Respublikasının Prezidenti",
+        "Azərbaycan Respublikasının Prezidenti",
+        "Azərbaycanın Birinci vitse-prezidenti"
+      ],
+      "dates": [
+        "noyabr ayında"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "967",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14973",
+    "pub_date": "2024-12-19 00:00:00.000",
+    "title": "Azərbaycan D-8 təşkilatının üzvü seçilib",
+    "content": "Dekabrın 19-da Misirin paytaxtı Qahirə şəhərində İnkişaf etməkdə olan səkkiz ölkənin İqtisadi Əməkdaşlıq Təşkilatının (D-8) XI Sammiti zamanı Azərbaycan Respublikası yekdilliklə D-8 təşkilatının üzvü seçilib.\n\nXarici İşlər Nazirliyinin Mətbuat xidməti idarəsindən AZƏRTAC-a verilən məlumata görə, Prezident İlham Əliyevin qətiyyətli və uğurlu xarici siyasətinin məntiqi nəticəsi olan D-8-ə üzvlüyümüz təşkilat yarandığı gündən ilk genişlənmə kimi əlamətdardır.\n\nÖlkəmiz ilk dəfə Prezident İlham Əliyevin xüsusi qonaq qismində iştirak etdiyi 2017-ci ildə İstanbulda keçirilmiş IX Zirvə görüşündə təmsil olunub.\n\nQahirə şəhərində keçirilən XI Sammitdə ölkəmizi Azərbaycan Respublikasının Baş naziri Əli Əsədovun rəhbərlik etdiyi nümayəndə heyəti təmsil edib.\n\nÜzvlərinin əhalisinin sayının ümumilikdə dünya müsəlmanlarının 60 faizini təşkil edən və böyük iqtisadi potensiala malik “İslam Səkkizliyi” adlanan D-8-ə ölkəmizin üzvlüyü Azərbaycanın beynəlxalq aləmdə artan nüfuzunun və ölkəmizə olan etimadın bariz nümunəsidir.\n\nƏdaləti və beynəlxalq hüququn norma və prinsiplərini özünün prioritet məqsədi kimi qarşıya qoyan ölkəmiz D-8-in təməl prinsiplərinin qorunmasında, təşkilat çərçivəsində əməkdaşlığın daha da dərinləşməsində mühüm rol oynayacaq.\n\nBu çərçivədə, həmçinin geniş regionumuzda təhlükəsizliyin, sabitliyin, rifahın və qarşılıqlı faydalı əməkdaşlığın formalaşması, eləcə də iqtisadi və ticarət, nəqliyyat, kommunikasiya və bir sıra digər vacib istiqamətlərdə əlaqələrin inkişafı mühüm əhəmiyyət kəsb edir.\n\nTarix boyu Şərq ilə Qərb arasında körpü rolu oynamış, İslam dünyasının əsas mədəni, dini və sivilizasiya mərkəzlərindən biri olan Azərbaycanın D-8 üzvlüyü, eyni zamanda, İslam həmrəyliyinin möhkəmlənməsində, İslam dəyərlərinin dünyada təbliğində və İslamofobiya ilə mübarizə sahəsində böyük töhfə olacaq.\n\nD-8 İqtisadi Əməkdaşlıq Təşkilatı səkkiz müsəlman ölkəni birləşdirir. Təşkilatın təməli Türkiyənin təşəbbüsü ilə 1996-cı il oktyabrın 22-də İstanbulda Banqladeş, İndoneziya, İran, Malayziya, Misir, Nigeriya və Pakistanın əməkdaşlığı ilə təşkil edilən İnkişaf Əməkdaşlıq Konfransında atılıb. 1997-ci il iyunun 15-də İstanbulda 8 ölkənin dövlət və hökumət başçılarının sammitində təşkilat rəsmən elan olunub. Təşkilatın Katibliyi İstanbul şəhərində yerləşir.",
+    "gold_entities": {
+      "persons": [
+        "İlham Əliyev",
+        "Əli Əsədov"
+      ],
+      "organizations": [
+        "AZƏRTAC",
+        "Xarici İşlər Nazirliyi",
+        "D-8",
+        "İnkişaf etməkdə olan səkkiz ölkənin İqtisadi Əməkdaşlıq Təşkilatı",
+        "SESRIC"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Misir",
+        "Qahirə",
+        "İstanbul",
+        "Türkiyə",
+        "Banqladeş",
+        "İndoneziya",
+        "İran",
+        "Malayziya",
+        "Nigeriya",
+        "Pakistan"
+      ],
+      "positions": [
+        "Prezident",
+        "Azərbaycan Respublikasının Baş naziri"
+      ],
+      "dates": [
+        "Dekabrın 19-da",
+        "2017-ci ildə",
+        "1996-cı il oktyabrın 22-də",
+        "1997-ci il iyunun 15-də"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "993",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14897",
+    "pub_date": "2024-12-06 00:00:00.000",
+    "title": "Bakıdan Sen Martin xalqının birliyinə və müstəqilliyinə çağırış edilib",
+    "content": "Dekabrın 6-da Bakı Təşəbbüs Qrupunun təşkilatçılığı ilə Fransa və Niderlandın müstəmləkəçiliyi altındakı Sen Martin adasına həsr edilmiş beynəlxalq konfransın açılışı olub.\n\nAZƏRTAC xəbər verir ki, “Sen Martində Fransa və Niderland müstəmləkəçiliyi - bir ada, bir xalq, bir tale” adlı konfransda müstəmləkəçiliyə qarşı mübarizə aparan və azad olmağa çalışan Sen Martin xalqının təmsilçiləri, habelə müstəmləkəçilik əleyhinə fəaliyyət göstərən təşkilatların rəhbərli, parlamentin üzvləri, hüquq müdafiəçiləri, qeyri-hökumət təşkilatlarının rəhbərləri, dekolonizasiya üzrə ekspertlər və tədqiqatçılar iştirak ediblər.\n\nKonfransın açılışında çıxış edən Sen Martin parlamentinin üzvü Franklin Meyers bildirib ki, istər Fransanın, istərsə də Niderlandın müstəmləkəçiliyindən qurtularaq müstəqil olmaq xalqlarımızın ən müstəsna hüququdur. O, məhz bu hüququn dünya miqyasında tanınması üçün Bakıda olduqlarını qeyd edib.\n\n“Hesab edirik ki, analoji konfransların təşkili əsas ideyamız olan müstəqilliyə doğru irəliləmək yolunda son dərəcə mühüm addımdır”, - deyən Sen Martin parlamentinin üzvü bu istiqamətdə göstərdiyi dəstəyə görə Bakı Təşəbbüs Qrupuna təşəkkür edib.\n\nÇıxış edən Milli Məclisin deputatı Pərvanə Vəliyeva deyib ki, kolonializmin Sen Martin adasındakı təsirləri kimlik itkisindən və assimilyasiyadan çox uzağa gedib. O bildirib ki, adanın xalqı Fransa və Niderland arasında bağlanmış müqavilənin nəticələrindən hələ də əziyyət çəkir. Bu insanlar qeyri-insani ədalətsizliyə məruz qalıblar ki, bu da insanlıq adına bir utancdır.\n\n\"Sen Martinin xalqı birdir, baxmayaraq ki, kolonializm onları iki yerə bölüb. Amma onlar oxşar talelərlə üzləşirlər. Hər iki hissədəki yerli xalqın ortaq problemlərin öhdəsindən gəlmək qabiliyyəti qəsdən zəiflədilib. Kolonial hakimiyyətlər Sen Martinin resurslarını guya adanın inkişafına kömək məqsədilə öz xeyirlərinə istifadə edirlər. Lakin aydın görünür ki, dərin iqtisadi monopolizm və tənəzzül Sen Martin xalqına zərər verməyə davam edir\", - deyə deputat diqqətə çatdırıb.\n\nSonra “One Saint Martin” təşkilatının prezidenti Rhoda Arrindell “Sen Martində ikili müstəmləkəçilik irsi” mövzusunda təqdimatla çıxış edib. O, irsin sosial, mədəni və iqtisadi təsirlərinə toxunub. Həmçinin müstəmləkəçiliyin nəticələrinin aradan qaldırılmasının vacibliyini vurğulayaraq, Sen Martin xalqının birliyinə və müstəqilliyinə çağırış edib.\n\nBakı Təşəbbüs Qrupunun icraçı direktoru Abbas Abbasov təşkilatın fəaliyyəti ilə bağlı geniş təqdimat edib. O, Qrupun əsas missiyası və məqsədləri barədə danışaraq, həyata keçirilmiş layihələri və əldə edilən uğurları konfrans iştirakçılarının diqqətinə çatdıraraq vurğulayıb: “İndiyədək Bakı Təşəbbüs Qrupu kolonializmə aid 22 tədbir keçirib, 3 memorandum imzalanıb. Həmçinin müxtəlif beynəlxalq platformalarda çıxış edib”.\n\nAbbas Abbasov, həmçinin Bakı Təşəbbüs Qrupunun beynəlxalq əməkdaşlıq və tərəfdaşlıq əlaqələrini genişləndirmək istiqamətində gördüyü işləri də diqqətə çatdırıb.\n\nKonfransda, eyni zamanda, Fransanın və Niderlandın əsarəti altında olan və iki hakimiyyətin mövcud olduğu Sen Martin xalqının müstəmləkəçilikdən azad olmaq uğrunda apardığı mübarizə, habelə problemin aidiyyəti beynəlxalq təşkilatların gündəliyinə çıxarılması istiqamətində görülən işlər, beynəlxalq hüquqi mexanizmlər müzakirə olunacaq.",
+    "gold_entities": {
+      "persons": [
+        "Franklin Meyers",
+        "Pərvanə Vəliyeva",
+        "Rhoda Arrindell",
+        "Abbas Abbasov"
+      ],
+      "organizations": [
+        "AZƏRTAC",
+        "Bakı Təşəbbüs Qrupu",
+        "Milli Məclis",
+        "One Saint Martin"
+      ],
+      "locations": [
+        "Bakı",
+        "Sen Martin",
+        "Fransa",
+        "Niderland"
+      ],
+      "positions": [
+        "Sen Martin parlamentinin üzvü",
+        "Milli Məclisin deputatı",
+        "One Saint Martin təşkilatının prezidenti",
+        "Bakı Təşəbbüs Qrupunun icraçı direktoru"
+      ],
+      "dates": [
+        "Dekabrın 6-da"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "1049",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/14722",
+    "pub_date": "2024-11-11 00:00:00.000",
+    "title": "Bu gün Bakıda COP29 başlayır",
+    "content": "Dünyada ən irimiqyaslı və mötəbər tədbirlərdən biri hesab edilən BMT-nin İqlim Dəyişmələri üzrə Çərçivə Konvensiyasının Tərəflər Konfransının 29-cu sessiyası (COP29) bu gün Bakıda işə başlayır.\n\nAZƏRTAC xatırladır ki, noyabrın 11-22-də Bakı Stadionunda keçiriləcək COP29 Azərbaycanın bu günədək təşkil etdiyi ən nəhəng tədbirdir və regionda ilk dəfə Azərbaycanda baş tutur. Azərbaycan Hökuməti ilə BMT-nin İqlim Dəyişmələri üzrə Çərçivə Konvensiyasının Katibliyi arasında “Ev Sahibi Ölkə Sazişi” və digər mühüm sənədlər imzalanıb.\n\nCOP29 çərçivəsində ən yüksək səviyyəli tədbir – Dünya Liderlərinin İqlim Fəaliyyəti Sammiti noyabrın 12-13-də təşkil olunacaq.\n\nCOP29-dan əsas gözlənti iqlim maliyyəsi ilə bağlı ədalətli və ambisiyalı Yeni Kollektiv Kəmiyyət Hədəfinin (NCQG) razılaşdırılmasından ibarətdir.\n\nCOP29 Sədrliyi tərəfindən iqlim fəaliyyəti ilə dayanıqlı inkişaf məqsədləri arasında əlaqəni ehtiva edən, yaşıl enerji dəhlizləri, yaşıl enerji saxlancları, iqlim dayanıqlılığı üçün harmoniya, təmiz hidrogen, orqanik tullantılarda metanın azaldılması, yaşıl rəqəmsal fəaliyyət və digər mövzuları əhatə edən 14 təşəbbüs irəli sürülüb. Bununla yanaşı, təşəbbüslərdən biri kimi İqlim Maliyyəsi üzrə Fəaliyyət Fondunun yaradılması nəzərdə tutulur.\n\nİqlim maliyyəsinin yaradılması fəaliyyət üçün şərait yaradan əsas prioritet olmaqla yanaşı, hamını bir araya gətirməklə 1,5°C öhdəliyinin yerinə yetirilməsinə töhfə verəcək.\n\nAzərbaycan ətraf mühitin mühafizəsinə və iqlim dəyişmələrinin fəsadlarının aradan qaldırılması məsələlərinə xüsusi önəm verir və bu istiqamətdə mühüm işlər görür. BMT-nin İqlim Dəyişmələri üzrə Çərçivə Konvensiyasının Tərəflər Konfransının 29-cu sessiyası üzrə yekdil qərarla ölkəmizin ev sahibi seçilməsi bunun bariz nümunəsidir. Azərbaycan Respublikasının Prezidenti İlham Əliyevin qeyd etdiyi kimi, bu, beynəlxalq ictimaiyyətin ölkəmizə böyük hörmətinin və etimadının göstəricisidir.\n\nKonfransın rəsmi yayımı, könüllülər, inklüzivlik\n\nBakı Stadionundan yüksəkkeyfiyyətli yayımı təmin etmək məqsədilə Bakı Media Mərkəzi COP29 konfransının rəsmi yayım şirkəti təyin olunub.\n\nBu tədbir könüllülər üçün də mühüm platformadır. COP29 tədbirinin uğurlu icrasında əhəmiyyətli pay öz fədakar əməyi, nümunəvi davranışları ilə seçilən dayanıqlılıq səfirləri kimi çıxış edəcək COP29 könüllülərinin üzərinə düşür.\n\nCOP29 Azərbaycan Əməliyyat Şirkəti COP29 iqlim konfransında inklüziv mühitin yaradılması, hər kəs üçün əlçatanlığın və müyəssər şəraitin təmin edilməsi məqsədilə tədbir məkanı Bakı Stadionunda bir sıra müvafiq həllər tətbiq edib. COP29 Azərbaycan Əməliyyat Şirkətinin dayanıqlılıq siyasətinin 7 əsas öhdəliyindən biri olan inklüzivlik və əlçatanlığın təmin edilməsi COP29 konfransının təşkili prosesində prioritet kimi nəzərə alınan amillərdəndir. Belə ki, Əməliyyat Şirkəti tədbir məkanı olan Bakı Stadionunda COP təcrübəsində ilk dəfə Bakıda keçiriləcək COP29-un plenar iclas zalında eşitmə və nitq məhdudiyyətli şəxslər üçün işarət dilinə tərcümə və audioinduksiya sistemi, sessiya və panelləri əlçatan etmək üçün işarət dili üzrə surdotərcüməçilər xidmət göstərəcək.\n\nRəqəmsal nəqliyyat xəritəsi\n\nCOP29 veb-saytında yerləşdirilmiş rəqəmsal nəqliyyat xəritəsi istifadəçilərə əsas nəqliyyat qovşaqlarının mövqelərini göstərmək üçün nəzərdə tutulub. Bu nəqliyyat qovşaqları COP29 müddətində nümayəndə heyətlərinin gediş-gəlişini optimallaşdırmaq və asanlaşdırmaq məqsədilə hazırlanmışdır və nəqliyyat qovşaqları, tədbir məkanı, o cümlədən qonaqlama məntəqələri arasında nəqliyyat hərəkətlərini effektiv şəkildə özündə birləşdirir. COP29 dövründə 500 avtomobil istifadə ediləcək, onlardan 210-u Liderlər Sammiti üçün cəlb olunacaq. Eyni zamanda, 140 elektrik avtobusundan istifadə ediləcək.\n\nProqram\n\nCOP29 rəsmi veb-saytında yerləşdirilən və konfransın gündəliyinə uyğun yenilənməkdə olan proqram qlobal iqlim gündəliyini əhatə edəcək müxtəlif tədbirlər, müzakirələr və sərgilər haqqında məlumatları ehtiva edir. Konfransda əyani surətdə iştirak edən şəxslər bu proqr",
+    "gold_entities": {
+      "persons": [
+        "İlham Əliyev"
+      ],
+      "organizations": [
+        "AZƏRTAC",
+        "COP29",
+        "BMT-nin İqlim Dəyişmələri üzrə Çərçivə Konvensiyası",
+        "Bakı Media Mərkəzi",
+        "COP29 Azərbaycan Əməliyyat Şirkəti"
+      ],
+      "locations": [
+        "Bakı",
+        "Bakı Stadionu",
+        "Azərbaycan"
+      ],
+      "positions": [
+        "Azərbaycan Respublikasının Prezidenti"
+      ],
+      "dates": [
+        "noyabrın 11-22-də",
+        "noyabrın 12-13-də"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "938",
+    "source": "azerbaijan.az",
+    "link": "https://azerbaijan.az/news/15055",
+    "pub_date": "2025-01-01 00:00:00.000",
+    "title": "Azərbaycan Respublikasının Prezidenti İlham Əliyevin Dünya Azərbaycanlılarının Həmrəyliyi Günü və Yeni il münasibətilə müraciəti",
+    "content": "Əziz həmvətənlər.\n\n2024-cü ili uğurla başa vururuq. İlin əvvəlində qarşımıza qoyduğumuz bütün məsələlər öz həllini tapmışdır. Ölkəmiz inamla inkişaf etmişdir. Ölkəmizin beynəlxalq nüfuzu böyük dərəcədə artmışdır. Ölkə iqtisadiyyatında müsbət inkişaf var, hərbi gücümüz artıb. Ölkəmizdə sabitlik hökm sürür. Azərbaycan xalqı təhlükəsizlik şəraitində yaşamışdır.\n\nBu gün dünyada baş verən hadisələr hamımızın gözünün qarşısındadır. Yeni müharibələr, qarşıdurmalar, münaqişələr alovlanır. Dünyanın müxtəlif bölgələrində qanlı toqquşmalar davam edir. Azərbaycan isə sülh, əmin-amanlıq, təhlükəsizlik və sabitlik şəraitində yaşayır. Əminəm ki, bundan sonra sabitlik və əmin-amanlıq əbədi olacaqdır.\n\n2024-cü ildə bir çox önəmli hadisələr baş vermişdir. Onların arasında ən vacib məsələ Qazax rayonunun 1990-cı illərin əvvəllərində işğal altına düşmüş dörd kəndinin işğaldan azad edilməsi idi. Bu kəndlər haqqında biz heç vaxt öz mövqeyimizdən bir addım belə geri atmamışdıq. Bu kəndləri biz heç vaxt unutmamışdıq. Sadəcə olaraq, ərazi bütövlüyümüzün və suverenliyimizin bərpasının öz məntiqi var idi. Hər şeyi, bütün məsələləri biz inamla və ardıcıllıqla həll etdik. Birinci mərhələdə Qarabağın və Şərqi Zəngəzurun böyük hissəsini 2020-ci ildə Vətən müharibəsində işğalçılardan azad etdik. İşğal altında qalan hissə keçən il antiterror əməliyyatı nəticəsində işğalçılardan azad edildi və Azərbaycan öz dövlət suverenliyini bərpa etdi. Biz bu il Qazax rayonunun dörd kəndini geri aldıq, bir güllə atılmadan, siyasi yollarla. Amma o da həqiqətdir ki, əgər son dörd ilin Azərbaycan-Ermənistan münasibətlərində baş vermiş hadisələr baş verməsəydi, əlbəttə, Ermənistan heç vaxt öz xoşu ilə bu kəndləri bizə qaytarmazdı. Onlar məcburiyyət qarşısında bunu etdilər, bizim siyasi, hərbi gücümüzü dərk edərək buna getdilər və mən ümid edirəm ki, bundan sonra da Ermənistan öz siyasətində Cənubi Qafqazda və eyni zamanda, dünyada yaradılmış yeni reallıqları nəzərə alacaq. Cənubi Qafqazda yeni reallıqları biz yaratdıq. Vətən müharibəsi bu reallıqları yaratdı, dövlət suverenliyimizin bərpası bu reallıqları daha da gücləndirdi və biz Cənubi Qafqazda yaratdığımız yeni reallıqları diplomatik, beynəlxalq və siyasi müstəvidə təsdiqlədik. Bütün dünya yeni reallıqları qəbul edib.\n\nOna görə Ermənistanın genişmiqyaslı silahlanma kampaniyası hesab edirəm ki, bölgə üçün növbəti təhdid mənbəyidir. Əgər bu il bizim üçün ən narahatedici məqamı qeyd etsək, təbii ki, bu, Ermənistanın silahlanmasıdır. Bunun heç bir məntiqi izahatı yoxdur. Ermənistan öz işğalçılıq siyasətində tamamilə iflasla üz-üzə qalmışdır. 2020-ci və ondan sonra 2023-cü illərdəki hərbi məğlubiyyətləri onlara düz yol göstərməli idi. Biz də buna çalışırdıq və bu gün də öz səylərimizi davam etdiririk. Mən dəfələrlə həm rəsmi bəyanatlarımda, həm Ermənistan tərəfi ilə apardığımız danışıqlar əsnasında onlara xəbərdarlıq etmişəm ki, bu təhlükəli yoldan çəkinsinlər. Onları təhrik edən və bu gün yenə də Azərbaycan üzərinə hücum etməyə vadar edən xarici dairələr, xarici ölkələr onların arxasında durmayacaq, sadəcə olaraq, dura bilməyəcək. Bizimlə bu bölgədə hərbi müstəvidə heç bir qüvvə rəqabət apara bilməz. Ona görə bir daha deyirəm, hələ ki, gec deyil, bu təhlükəli yoldan geri qayıtsınlar. Cənubi Qafqaz sülh, əmin-amanlıq, əməkdaşlıq bölgəsi olmalıdır. Ermənistanın genişmiqyaslı və sürətli silahlanması, öldürücü silahların tədarükü bu sülhü, mümkün olan sülhü poza bilər. Bir şeyi də qeyd etməliyəm, Azərbaycan, sadəcə olaraq, bu məsələ ilə bağlı tamaşaçı rolunda olmayacaq. Otuzillik işğal, dağıntılar, Qarabağın, Şərqi Zəngəzurun viran qoyulması, Xocalı soyqırımı, bir milyon insanımızın Ermənistanın ucbatından qaçqın, köçkün vəziyyətində yaşaması bizim xatirimizdən heç vaxt silinməyəcək. Biz bunu heç vaxt unutmayacağıq. Ermənistanın işğalçılıq siyasəti və mahiyyəti daim nəzərə alınmalıdır. Ona görə bir daha özümə borc bilib Ermənistan rəhbərliyinə növbəti xəbərdarlıq edirəm ki, bu təhlükəli yoldan çəkinsinlər. Bir də ki, bizimlə hərbi",
+    "gold_entities": {
+      "persons": [
+        "İlham Əliyev"
+      ],
+      "organizations": [
+        "Azərbaycan Respublikası"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Ermənistan",
+        "Qarabağ",
+        "Şərqi Zəngəzur",
+        "Qazax rayonu",
+        "Cənubi Qafqaz",
+        "Xocalı"
+      ],
+      "positions": [
+        "Azərbaycan Respublikasının Prezidenti"
+      ],
+      "dates": [
+        "2024-cü il",
+        "1990-cı illərin əvvəllərində",
+        "2020-ci ildə",
+        "2023-cü ildə"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8969",
+    "source": "trend.az",
+    "link": "https://az.trend.az/azerbaijan/incident/4101000.html",
+    "pub_date": "2025-10-08 12:29:00.000",
+    "title": "Həyat yoldaşını qətlə yetirməkdə təqsirləndirilən şəxsə hökm oxunub",
+    "content": "Bakı. Trend:\n\nHəyat yoldaşını ehtiyatsızlıqdan qətlə yetirməkdə\ntəqsirləndirilən Raidə Mahmudovanın cinayət işi üzrə məhkəmə\nprosesi yekunlaşıb.\n\nTrend xəbər\nverir ki, Bakı Ağır Cinayətlər Məhkəsməsində keçirilən prosesdə\nhökm oxunub.\n\nHökmə əsasən, Raidə Mahmudova 1 il 6 ay müddətə azadlıqdan\nməhrum edilib. O, cəzasını məntəqə tipli cəzaçəkmə müəssissəsində\nçəkəcək.\n\nTəqsirləndirilən şəxs Cinayət Məcəlləsinin 124.1-ci\n(Ehtiyatsızlıqdan adam öldürmə) ittiham edilib.",
+    "gold_entities": {
+      "persons": [
+        "Raidə Mahmudova"
+      ],
+      "organizations": [
+        "Trend",
+        "Bakı Ağır Cinayətlər Məhkəsməsi",
+        "Cinayət Məcəlləsi"
+      ],
+      "locations": [
+        "Bakı"
+      ],
+      "positions": [],
+      "dates": []
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "9005",
+    "source": "trend.az",
+    "link": "https://az.trend.az/azerbaijan/gundem/4100868.html",
+    "pub_date": "2025-10-08 10:10:00.000",
+    "title": "Cinayət törətməkdə şübhəli bilinən 50 nəfər saxlanılıb - DİN",
+    "content": "Bakı.Trend:\n\nOktyabrın 7-də ölkə ərazisində cinayət törətməkdə şübhəli\nbilinən 50 nəfər saxlanılıb.\n\nBu barədə Trend-ə DİN-dən məlumat verilib.\n\nBildirilib ki, oktyabrın 7-də ölkə ərazisində qeydə alınan 42,\nəvvəlki dövrlərdən bağlı qalan 2 cinayətin açılması polis\nəməkdaşları tərəfindən təmin olunub.\n\nHəmçinin, axtarışda olduğuna görə ümumilikdə 70, o cümlədən\nborclu şəxs qismində axtarışda olan 64 nəfər saxlanılaraq aidiyyəti\nüzrə təhvil verilib.\n\n\"Narkotiklərlə əlaqəli 14, qanunsuz saxlanılan silah-sursatın\ngötürülməsi və aşkarlanması ilə bağlı 8 fakt müəyyən edilib\",-\nqurumdan əlavə edilib.",
+    "gold_entities": {
+      "persons": [],
+      "organizations": [
+        "Trend",
+        "DİN",
+        "polis"
+      ],
+      "locations": [
+        "Bakı",
+        "Azərbaycan"
+      ],
+      "positions": [],
+      "dates": [
+        "Oktyabrın 7-də"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8911",
+    "source": "trend.az",
+    "link": "https://az.trend.az/business/4101184.html",
+    "pub_date": "2025-10-08 16:23:12.000",
+    "title": "Sənaye və istehsal sektoruna kredit qoyuluşları 10%-ə yaxın artıb",
+    "content": "Bakı. Trend:\n\nBu ilin sentyabrın 1-nə Azərbaycanda fəaliyyət göstərən banklar\nvə qeyri-banklar tərəfindən sənaye və istehsal sektoruna qoyulmuş\nkreditlərin həcmi 1,6 milyard manata çatıb.\n\nBu barədə Trend Azərbaycan Mərkəzi Bankından (AMB) məlumat əldə\nedib.\n\nMəlumata görə, bu göstərici aylıq müqayisədə 10,5 milyon manat\nvə ya 0,6%, ötən ilin eyni dövrü ilə müqayisədə isə 144,8 milyon\nmanat və ya 9,9% çoxdur.\n\nQeyd edək ki, ümumilikdə, hesabat dövründə Azərbaycanda real\nsektora kredit qoyuluşu üzrə kredit portfeli 30,995 milyard manat\ntəşkil edib.\n\nBu da aylıq müqayisədə 208,2 milyon manat və ya 0,7%, 2024-cü\nilin eyni dövründəki göstərici ilə müqayisədə isə 2,9 milyard manat\nvə ya 10,2% artım deməkdir.",
+    "gold_entities": {
+      "persons": [],
+      "organizations": [
+        "Trend",
+        "Azərbaycan Mərkəzi Bankı (AMB)",
+        "banklar",
+        "qeyri-banklar"
+      ],
+      "locations": [
+        "Azərbaycan"
+      ],
+      "positions": [],
+      "dates": [
+        "sentyabrın 1-nə",
+        "2024-cü ilin eyni dövrü"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8954",
+    "source": "trend.az",
+    "link": "https://az.trend.az/azerbaijan/society/4101049.html",
+    "pub_date": "2025-10-08 13:25:00.000",
+    "title": "Xocalının Xanyurdu kəndinə növbəti köç olub (FOTO)",
+    "content": "Xocalı. Trend:\n\nOktyabrın 8-də Xocalının Xanyurdu kəndinə növbəti köç həyata\nkeçirilib.\n\nXankəndi şəhərində, Ağdərə və Xocalı rayonlarında Bərpa, Tikinti\nvə İdarəetmə Xidmətinin ictimaiyyətlə əlaqələr şöbəsindən Trend-ə verilən məlumata\ngörə, ölkəmizin müxtəlif şəhər və rayonlarında müvəqqəti\nməskunlaşan 69 nəfərdən ibarət 18 ailə bu gün Xanyurdu kəndinə\nqayıdıb.\n\nBildirilib ki, rəsmilər, sakinləri doğma kəndlərinə dönüş\nmünasibətilə təbrik edib, yeni tikilmiş fərdi yaşayış evlərinin\naçarlarını onlara təqdim ediblər.\n\nQeyd edək ki, Xanyurdu kəndində sakinlər üçün müasir\nstandartlara uyğun fərdi evlər inşa olunub, elektrik, qaz, su\ntəchizatı, rabitə və internet infrastrukturu tam şəkildə təmin\nedilib. Xatırladaq ki, bugünədək Xocalı rayonunun Xanyurdu kəndinə\n69 ailədən ibarət 237 nəfər keçmiş məcburi köçkün köçürülüb.",
+    "gold_entities": {
+      "persons": [],
+      "organizations": [
+        "Trend",
+        "Xankəndi şəhərində, Ağdərə və Xocalı rayonlarında Bərpa, Tikinti və İdarəetmə Xidməti"
+      ],
+      "locations": [
+        "Xocalı",
+        "Xanyurdu",
+        "Xankəndi",
+        "Ağdərə",
+        "Azərbaycan"
+      ],
+      "positions": [],
+      "dates": [
+        "Oktyabrın 8-də"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8874",
+    "source": "trend.az",
+    "link": "https://az.trend.az/azerbaijan/society/4101309.html",
+    "pub_date": "2025-10-08 20:37:00.000",
+    "title": "HDQ komandanı Rusiyada Xəzər dənizində regional təhlükəsizlik müzakirələrində iştirak edib (FOTO)",
+    "content": "Bakı. Trend:\n\nRusiya Federasiyasının Sankt-Peterburq şəhərində Xəzəryanı\nölkələrin Hərbi Dəniz Qüvvələri (HDQ) komandanlarının görüşü\nkeçirilib.\n\nTrend bu barədə\nMüdafiə Nazirliyinə istinaən xəbər verir.\n\nBildirilib ki, Azərbaycan Respublikası HDQ komandanı 1-ci\ndərəcəli kapitan Şahin Məmmədovun rəhbərlik etdiyi nümayəndə\nheyətinin iştirak etdiyi görüşdə Xəzər dənizində regional\ntəhlükəsizlik, hərbi-dəniz əməkdaşlığı, birgə təlimlərin təşkili və\ndigər qarşılıqlı maraq doğuran məsələlər müzakirə olunub.\n\nBununla yanaşı, tədbir çərçivəsində hidroqrafiya sahəsində\nəməkdaşlığa dair danışıqlar aparılıb, Xəzər dənizində naviqasiya\ntəhlükəsizliyinin artırılması, hidroqrafik məlumatların mübadiləsi\nvə birgə tədqiqatların təşkili imkanlarına diqqət yetirilib.\n\nGörüşdə, həmçinin Xəzəryanı ölkələr arasında qarşılıqlı etimadın\nvə dənizdə təhlükəsizliyin artırılması məqsədilə əməkdaşlıq\nformatlarının genişləndirilməsi barədə geniş müzakirə aparılıb.",
+    "gold_entities": {
+      "persons": [
+        "Şahin Məmmədov"
+      ],
+      "organizations": [
+        "Trend",
+        "Müdafiə Nazirliyi",
+        "Hərbi Dəniz Qüvvələri (HDQ)",
+        "Azərbaycan Respublikası",
+        "Rusiya Federasiyası"
+      ],
+      "locations": [
+        "Sankt-Peterburq",
+        "Rusiya",
+        "Xəzər dənizi",
+        "Azərbaycan"
+      ],
+      "positions": [
+        "Azərbaycan Respublikası HDQ komandanı",
+        "1-ci dərəcəli kapitan"
+      ],
+      "dates": []
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8951",
+    "source": "trend.az",
+    "link": "https://az.trend.az/azerbaijan/politics/4101008.html",
+    "pub_date": "2025-10-08 13:26:00.000",
+    "title": "Xorvatiya normallaşma istiqamətində əldə edilən irəliləyişi qətiyyətlə dəstəkləyir",
+    "content": "Bakı. Trend:\n\nGörüşdə Sahibə Qafarova ilə ikitərəfli münasibətlərimizin\nmüxtəlif istiqamətləri, həm Azərbaycan, həm də Xorvatiyanın\nqonşuluğundakı vəziyyət, habelə cari geosiyasi çağırışlar və\ntəhlükəsizlik böhranları barədə səmimi və sağlam fikir mübadiləmiz\nbaş tutdu.\n\nTrend xəbər\nverir ki, bunu Xorvatiya Parlamentinin sədri Qordan Yandrokoviç\nMilli Məclisin sədri Sahibə Qafarova ilə birgə keçirdiyi mətbuat\nkonfransında deyib.\n\n“Biz həmçinin Azərbaycan və Ermənistan arasındakı sülh\ndanışıqlarının hazırki durumunu da müzakirə etdik”, - deyə o\nbildirib.\n\nParlament sədri vurğulayıb ki, Xorvatiya münasibətlərin\nnormallaşması istiqamətində indiyədək əldə edilmiş irəliləyişi\nqətiyyətlə dəstəkləyir.\n\n“Mən bu gün səhər Prezident İlham Əliyevlə də bu mövzu, eləcə də\nsiyasi və iqtisadi əməkdaşlığımızın ümumi potensialı haqqında\ndanışmaq fürsətinə malik olmaqdan məmnun oldum.\n\nOnu da xatırlatmaq istərdim ki, Prezident İlham Əliyev bu\ngünədək üç dəfə Xorvatiyaya rəsmi səfər edib.\n\nBu gün Baş nazir Əli Əsədovla görüş əsnasında da ikitərəfli\niqtisadi və təsisati əməkdaşlığımızdakı nailiyyətləri və potensialı\ndaha ətraflı müzakirə edəcəyəm”, - deyə Q.Yandrokoviç qeyd\nedib.",
+    "gold_entities": {
+      "persons": [
+        "Sahibə Qafarova",
+        "Qordan Yandrokoviç",
+        "İlham Əliyev",
+        "Əli Əsədov"
+      ],
+      "organizations": [
+        "Trend",
+        "Xorvatiya Parlamenti",
+        "Milli Məclis"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Xorvatiya",
+        "Ermənistan"
+      ],
+      "positions": [
+        "Xorvatiya Parlamentinin sədri",
+        "Milli Məclisin sədri",
+        "Prezident",
+        "Baş nazir"
+      ],
+      "dates": [
+        "bu gün"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8890",
+    "source": "trend.az",
+    "link": "https://az.trend.az/business/4101261.html",
+    "pub_date": "2025-10-08 17:37:19.000",
+    "title": "Azərbaycan və ABŞ elmi mərkəzi Xəzər regionunda nəqliyyat və iqtisadi əməkdaşlığı müzakirə edib",
+    "content": "Bakı. Trend:\n\nAzərbaycan və Amerika Birləşmiş Ştatlarının (ABŞ) nüfuzlu\nelmi-tədqiqat mərkəzi – “Caspian Policy Center” arasında Xəzər\nregionunda nəqliyyat, enerji, rəqəmsallaşma, iqtisadi əməkdaşlıq və\ndavamlı inkişaf məsələləri barədə fikir mübadiləsi aparılıb.\n\nBu barədə Trend Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinə\nistinadən xəbər verir.\n\nBelə ki, rəqəmsal inkişaf və nəqliyyat nazirinin müavini Rəhman\nHümmətov ABŞ-nin nüfuzlu elmi-tədqiqat mərkəzi – “Caspian Policy\nCenter”in İdarə Heyətinin sədri Əfqan Niftinin rəhbərlik etdiyi\nnümayəndə heyəti ilə görüşüb.\n\nQeyd edilib ki, görüşdə Xəzər regionunda nəqliyyat, enerji,\nrəqəmsallaşma, iqtisadi əməkdaşlıq və davamlı inkişaf məsələləri\nbarədə fikir mübadiləsi aparılıb.\n\nRəhman Hümmətov Orta Dəhlizin genişləndirilməsi istiqamətində\nhəyata keçirilən infrastruktur və institusional islahatlar barədə\nətraflı məlumat təqdim edib. Nazir müavini qeyd edib ki, Azərbaycan\nregionda multimodal logistika mərkəzinə çevrilmək istiqamətində\nmühüm addımlar atır. Rəqəmsal nəqliyyat sistemlərinin tətbiqi,\nliman, dəmir yolu və hava limanlarının modernləşdirilməsi, Zəngəzur\ndəhlizinin inkişafı bu baxımdan xüsusi əhəmiyyət kəsb edir.\n\nRəhman Hümmətov, həmçinin “Caspian Policy Center”in Xəzər\nregionunda dayanıqlı inkişaf, enerji təhlükəsizliyi və regional\nsabitliyin təşviqi sahəsində apardığı tədqiqat və təşəbbüsləri\nyüksək qiymətləndirib.\n\nGörüş zamanı gələcəkdə birgə layihələr və analitik platformalar\nçərçivəsində əməkdaşlığın genişləndirilməsi imkanları da müzakirə\nolunub.",
+    "gold_entities": {
+      "persons": [
+        "Rəhman Hümmətov",
+        "Əfqan Nifti"
+      ],
+      "organizations": [
+        "Trend",
+        "Caspian Policy Center",
+        "Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi",
+        "ABŞ"
+      ],
+      "locations": [
+        "Xəzər regionu",
+        "Azərbaycan",
+        "ABŞ"
+      ],
+      "positions": [
+        "rəqəmsal inkişaf və nəqliyyat nazirinin müavini",
+        "İdarə Heyətinin sədri"
+      ],
+      "dates": []
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8900",
+    "source": "trend.az",
+    "link": "https://az.trend.az/azerbaijan/society/4101235.html",
+    "pub_date": "2025-10-08 17:10:00.000",
+    "title": "İslam Əməkdaşlıq Təşkilatının KOB-lar Şəbəkəsi yaradılıb (FOTO)",
+    "content": "Bakı.Trend:\n\nBakıda keçirilən Azərbaycan Halal Biznes (AZHAB) Forumu\nçərçivəsində “İslam Əməkdaşlıq Təşkilatının KOB-lar Şəbəkəsi”nin\ntəsis toplantısı və ilk iclası keçirilib.\n\nBu barədə Trend-ə KOBİA-dan məlumat verilib.\n\nBildirilib ki, iclasda İslam Əməkdaşlıq Təşkilatına (İƏT) üzv\nölkələrin KOB-lara dəstək və xidmət göstərən təşkilat və müvafiq\nqurumlarının nümayəndələri iştirak ediblər.\n\nVurğulanıb ki,şəbəkənin yaradılmasında məqsəd İslam Əməkdaşlıq\nTəşkilatı (İƏT) çərçivəsində KOB-lara dəstək göstərən qurumların\nəməkdaşlığının gücləndirilməsidir.\n\n“İƏT-in KOB şəbəkəsi”nin təsis olunmasına həsr olunmuş AZHAB\nForumunun ilk panel iclasında İƏT-ə üzv ölkələrin KOB-larla əlaqəli\nqurumlarının nümayənədələri çıxış edərək, təmsil etdikləri\nölkələrin və təşkilatların KOB-lara dəstək və xidmət sahəsində\ntərcübələrini, əməkdaşlıq imkanlarını bölüşüblər. Tədbirdə\nTürkiyəni KOSGEB, Səudiyyə Ərəbistanının MONSHAAT, Mərakeşin\n“Morocco PME”, həmçinin İordaniya, Pakistan, Qırğızıstan, Çad və\nKot-d’İvuarın müvafiq qurumlarının nümayəndələri təmsil edib.\nPaneldə KOBİA tərəfindən Azərbaycanda KOB-lara dəstək və xidmətlər,\nölkəmizin KOB ekosistemi barədə məlumat verilib\".\n\nİclasda çıxış edən spikerlər KOB-ların bütün dünyada\niqtisadiyyatın hərəkətverici qüvvəsi, iqtisadiyyatda və məşğulluqda\nönəmli paya malik olduğunu vurğulayıblar. Bildirilib ki, İƏT\nölkələrində isə şirkətlərin 99,9%-ni KOB-lar təşkil edir və onların\nməşğulluqda payı 93%-dən çox, əlavə dəyərdə isə 85%-ə yaxındır.\n\n“İƏT KOB-lar şəbəkəsi”nin təsis yığıncağının sonunda Bakı\nBəyannaməsi qəbul edilib. Bəyyanamədə təşkilatın ilk təsis\nyığıncağına ev sahibliyi etməsi və kiçik və orta sahibkarlığın\ninkişafı sahəsində regional əməkdaşlığa göstərdiyi davamlı dəstəyə\ngörə Azərbaycana təşəkkür edilib.\n\nHəmçinin, təsis toplantısı çərçivəsində şəbəkəyə üzv\ntəşkilatların yekdil qərarı ilə “İslam Əməkdaşlıq Təşkilatının\nKOB-lar Şəbəkəsi”nə sədrlik 3 il müddətinə KOBİA-ya keçib.\nŞəbəkənin katibliyi funksiyasını İslam Ölkələri üzrə Statistik,\nİqtisadi, Sosial Araşdırmalar və Təlim Mərkəzi (SESRIC) icra\nedəcəkdir.",
+    "gold_entities": {
+      "persons": [],
+      "organizations": [
+        "Trend",
+        "Azərbaycan Halal Biznes (AZHAB) Forumu",
+        "İslam Əməkdaşlıq Təşkilatı (İƏT)",
+        "KOBİA",
+        "KOSGEB",
+        "MONSHAAT",
+        "Morocco PME",
+        "SESRIC",
+        "Bakı Bəyannaməsi"
+      ],
+      "locations": [
+        "Bakı",
+        "Azərbaycan",
+        "Türkiyə",
+        "Səudiyyə Ərəbistanı",
+        "Mərakeş",
+        "İordaniya",
+        "Pakistan",
+        "Qırğızıstan",
+        "Çad",
+        "Kot-d’İvuar"
+      ],
+      "positions": [],
+      "dates": [
+        "3 il müddətinə"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8984",
+    "source": "trend.az",
+    "link": "https://az.trend.az/azerbaijan/politics/4100943.html",
+    "pub_date": "2025-10-08 11:25:00.000",
+    "title": "TDT-nin Qəbələ Zirvəsi – Türk inteqrasiyasının yeni mərhələsi",
+    "content": "Bakı.Trend:\n\nQəbələdə Türk Dövlətləri Təşkilatının (TDT) Dövlət Başçıları\nŞurasının 12-ci Zirvə Görüşü Türk dünyasının inteqrasiyasında yeni\nstrateji mərhələnin başlanğıcı kimi dəyərləndirilir.\n\nBu sözləri Trend-ə politoloq Azər Qarayev bildirib.\n\nPolitoloq bildirib ki, Zirvə həm simvolik, həm də siyasi\nbaxımdan mühüm mesajlar verdi — Türk dövlətlərinin artıq yalnız\nmədəni yaxınlıq deyil, vahid geosiyasi maraqlar əsasında\nbirləşdiyini təsdiqlədi.\n\n\"Prezident İlham Əliyev çıxışında bildirdi ki, TDT bu gün sadəcə\nəməkdaşlıq platforması deyil, qlobal siyasətdə özünəməxsus güc\nmərkəzinə çevrilir. Bu fikir Təşkilatın transformasiyasını aydın\nşəkildə ifadə edir – mədəni və iqtisadi inteqrasiyadan çıxış\nedərək, TDT artıq vahid siyasi və təhlükəsizlik mexanizmi\nformalaşdırmaq istiqamətində irəliləyir.\"\n\nA.Qarayev qeyd edib ki, Prezident İlham Əliyevin 2026-cı ildə\nAzərbaycan ərazisində Türk dövlətlərinin birgə hərbi təlimlərinin\nkeçirilməsi barədə təklifi isə bu vizionun praktiki ifadəsidir.\n\n\"Bu addım TDT-nin gələcəkdə ortaq müdafiə siyasəti qurmaq\npotensialını nümayiş etdirir.Prezident İlham Əliyevin çıxışında\ndiqqət çəkən mühüm məqam Cənubi Qafqazda yaranan yeni geosiyasi\nmühitlə bağlı idi. Ermənistanla sülh sazişinin Vaşinqtonda\nparaflanması və ATƏT-in Minsk qrupunun ləğvi barədə açıqlamalar\ngöstərir ki, Azərbaycan bölgədə ədalətə əsaslanan sabitlik modelini\nformalaşdırıb. Bu hadisələr regionda yeni diplomatik mühitin\nyaranmasına səbəb olub və Azərbaycanın sülh təşəbbüsləri Türk\ndünyası üçün ədalət üzərində qurulmuş sabitlik modelinin nümunəsinə\nçevrilib.\"\n\nA.Qarayev vurğulayıb ki, bu, təkcə Azərbaycan üçün deyil, Türk\ndünyasının digər üzvləri üçün də nümunəvi təcrübədir – yəni\nsuverenlik, təhlükəsizlik və müstəqilliyin təminatı ancaq milli güc\nvə birgə əməkdaşlıqla mümkündür.\n\n\"Qəbələ Zirvəsində Zəngəzur dəhlizinin açılması və Orta Dəhlizin\ngenişləndirilməsi məsələlərinin xüsusi vurğulanması TDT-nin\niqtisadi inteqrasiyasının praktiki istiqamətlərini müəyyənləşdirdi.\nAzərbaycanın tranzit və enerji mərkəzi kimi rolu Türk dünyasının\nQərblə Asiya arasında strateji körpü statusunu daha da\nmöhkəmləndirir.Bu istiqamətdə həyata keçirilən “Orta\nAsiya–Azərbaycan–Türkiyə–Avropa Yaşıl Enerji Dəhlizi” layihəsi Türk\ndövlətlərini yalnız enerji ixracatçısı deyil, həm də bərpaolunan\nenerji üzrə aparıcı mərkəzə çevirəcək.\"\n\nA.Qarayev qeyd edib ki, Qarabağ və Şərqi Zəngəzurun bərpasında\ntürk dövlətlərinin iştirakı sadəcə humanitar jest deyil, birliyin\nreal siyasi və mənəvi təzahürüdür.\n\n\"Türk dövlətləri Qarabağ və Şərqi Zəngəzurun bərpasında fəal\niştirak edirlər. Füzulidə Mirzə Uluqbəy adına məktəb (Özbəkistan),\nAğdamda Manas məktəbi (Qırğızıstan), Cəbrayılda Macarıstan\ntərəfindən inşa edilən təhsil ocağı və Füzuli məscidinin\nTürkmənistanın hədiyyəsi olması, Türk həmrəyliyinin praktiki\nsimvoluna çevrilib. Bu layihələr sadəcə bərpa prosesi deyil, həm də\nmənəvi birliyin, qarşılıqlı hörmətin və ortaq kimliyin konkret\nifadəsidir. Bu fakt göstərir ki, Türk birliyi artıq təkcə\ndiplomatik konsepsiya deyil, əməli fəaliyyət və qarşılıqlı dəstək\nüzərində qurulan real strateji əməkdaşlıqdır.\"",
+    "gold_entities": {
+      "persons": [
+        "Azər Qarayev",
+        "İlham Əliyev"
+      ],
+      "organizations": [
+        "Trend",
+        "Türk Dövlətləri Təşkilatı (TDT)",
+        "ATƏT-in Minsk qrupu",
+        "Orta Dəhliz"
+      ],
+      "locations": [
+        "Qəbələ",
+        "Azərbaycan",
+        "Ermənistan",
+        "Vaşinqton",
+        "Cənubi Qafqaz",
+        "Qarabağ",
+        "Şərqi Zəngəzur",
+        "Füzuli",
+        "Ağdam",
+        "Cəbrayıl"
+      ],
+      "positions": [
+        "politoloq",
+        "Prezident"
+      ],
+      "dates": [
+        "2026-cı ildə"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  },
+  {
+    "article_id": "8990",
+    "source": "trend.az",
+    "link": "https://az.trend.az/azerbaijan/society/4100921.html",
+    "pub_date": "2025-10-08 11:05:00.000",
+    "title": "Gəncə avtomobil zavodu İB-i yerli istehsalın inkişafı istiqamətində vacib addım atıb (FOTO/VİDEO)",
+    "content": "Bakı. Trend:\n\nAzərbaycanın avtomobil sənayesində flaqmanlardan olan Gəncə\navtomobil zavodu İstehsalat Birliyi artıq 20 ildən artıqdır ki,\nölkənin istehsal sahəsində yeniliklərə imza atmaqda davam edir.\n\nTrend xəbər\nverir ki, 2025-ci ilin iyun ayından etibarən zavodda kommunal\ntexnikaların konteynerlərinin yığımını 100 faiz yerli istehsal\nolaraq reallaşdırılmağa start verib. Belə ki, sifarişə uyğun olaraq\nistənilən avtomobilin bazasında müəssisədə istəkdən asılı olaraq\nistənilən kubametr tutumlu kommunal maşınların yığımı həyata\nkeçirilir. Bu günədək Azərbaycan Ekologiya və Təbii Sərvətlər\nNazirliyinin sifarişinə uyğun olaraq KAMAZ-ın bazasında 45 ədəd 20\nkubmetr tutumlu kommunal maşınları yığılaraq təhvil verilib.\nKommunal avtomobillərin konteynerləri baza hissəsindən rənglənməyə\nqədər müəssisədə yerli mütəxəssislər tərəfindən həyata keçirilir.\nBu da onu deməyə əsas verir ki, Gəncə avtomobil zavodu istehsalat\nbirliyində artıq texnikaların yığılması ilə yanaşı yerli istehsal\nsahələri də inkişf etdirilir. Bunun üçün müəssisədə ən son\ntexnologiyalardan olar plazma və kəsmə avadanlıqları, əymə və\nmüxtılif dəzgahlar, müasir qaynaq və digər lazımi avadanlıqlar\nquraşdırılıb.\n\nFəaliyyətini 2004-cü ilin dekabrın 24-də bərpa edən müəssisə bu\nmüddər ərzində minlərlə müxtəlif modeldə və modifikasiyada\navtomobillərin və kənd təsərrüfatı texnikalarının, avtobus və\nmüasir elektrobusların, kombaynların yığımını həyata keçirib.\nHazırda zavodda sifarişlərə uyğun olaraq müxtəlif modeldə və\nmodifikasiyada kənd təsərrüfatı texnikalarının, traktorların yığımı\naparılır. Təkcə bu rəqəmi demək kifayətdir ki, Azərbaycanda 14\n300-dən çox Gəncə avtomobil zavodunun istehsal etdiyi traktorlar\nölkənin kənd təsəsrrüfatı sahəsində vətəndaşlara xidmət edir.\nHazırda sifarişlərə uyğun müəssisədə Belarusun MTZ və Almaniyanın\nDeutz-Fahr traktorlarının müxtəlif modellərinin yığımı davam\netdirilir.\n\nTraktor və avtomobillərlə, avtobuslarla yanaşı müəssisədə son\nillərdə kombaynların və elektrobusların yığımı da reallaşdırılıb.\nAzərbaycanda ilk dəfə 2019-cu ildə Gəncə Avtomobil Zavodu İB və\nBelarusun “Belkommunaş” ASC arasında bağlanmış ikitərəfli\nəməkdaşlıq müqaviləsi çərçivəsində “E-321” markalı elektrobusların\nyığımına başlanıldı. Çox fərəhləndirici haldır ki, müəssisədə\nyığılan 4 elektrobus hazırda işğaldan azad edilən torpaqlarımızda,\nŞuşada xidmət göstərir. Bu müddətdə 6 avtobus, 113 kombayn, 900-ə\nyaxın trakror qoşquları, 300-dən çox MAZ qoşquları, 3500-ə yaxın\nasma avadanlıqlar yığılaraq təhvil verilib.\n\nGəncə avtomobil zavodunda müxtəlif modifikasiyada olan\navtomobillərin bazasında xüsusi təyinatlı texnikaların yığımı da\nhəyata keçirilib. Bu günədək müəssisədə 1500-dən çox KAMAZ, 3000-ə\nyaxın MAZ, 700-ə yaxın URAL iri tonnajlı avtomobillər konveyerdən\nçıxıb.\n\nZavod sifarişə uyğun olaraq lazım olan model yük avtomobilllərin\nbazalarında müxtəlif tutumlu kommunal maşınlarının yığımını da\nreallaşdırır. Ötən müddətdə zavod Minsk abtomobil zavodu və\nAlmaniyanın Hallaer şirkəti ilə bağladığı müqaviləyə əsasən 60 ədəd\n16 və 22 kubmetr tutumlu kommunal avtomibilləri yığaraq istifadəyə\nverib.\n\nGəncə avtomobil zavodu İstehslat Birliyi fəaliyyət dairəsini\ngenişləndirərək Fövqəladə Hallar Nazirliyini sifarişi əsasında\n“Minsk Avtomobil Zavodu” ASC (MAZ) və “Pojsnab” MMC arasında\nyanğınsöndürmə texnikasının Azərbaycanda istehsalının təşkilinə\ndair üçtərəfli müqavilə imzaladı və bu günədək 15 belə texnikanın\nyığımını reallaşdırıb. Bu günlərdə Azərbaycanın Baş Naziri Əli\nƏsədovun Belarusa rəsmi səfəri zamanı Baş naziri Aleksandr Turçinlə\ngörüşünün nəticəsi olaraq Minskdə Belarusun kommunal və\nyanğınsöndürmə texnikalarının Azərbaycana tədarükü ilə bağlı yeni\nmüqavilə imzalanıb. Sənədə əsasən Minsk Avtomobil Zavodu,\n“POZHSNAB” MMC və Gəncə Avtomobil Zavodu İstehsalat Birliyi\nAzərbaycana 80 MAZ markalı kommunal və yanğınsöndürmə texnikasının\ntədarükünə dair üçtərəfli razılığa gəliblər. Razılaşmaya görə\nMAZ-ın bazasında kommunal texnikaların konteynerlərinin yığımı yenə\ndə 100 fai",
+    "gold_entities": {
+      "persons": [
+        "Əli Əsədov",
+        "Aleksandr Turçin"
+      ],
+      "organizations": [
+        "Trend",
+        "Gəncə avtomobil zavodu İstehsalat Birliyi",
+        "Azərbaycan Ekologiya və Təbii Sərvətlər Nazirliyi",
+        "KAMAZ",
+        "MTZ",
+        "Deutz-Fahr",
+        "Belkommunaş ASC",
+        "Minsk Avtomobil Zavodu (MAZ) ASC",
+        "Hallaer şirkəti",
+        "Fövqəladə Hallar Nazirliyi",
+        "Pojsnab MMC",
+        "POZHSNAB MMC"
+      ],
+      "locations": [
+        "Azərbaycan",
+        "Gəncə",
+        "Belarus",
+        "Almaniya",
+        "Şuşa",
+        "Minsk"
+      ],
+      "positions": [
+        "Azərbaycanın Baş Naziri",
+        "Baş nazir"
+      ],
+      "dates": [
+        "2025-ci ilin iyun ayından",
+        "2004-cü ilin dekabrın 24-də",
+        "2019-cu ildə"
+      ]
+    },
+    "manually_verified": true,
+    "annotator_notes": ""
+  }
+]
