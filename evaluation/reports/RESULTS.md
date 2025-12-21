@@ -1,17 +1,14 @@
-## Результаты оценки (кратко)
+## Результаты оценки NER-модели
 
-### Что сравнивали
-- **Gold**: `evaluation/gold/gold_dataset_50x3_unlabeled.json` (150 статей, 50/50/50)
-- **Predictions (NEW MODEL)**: `evaluation/reports/predictions_on_gold_model_50x3.json`
-- **Отчёт JSON (NEW MODEL)**: `evaluation/reports/metrics_report_model_50x3.json`
+### Данные
 
-Предсказания получали командой:
-`python evaluation/run_pipeline_on_gold.py --engine model --local-files-only --gold evaluation/gold/gold_dataset_50x3_unlabeled.json --out evaluation/reports/predictions_on_gold_model_50x3.json`
+| Файл | Описание |
+|------|----------|
+| `evaluation/gold/gold_dataset_50x3_unlabeled.json` | Gold-разметка (150 статей, 50/50/50 по источникам) |
+| `evaluation/reports/predictions_on_gold_model_50x3.json` | Предсказания модели |
+| `evaluation/reports/metrics_report_model_50x3.json` | Метрики в JSON |
 
-Метрики считали командой:
-`python evaluation/metrics_evaluator.py --gold evaluation/gold/gold_dataset_50x3_unlabeled.json --pred evaluation/reports/predictions_on_gold_model_50x3.json --out evaluation/reports/metrics_report_model_50x3.json`
-
-### Вывод (как в консоли)
+### Консольный вывод
 
 ```text
 ======================================================================
