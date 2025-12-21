@@ -25,9 +25,28 @@ docker compose ps
 
 ### 2. Открыть в браузере
 
-- **Web UI**: http://localhost:8000
-- **Swagger API**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
+| URL | Описание |
+|-----|----------|
+| http://localhost:8000 | Главная страница |
+| http://localhost:8000/search | Поиск по новостям в БД |
+| http://localhost:8000/entities | **Карточки персон** (связи, риски, NLI) |
+| http://localhost:8000/stats | Статистика БД |
+| http://localhost:8000/docs | Swagger API |
+| http://localhost:8000/redoc | ReDoc API |
+
+### Функции Web UI
+
+#### Карточки персон (`/entities`)
+- Поиск персон по имени (713+ персон в индексе)
+- Отображение связей (персоны, организации, локации)
+- Семантические связи (met_with, works_for, related_to)
+- NLI-метки с confidence score
+- Цитаты из статей (evidence) со ссылками на источники
+- Уровень риска (LOW, MEDIUM, HIGH, CRITICAL)
+
+#### Поиск по БД (`/search`)
+- Полнотекстовый поиск по 85,000+ статей
+- Фильтрация по дате, источнику, типу сущности
 
 ### 3. Запуск парсеров (опционально)
 
@@ -142,10 +161,43 @@ CREATE TABLE report (
 
 ## Примеры запросов
 
-### Найти связи Агаларова
+### Карточка персоны (API)
 
 ```bash
-curl "http://localhost:8000/api/v1/persons/by-name/Агаларов?top_neighbors=30" | jq
+# Поиск персоны по имени
+curl "http://localhost:8000/api/v1/persons/search?q=Ceyhun+Bayramov" | jq
+
+# Полная карточка с соседями и связями
+curl "http://localhost:8000/api/v1/persons/ceyhun%20bayramov?top_neighbors=50" | jq
+
+# Карточка по имени (удобный endpoint)
+curl "http://localhost:8000/api/v1/persons/by-name/Ilham+Aliyev?top_neighbors=30" | jq
+```
+
+### Пример ответа карточки
+
+```json
+{
+  "status": "ok",
+  "person": {
+    "person_key": "ceyhun bayramov",
+    "display": "Ceyhun Bayramov",
+    "risk": {"risk_level": "LOW", "overall_risk_score": 0.0},
+    "neighbors_count": 22,
+    "neighbors": [
+      {
+        "display": "Hakan Fidan",
+        "type": "person",
+        "nli_label": "met with",
+        "nli_score": 1.0,
+        "evidence": [{"sentence": "...görüş...", "link": "https://..."}]
+      }
+    ],
+    "semantic_relations": [
+      {"relation": "met_with", "target": "Abdullah bin Zayed", "nli_score": 1.0}
+    ]
+  }
+}
 ```
 
 ### Топ персон с рисками
@@ -158,4 +210,12 @@ curl "http://localhost:8000/api/v1/top-persons?sort_by=risk_score&limit=10" | jq
 
 ```bash
 curl "http://localhost:8000/api/v1/index/stats" | jq
+# {"total_persons": 713, "total_neighbors": 3097, "risk_levels": {...}}
+```
+
+### Поиск по новостям
+
+```bash
+# Поиск статей про Агаларова
+curl "http://localhost:8000/api/v1/search?query=Agalarov&limit=20" | jq
 ```
