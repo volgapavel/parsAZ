@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск - ClearPic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-newspaper"></i> ClearPic Media Monitor
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/process">Обработка текста</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/search">Поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/entities">Сущности</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stats">Статистика</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="mb-4">
+            <i class="fas fa-search text-primary"></i> Поиск в базе данных
+        </h2>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <form id="searchForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="query" class="form-label">Поисковый запрос</label>
+                            <input type="text" class="form-control" id="query" placeholder="Введите текст для поиска">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="entity_name" class="form-label">Имя сущности</label>
+                            <input type="text" class="form-control" id="entity_name" placeholder="Например: Алиев">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="entity_type" class="form-label">Тип сущности</label>
+                            <select class="form-select" id="entity_type">
+                                <option value="">Все типы</option>
+                                <option value="PERSON">Персона</option>
+                                <option value="ORG">Организация</option>
+                                <option value="GPE">Геолокация</option>
+                                <option value="LOC">Локация</option>
+                                <option value="DATE">Дата</option>
+                                <option value="MONEY">Деньги</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="risk_level" class="form-label">Уровень риска</label>
+                            <select class="form-select" id="risk_level">
+                                <option value="">Любой</option>
+                                <option value="none">Нет риска</option>
+                                <option value="low">Низкий</option>
+                                <option value="medium">Средний</option>
+                                <option value="high">Высокий</option>
+                                <option value="critical">Критический</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="risk_category" class="form-label">Категория риска</label>
+                            <select class="form-select" id="risk_category">
+                                <option value="">Все категории</option>
+                                <option value="fraud">Мошенничество</option>
+                                <option value="corruption">Коррупция</option>
+                                <option value="sanctions">Санкции</option>
+                                <option value="criminal">Криминал</option>
+                                <option value="environmental">Экология</option>
+                                <option value="labor">Трудовые</option>
+                                <option value="legal">Правовые</option>
+                                <option value="reputation">Репутация</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="date_from" class="form-label">Дата от</label>
+                            <input type="date" class="form-control" id="date_from">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="date_to" class="form-label">Дата до</label>
+                            <input type="date" class="form-control" id="date_to">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-search"></i> Найти
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="resetBtn">
+                                <i class="fas fa-redo"></i> Сбросить
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="searchResults"></div>
+
+        <div id="loadingContainer" class="text-center mt-4" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Поиск...</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">ClearPic Media Monitoring System &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка текста - ClearPic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-newspaper"></i> ClearPic Media Monitor
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/process">Обработка текста</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/search">Поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/entities">Сущности</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stats">Статистика</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="mb-4">
+                    <i class="fas fa-file-alt text-primary"></i> Обработка текста
+                </h2>
+                <p class="text-muted">Введите текст новости для автоматического извлечения сущностей, анализа связей и выявления рисков</p>
+
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <form id="processForm">
+                            <div class="mb-3">
+                                <label for="url" class="form-label">URL статьи</label>
+                                <div class="input-group">
+                                    <input type="url" class="form-control" id="url" placeholder="https://example.com/news/123">
+                                    <button type="button" class="btn btn-outline-primary" id="fetchBtn">
+                                        <i class="fas fa-download"></i> Извлечь
+                                    </button>
+                                </div>
+                                <div class="form-text">Вставьте URL статьи и нажмите "Извлечь" для автоматического получения заголовка и текста</div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Заголовок</label>
+                                <input type="text" class="form-control" id="title" placeholder="Введите заголовок новости" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="text" class="form-label">Текст</label>
+                                <textarea class="form-control" id="text" rows="10" placeholder="Вставьте текст новости для анализа..." required></textarea>
+                                <div class="form-text">Минимум 50 символов</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="source" class="form-label">Источник (опционально)</label>
+                                <input type="text" class="form-control" id="source" placeholder="Например: azadliq.org">
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Дата публикации</label>
+                                <input type="date" class="form-control" id="date" value="">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                                <i class="fas fa-cogs"></i> Обработать текст
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="resultsContainer" class="mt-4" style="display: none;">
+                    <div class="card shadow">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="fas fa-check-circle"></i> Результаты обработки</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="processingResults"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="errorContainer" class="alert alert-danger mt-4" style="display: none;">
+                    <i class="fas fa-exclamation-circle"></i> <span id="errorMessage"></span>
+                </div>
+
+                <div id="loadingContainer" class="text-center mt-4" style="display: none;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Обработка...</span>
+                    </div>
+                    <p class="mt-2 text-muted">Анализ текста может занять несколько секунд...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">ClearPic Media Monitoring System &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/process.js"></script>
+</body>
+</html>

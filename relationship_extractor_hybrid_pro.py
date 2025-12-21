@@ -17,6 +17,14 @@ from collections import defaultdict
 
 logger = logging.getLogger(__name__)
 
+# Импорт переводчика
+try:
+    from translator import Translator
+    TRANSLATOR_AVAILABLE = True
+except ImportError:
+    TRANSLATOR_AVAILABLE = False
+    logger.warning("translator.py not found, translation disabled")
+
 
 @dataclass
 class ExtractedRelation:
@@ -54,6 +62,7 @@ class RelationExtractorHybridPro:
         use_regex: bool = True,
         use_spacy: bool = True,
         use_bert: bool = True,
+        use_translation: bool = True,
         device: str = "cpu"
     ):
         """
@@ -61,10 +70,29 @@ class RelationExtractorHybridPro:
             use_regex: Использовать regex паттерны
             use_spacy: Пытаться использовать spaCy
             use_bert: Пытаться использовать BERT
+            use_translation: Переводить азербайджанский текст на английский
             device: 'cpu' или 'cuda'
         """
         self.device = device
         self.methods_loaded = []
+        
+        # Инициализация атрибутов
+        self.spacy_nlp = None
+        self.zeroshot_pipeline = None
+        
+        # Инициализация переводчика
+        self.translator = None
+        if use_translation and TRANSLATOR_AVAILABLE:
+            try:
+                self.translator = Translator()
+                if self.translator.available:
+                    logger.info("Translator initialized")
+                    self.methods_loaded.append('translator')
+                else:
+                    self.translator = None
+            except Exception as e:
+                logger.warning(f"Translator init failed: {e}")
+                self.translator = None
         
         # Layer 1: Regex (ВСЕГДА инициализируется)
         if use_regex:
@@ -78,40 +106,47 @@ class RelationExtractorHybridPro:
         if use_bert:
             self._init_bert()
         
-        logger.info(f"✅ Loaded methods: {', '.join(self.methods_loaded)}")
+        logger.info(f"Loaded methods: {', '.join(self.methods_loaded)}")
     
     def _init_regex(self) -> None:
         """Инициализация Regex метода"""
         try:
             self.regex_patterns = self._compile_patterns()
             self.methods_loaded.append('regex')
-            logger.info("✅ Regex patterns compiled")
+            logger.info("Regex patterns compiled")
         except Exception as e:
-            logger.error(f"❌ Failed to init regex: {e}")
+            logger.error(f"Failed to init regex: {e}")
     
     def _init_spacy(self) -> None:
         """Инициализация spaCy с graceful fallback"""
         try:
             import spacy
+            # Пробуем загрузить многоязычную модель (для азербайджанского и др.)
             try:
-                self.spacy_nlp = spacy.load("en_core_web_sm")
+                self.spacy_nlp = spacy.load("xx_ent_wiki_sm")
                 self.methods_loaded.append('spacy')
-                logger.info("✅ spaCy loaded (en_core_web_sm)")
+                logger.info("spaCy loaded (xx_ent_wiki_sm - multilingual)")
             except OSError:
-                logger.warning("⚠️ spaCy model not found, downloading...")
-                import subprocess
-                subprocess.run(
-                    ["python", "-m", "spacy", "download", "en_core_web_sm"],
-                    capture_output=True
-                )
-                self.spacy_nlp = spacy.load("en_core_web_sm")
-                self.methods_loaded.append('spacy')
-                logger.info("✅ spaCy loaded (en_core_web_sm)")
+                # Если нет многоязычной, пробуем английскую
+                try:
+                    self.spacy_nlp = spacy.load("en_core_web_sm")
+                    self.methods_loaded.append('spacy')
+                    logger.info("spaCy loaded (en_core_web_sm)")
+                except OSError:
+                    logger.warning("spaCy model not found, downloading...")
+                    import subprocess
+                    subprocess.run(
+                        ["python", "-m", "spacy", "download", "en_core_web_sm"],
+                        capture_output=True
+                    )
+                    self.spacy_nlp = spacy.load("en_core_web_sm")
+                    self.methods_loaded.append('spacy')
+                    logger.info("spaCy loaded (en_core_web_sm)")
         except ImportError:
-            logger.warning("⚠️ spaCy not installed, skipping syntax layer")
+            logger.warning("spaCy not installed, skipping syntax layer")
             self.spacy_nlp = None
         except Exception as e:
-            logger.warning(f"⚠️ spaCy init failed: {e}")
+            logger.warning(f"spaCy init failed: {e}")
             self.spacy_nlp = None
     
     def _init_bert(self) -> None:
@@ -122,7 +157,7 @@ class RelationExtractorHybridPro:
             
             # Проверяем доступность CUDA
             if self.device == "cuda" and not torch.cuda.is_available():
-                logger.warning("⚠️ CUDA not available, using CPU")
+                logger.warning("CUDA not available, using CPU")
                 device = 0 if torch.cuda.is_available() else -1
             else:
                 device = 0 if self.device == "cuda" else -1
@@ -133,12 +168,12 @@ class RelationExtractorHybridPro:
                 device=device
             )
             self.methods_loaded.append('bert')
-            logger.info("✅ BERT zero-shot pipeline loaded")
+            logger.info("BERT zero-shot pipeline loaded")
         except ImportError:
-            logger.warning("⚠️ Transformers not installed, skipping BERT layer")
+            logger.warning("Transformers not installed, skipping BERT layer")
             self.zeroshot_pipeline = None
         except Exception as e:
-            logger.warning(f"⚠️ BERT init failed: {e}")
+            logger.warning(f"BERT init failed: {e}")
             self.zeroshot_pipeline = None
     
     # ═══════════════════════════════════════════════════════════════════════
@@ -148,7 +183,8 @@ class RelationExtractorHybridPro:
     def extract_relationships(
         self,
         text: str,
-        entities: Dict[str, List[Any]]
+        entities: Dict[str, List[Any]],
+        source_lang: str = 'az'
     ) -> List[ExtractedRelation]:
         """
         Главный метод - использует все доступные методы
@@ -157,10 +193,21 @@ class RelationExtractorHybridPro:
             text: Текст статьи
             entities: Dict с ключами 'persons', 'organizations', 'locations'
                      Значения: List[Dict] или List[str]
+            source_lang: Исходный язык текста ('az' для азербайджанского)
         
         Returns:
             List[ExtractedRelation] отсортированные по confidence
         """
+        # Переводим текст на английский если доступен переводчик
+        original_text = text
+        if self.translator and source_lang != 'en':
+            try:
+                text = self.translator.translate_text(text, source_lang=source_lang, target_lang='en')
+                logger.debug(f"📝 Text translated from {source_lang} to en")
+            except Exception as e:
+                logger.warning(f"⚠️ Translation failed: {e}, using original text")
+                text = original_text
+        
         all_relations = []
         
         # Метод 1: Regex (ВСЕГДА)
@@ -193,7 +240,7 @@ class RelationExtractorHybridPro:
         final_relations = self._deduplicate_relations(all_relations)
         final_relations.sort(key=lambda x: x.confidence, reverse=True)
         
-        logger.info(f"🔗 Total relations: {len(final_relations)}")
+        logger.info(f"Total relations: {len(final_relations)}")
         return final_relations
     
     # ═══════════════════════════════════════════════════════════════════════
@@ -222,6 +269,8 @@ class RelationExtractorHybridPro:
             ],
             'partners_with': [
                 r'([A-Z]\w+(?:\s+[A-Z]\w+)*)\s+(?:partnered|partners|partnership)\s+with\s+([A-Z]\w+(?:\s+[A-Z]\w+)*)',
+                r'([A-Z]\w+(?:\s+[A-Z]\w+)*)\s+and\s+([A-Z]\w+(?:\s+[A-Z]\w+)*)\s+(?:continue|have|maintain).*?(?:partnership|partner)',
+                r'([A-Z]\w+(?:\s+[A-Z]\w+)*)\s+(?:and|,)\s+([A-Z]\w+(?:\s+[A-Z]\w+)*)\s+.*?partnership',
             ],
         }
     

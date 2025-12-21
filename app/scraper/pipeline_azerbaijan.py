@@ -1,5 +1,6 @@
 """Scraping pipeline for azerbaijan.az."""
 import logging
+from typing import Optional, List
 
 from psycopg2.extensions import connection as Connection
 
@@ -27,7 +28,7 @@ class AzerbaijanPipeline:
         self.stats = {"processed": 0, "inserted": 0, "skipped": 0, "errors": 0}
         self.base_url = "https://azerbaijan.az"
     
-    def run(self, max_pages: int | None = None) -> dict:
+    def run(self, max_pages: Optional[int] = None) -> dict:
         """
         Run scraping pipeline.
         max_pages: limit number of pages to scrape (None = all pages)
@@ -57,7 +58,7 @@ class AzerbaijanPipeline:
                 
                 logger.info(f"Found {len(news_items)} items on page {page_num}")
                 
-                batch: list[NewsArticle] = []
+                batch: List[NewsArticle] = []
                 
                 for item in news_items:
                     article = self._process_article(item)
@@ -86,7 +87,7 @@ class AzerbaijanPipeline:
         logger.info(f"Scraping completed. Stats: {self.stats}")
         return self.stats
     
-    def _process_article(self, item: AzNewsListItem) -> NewsArticle | None:
+    def _process_article(self, item: AzNewsListItem) -> Optional[NewsArticle]:
         """Process single article."""
         self.stats["processed"] += 1
         
@@ -118,14 +119,14 @@ class AzerbaijanPipeline:
             pub_date=pub_date or item.pub_date
         )
     
-    def _flush_batch(self, batch: list[NewsArticle]) -> None:
+    def _flush_batch(self, batch: List[NewsArticle]) -> None:
         """Flush batch to database."""
         count = repository.insert_news_batch(self.conn, batch)
         self.stats["inserted"] += count
         logger.debug(f"Flushed batch of {len(batch)} articles")
 
 
-def run_azerbaijan_scraper(config: ScraperConfig | None = None, max_pages: int | None = None) -> dict:
+def run_azerbaijan_scraper(config: Optional[ScraperConfig] = None, max_pages: Optional[int] = None) -> dict:
     """Entry point for azerbaijan.az scraper."""
     from app.scraper.config import DBConfig
     from app.db.connection import create_connection

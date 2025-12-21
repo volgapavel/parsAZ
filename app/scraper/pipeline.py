@@ -1,7 +1,7 @@
 """Main scraping pipeline."""
 import logging
 from datetime import date, timedelta
-from typing import Generator
+from typing import Generator, Optional, List
 
 from psycopg2.extensions import connection as Connection
 
@@ -61,7 +61,7 @@ class ScrapingPipeline:
         
         logger.info(f"Processing {current_date}: {len(news_items)} items")
         
-        batch: list[NewsArticle] = []
+        batch: List[NewsArticle] = []
         
         for item in news_items:
             article = self._process_article(item)
@@ -79,7 +79,7 @@ class ScrapingPipeline:
         if batch:
             self._flush_batch(batch)
     
-    def _process_article(self, item: NewsListItem) -> NewsArticle | None:
+    def _process_article(self, item: NewsListItem) -> Optional[NewsArticle]:
         """Process single article."""
         self.stats["processed"] += 1
         
@@ -111,14 +111,14 @@ class ScrapingPipeline:
             pub_date=item.pub_date
         )
     
-    def _flush_batch(self, batch: list[NewsArticle]) -> None:
+    def _flush_batch(self, batch: List[NewsArticle]) -> None:
         """Flush batch to database."""
         count = repository.insert_news_batch(self.conn, batch)
         self.stats["inserted"] += count
         logger.debug(f"Flushed batch of {len(batch)} articles")
 
 
-def run_scraper(config: ScraperConfig | None = None) -> dict:
+def run_scraper(config: Optional[ScraperConfig] = None) -> dict:
     """Entry point for scraper."""
     from app.scraper.config import DBConfig
     from app.db.connection import create_connection

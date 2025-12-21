@@ -2,7 +2,7 @@
 import logging
 import time
 import random
-from typing import Callable
+from typing import Callable, Optional
 
 import requests
 from requests import Session, Response
@@ -29,7 +29,7 @@ class HttpClient:
         })
         return session
     
-    def fetch(self, url: str, allow_404: bool = False) -> str | None:
+    def fetch(self, url: str, allow_404: bool = False) -> Optional[str]:
         """
         Fetch URL content with retry logic.
         Returns HTML content or None on failure.
@@ -64,7 +64,7 @@ class HttpClient:
         
         return None
     
-    def random_delay(self, min_sec: float | None = None, max_sec: float | None = None) -> None:
+    def random_delay(self, min_sec: Optional[float] = None, max_sec: Optional[float] = None) -> None:
         """Sleep for random duration."""
         min_sec = min_sec or self.config.min_delay
         max_sec = max_sec or self.config.max_delay

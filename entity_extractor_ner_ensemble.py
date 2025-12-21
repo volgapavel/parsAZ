@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 
 
 @dataclass
+@dataclass
 class Entity:
     """Представление сущности"""
     name: str
@@ -70,7 +71,7 @@ class NEREnsembleExtractor:
             device: 'cuda' или 'cpu'
         """
         self.device = device
-        logger.info(f"🔧 Инициализация NER Ensemble на {device}...")
+        logger.info(f"Инициализация NER Ensemble на {device}...")
         
         # 1️⃣ Основная модель: Davlan (3 типа: PER, ORG, LOC)
         try:
@@ -86,9 +87,9 @@ class NEREnsembleExtractor:
                 device=0 if device == "cuda" else -1,
                 aggregation_strategy="simple"
             )
-            logger.info("✅ Davlan модель загружена успешно")
+            logger.info("Davlan модель загружена успешно")
         except Exception as e:
-            logger.error(f"❌ Ошибка загрузки Davlan: {e}")
+            logger.error(f"Ошибка загрузки Davlan: {e}")
             self.davlan_nlp = None
         
         # 2️⃣ Расширенная модель: LocalDoc (25 типов, az-специфичная)
@@ -105,9 +106,9 @@ class NEREnsembleExtractor:
                 device=0 if device == "cuda" else -1,
                 aggregation_strategy="simple"
             )
-            logger.info("✅ LocalDoc модель загружена успешно")
+            logger.info("LocalDoc модель загружена успешно")
         except Exception as e:
-            logger.warning(f"⚠️ LocalDoc модель недоступна (opt): {e}")
+            logger.warning(f"LocalDoc модель недоступна (opt): {e}")
             self.localdoc_nlp = None
         
         # Словари для post-processing
@@ -172,7 +173,7 @@ class NEREnsembleExtractor:
       entities = []
       try:
           ner_results = self.davlan_nlp(text)
-          print(f"🔍 Davlan raw result: {ner_results[:2] if ner_results else 'EMPTY'}")  # ДЕБАГ
+          print(f"Davlan raw result: {ner_results[:2] if ner_results else 'EMPTY'}")  # ДЕБАГ
           
           for result in ner_results:
               # 🔥 ФИКС: проверяем все возможные ключи
@@ -214,7 +215,7 @@ class NEREnsembleExtractor:
         entities = []
         try:
             ner_results = self.localdoc_nlp(text)
-            print(f"🔍 LocalDoc raw: {ner_results[:2] if ner_results else 'EMPTY'}")  # ДЕБАГ
+            print(f"LocalDoc raw: {ner_results[:2] if ner_results else 'EMPTY'}")  # ДЕБАГ
             
             for result in ner_results:
                 entity_key = None

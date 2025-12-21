@@ -17,19 +17,50 @@
 
 ### 1. Системные требования
 
-- Python 3.8+
-- PostgreSQL 15+
+- **Python 3.9+** (рекомендуется 3.10+ для нативной поддержки Union типов)
+- PostgreSQL 15+ (опционально, для production)
 - 8+ GB RAM (для NER моделей)
-- 10+ GB свободного места (для моделей)
+- 10+ GB свободного места (для моделей Transformers и spaCy)
+- Microsoft C++ Build Tools (для Windows, при установке spaCy из исходников)
+
+**Важно для Windows:** Если у вас Python 3.9, код адаптирован под `Optional[]` вместо `Type | None`. Для Python 3.10+ оба синтаксиса работают.
 
 ### 2. Клонирование и зависимости
 
 ```bash
-# Установка Python зависимостей
+# Клонирование репозитория
+git clone <repository-url>
+cd parsAZ
+
+# Создание виртуального окружения (рекомендуется)
+python -m venv venv
+
+# Активация окружения
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# Обновление pip
+pip install --upgrade pip
+
+# Установка основных зависимостей
 pip install -r requirements.txt
 
-# Для API
+# Установка зависимостей для API и веб-интерфейса
 pip install -r requirements_api.txt
+pip install -r requirements_website.txt
+
+# Установка spaCy (опционально, для синтаксического анализа отношений)
+# Windows (использовать предкомпилированные wheels):
+pip install --only-binary :all: spacy
+
+# Загрузка языковых моделей spaCy
+python -m spacy download en_core_web_sm      # Английская модель
+python -m spacy download xx_ent_wiki_sm      # Многоязычная модель (для азербайджанского)
+
+# Установка переводчика (для работы с азербайджанским языком)
+pip install googletrans==4.0.0rc1
 ```
 
 ### 3. Настройка PostgreSQL
@@ -60,10 +91,26 @@ LOG_LEVEL=INFO
 
 ## Использование
 
+### Веб-интерфейс (рекомендуется для демонстрации)
+
+```bash
+# Запуск веб-приложения
+python website_app.py
+
+# Веб-интерфейс: http://localhost:8002
+# API документация: http://localhost:8002/api/v1/docs
+```
+
+**Возможности веб-интерфейса:**
+- Автоматическое извлечение контента из URL азербайджанских новостных сайтов
+- Обработка текста с извлечением сущностей, отношений и рисков
+- Автоматический перевод с азербайджанского на английский
+- Интерактивная визуализация результатов
+
 ### REST API
 
 ```bash
-# Запуск API сервера
+# Запуск API сервера (без веб-интерфейса)
 uvicorn api:app --reload --host 0.0.0.0 --port 8000
 
 # API будет доступно на http://localhost:8000
@@ -358,6 +405,51 @@ python evaluation/run_pipeline_on_gold.py
 # Генерация метрик
 python evaluation/metrics_evaluator.py
 ```
+
+## Решение проблем
+
+### spaCy не установлен / Warning
+
+**Проблема:** `WARNING: spaCy not installed, skipping syntax layer`
+
+**Решение:**
+```bash
+# Windows (рекомендуется использовать предкомпилированные wheels)
+pip install --only-binary :all: spacy
+python -m spacy download en_core_web_sm
+python -m spacy download xx_ent_wiki_sm
+
+# Если ошибка компиляции - установите Microsoft C++ Build Tools
+# https://visualstudio.microsoft.com/visual-cpp-build-tools/
+```
+
+### Ошибки типов Python 3.9
+
+**Проблема:** `unsupported operand type(s) for |: 'type' and 'NoneType'`
+
+**Решение:** Код адаптирован для Python 3.9 с использованием `Optional[]` вместо `Type | None`. Если проблема сохраняется:
+```bash
+# Обновите Python до версии 3.10+
+python --version  # проверьте текущую версию
+```
+
+### PostgreSQL недоступен
+
+**Проблема:** Ошибки подключения к базе данных
+
+**Решение:** Система работает без PostgreSQL в режиме demo. Для полной функциональности:
+- Установите PostgreSQL 15+
+- Настройте переменные окружения в `.env`
+- Выполните инициализацию схемы из `database_schema.sql`
+
+### Медленная обработка текстов
+
+**Проблема:** Обработка занимает много времени
+
+**Решение:**
+- Используйте GPU для моделей Transformers (если доступно)
+- Отключите ненужные компоненты: `use_bert=False`, `use_spacy=False`
+- Уменьшите количество NER моделей в ансамбле
 
 ## Лицензия
 

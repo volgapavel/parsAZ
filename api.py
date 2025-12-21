@@ -34,8 +34,34 @@ from entity_deduplicator import EntityDeduplicator
 from output_formatter import OutputFormatter
 from database import DatabaseManager, get_db_manager
 
+# ANSI color codes
+COLOR_GREEN = "\033[92m"
+COLOR_ORANGE = "\033[93m"
+COLOR_RED = "\033[91m"
+COLOR_RESET = "\033[0m"
+
+# Custom formatter with colored log levels
+class ColoredFormatter(logging.Formatter):
+    def format(self, record):
+        if record.levelno == logging.INFO:
+            levelname_colored = f"{COLOR_GREEN}{record.levelname}{COLOR_RESET}"
+        elif record.levelno == logging.WARNING:
+            levelname_colored = f"{COLOR_ORANGE}{record.levelname}{COLOR_RESET}"
+        elif record.levelno == logging.ERROR:
+            levelname_colored = f"{COLOR_RED}{record.levelname}{COLOR_RESET}"
+        else:
+            levelname_colored = record.levelname
+        
+        record.levelname = levelname_colored
+        return super().format(record)
+
 # Настройка логирования
-logging.basicConfig(level=logging.INFO)
+handler = logging.StreamHandler()
+handler.setFormatter(ColoredFormatter('%(levelname)s:\t%(name)s:\t%(message)s'))
+logging.basicConfig(
+    level=logging.INFO,
+    handlers=[handler]
+)
 logger = logging.getLogger(__name__)
 
 # Инициализация FastAPI
@@ -274,7 +300,7 @@ def process_text_pipeline(
     if ner_extractor is None:
         raise HTTPException(status_code=503, detail="NER Extractor not available")
     
-    entities_raw = ner_extractor.extract_entities(cleaned_text)
+    entities_raw = ner_extractor.extract(cleaned_text)['entities']
     
     # 3. Дедупликация
     entities = deduplicator.deduplicate_entities(entities_raw)
@@ -437,6 +463,40 @@ async def process_article(request: ProcessRequest):
         # Генерация ID
         article_id = generate_article_id()
         
+        # Конвертация Entity объектов в словари для Pydantic
+        entities_dict = {}
+        for entity_type, entity_list in result['entities'].items():
+            entities_dict[entity_type] = [
+                {
+                    'name': e.name if hasattr(e, 'name') else e['name'],
+                    'type': e.entity_type if hasattr(e, 'entity_type') else e.get('type', entity_type),
+                    'confidence': e.confidence if hasattr(e, 'confidence') else e.get('confidence', 0.0),
+                    'context': e.context if hasattr(e, 'context') else e.get('context'),
+                    'source': e.source if hasattr(e, 'source') else e.get('source')
+                }
+                for e in entity_list
+            ]
+        
+        # Конвертация relationships
+        relationships_list = None
+        if result.get('relationships'):
+            relationships_list = [
+                {
+                    'source_entity': r.entity1_text if hasattr(r, 'entity1_text') else r.get('source_entity'),
+                    'target_entity': r.entity2_text if hasattr(r, 'entity2_text') else r.get('target_entity'),
+                    'relation_type': r.relation_type if hasattr(r, 'relation_type') else r.get('relation_type'),
+                    'confidence': r.confidence if hasattr(r, 'confidence') else r.get('confidence', 0.0),
+                    'evidence': r.evidence if hasattr(r, 'evidence') else r.get('evidence'),
+                    'source_method': r.extraction_method if hasattr(r, 'extraction_method') else r.get('source_method')
+                }
+                for r in result.get('relationships', [])
+            ]
+        
+        # Конвертация risks - добавляем risk_score если отсутствует
+        risks_dict = result.get('risks')
+        if risks_dict and 'risk_score' not in risks_dict:
+            risks_dict['risk_score'] = risks_dict.get('overall_risk_score', 0.0)
+        
         # Форматирование ответа
         return ProcessResponse(
             article_id=article_id,
@@ -444,15 +504,106 @@ async def process_article(request: ProcessRequest):
             source=request.source,
             pub_date=request.pub_date,
             processing_time_ms=result['processing_time_ms'],
-            entities=result['entities'],
-            relationships=result.get('relationships'),
-            risks=result.get('risks'),
+            entities=entities_dict,
+            relationships=relationships_list,
+            risks=risks_dict,
             knowledge_graph=result.get('knowledge_graph')
         )
         
     except Exception as e:
         logger.error(f"Error processing article: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Processing failed: {str(e)}")
+
+
+@app.get("/api/v1/search", tags=["Search"])
+async def search_articles_get(
+    query: Optional[str] = Query(None, description="Полнотекстовый поиск"),
+    entity_name: Optional[str] = Query(None, description="Имя сущности"),
+    entity_type: Optional[str] = Query(None, description="Тип сущности"),
+    risk_level: Optional[str] = Query(None, description="Уровень риска"),
+    risk_category: Optional[str] = Query(None, description="Категория риска"),
+    date_from: Optional[str] = Query(None, description="Дата от (YYYY-MM-DD)"),
+    date_to: Optional[str] = Query(None, description="Дата до (YYYY-MM-DD)"),
+    limit: int = Query(20, ge=1, le=100, description="Количество результатов"),
+    offset: int = Query(0, ge=0, description="Смещение")
+):
+    """
+    Поиск по базе данных (GET метод для веб-интерфейса)
+    """
+    # Проверка доступности БД
+    if db_manager is None:
+        initialize_database()
+    
+    if db_manager is None or not db_manager.is_connected():
+        return {
+            "total": 0,
+            "limit": limit,
+            "offset": offset,
+            "results": [],
+            "error": "Database is not available. Search requires PostgreSQL connection.",
+            "status": "database_unavailable"
+        }
+    
+    try:
+        # Преобразование дат
+        date_from_obj = None
+        date_to_obj = None
+        
+        if date_from:
+            try:
+                date_from_obj = datetime.strptime(date_from, "%Y-%m-%d").date()
+            except ValueError:
+                raise HTTPException(status_code=400, detail="Invalid date_from format. Use YYYY-MM-DD")
+        
+        if date_to:
+            try:
+                date_to_obj = datetime.strptime(date_to, "%Y-%m-%d").date()
+            except ValueError:
+                raise HTTPException(status_code=400, detail="Invalid date_to format. Use YYYY-MM-DD")
+        
+        # Поиск в БД
+        articles, total = db_manager.search_articles(
+            entity_name=entity_name,
+            entity_type=entity_type,
+            source=None,
+            date_from=date_from_obj,
+            date_to=date_to_obj,
+            limit=limit,
+            offset=offset
+        )
+        
+        # Форматирование результатов
+        results = []
+        for article in articles:
+            results.append({
+                "article_id": article['article_id'],
+                "title": article['title'],
+                "source": article.get('source'),
+                "url": article.get('link'),
+                "published_date": str(article['pub_date']) if article.get('pub_date') else None,
+                "entities": article.get('entities', {})
+            })
+        
+        return {
+            "total": total,
+            "limit": limit,
+            "offset": offset,
+            "results": results,
+            "status": "ok"
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Search failed: {e}", exc_info=True)
+        return {
+            "total": 0,
+            "limit": limit,
+            "offset": offset,
+            "results": [],
+            "error": str(e),
+            "status": "error"
+        }
 
 
 @app.post("/api/v1/search", tags=["Search"])
@@ -598,10 +749,14 @@ async def get_entities(
         initialize_database()
     
     if db_manager is None or not db_manager.is_connected():
-        raise HTTPException(
-            status_code=503,
-            detail="Database is not available"
-        )
+        return {
+            "total": 0,
+            "limit": limit,
+            "offset": offset,
+            "entities": [],
+            "status": "database_unavailable",
+            "error": "Database is not available"
+        }
     
     try:
         entities, total = db_manager.get_entities(
@@ -614,7 +769,8 @@ async def get_entities(
             "total": total,
             "limit": limit,
             "offset": offset,
-            "entities": entities
+            "entities": entities,
+            "status": "ok"
         }
         
     except Exception as e:

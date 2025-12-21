@@ -1,0 +1,259 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --dark-color: #212529;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    opacity: 0.95;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+}
+
+/* Stats Cards */
+.stats-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+/* Forms */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Entity Tags */
+.entity-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    margin: 3px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.entity-PERSON {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.entity-ORG {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.entity-GPE {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.entity-LOC {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+.entity-DATE {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.entity-MONEY {
+    background-color: #e0f2f1;
+    color: #00796b;
+}
+
+/* Risk Badges */
+.risk-badge {
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.risk-none {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.risk-low {
+    background-color: #fff9c4;
+    color: #f57f17;
+}
+
+.risk-medium {
+    background-color: #ffe0b2;
+    color: #e65100;
+}
+
+.risk-high {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+.risk-critical {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Results Display */
+.result-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.result-item:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.result-header {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Tables */
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Relationship Graph */
+.relationship-item {
+    border-left: 4px solid var(--info-color);
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Alert Customization */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin: 20px 0;
+}
