@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сущности - ClearPic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-newspaper"></i> ClearPic Media Monitor
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/process">Обработка текста</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/search">Поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/entities">Сущности</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stats">Статистика</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="mb-4">
+            <i class="fas fa-tag text-primary"></i> Извлеченные сущности
+        </h2>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <form id="filterForm" class="row g-3">
+                    <div class="col-md-4">
+                        <label for="entity_type_filter" class="form-label">Тип сущности</label>
+                        <select class="form-select" id="entity_type_filter">
+                            <option value="">Все типы</option>
+                            <option value="PERSON">Персона</option>
+                            <option value="ORG">Организация</option>
+                            <option value="GPE">Геолокация</option>
+                            <option value="LOC">Локация</option>
+                            <option value="DATE">Дата</option>
+                            <option value="MONEY">Деньги</option>
+                            <option value="PERCENT">Проценты</option>
+                            <option value="TIME">Время</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="name_filter" class="form-label">Поиск по имени</label>
+                        <input type="text" class="form-control" id="name_filter" placeholder="Введите имя">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="limit" class="form-label">Количество результатов</label>
+                        <select class="form-select" id="limit">
+                            <option value="20">20</option>
+                            <option value="50" selected>50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-filter"></i> Применить фильтр
+                        </button>
+                        <button type="button" class="btn btn-secondary" id="resetBtn">
+                            <i class="fas fa-redo"></i> Сбросить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="entitiesResults"></div>
+
+        <div id="loadingContainer" class="text-center mt-4" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Загрузка...</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">ClearPic Media Monitoring System &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/entities.js"></script>
+</body>
+</html>
