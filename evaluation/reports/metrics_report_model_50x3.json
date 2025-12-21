@@ -1,0 +1,3118 @@
+{
+  "evaluated_articles": 150,
+  "missing_in_predictions": 0,
+  "metrics": {
+    "person": {
+      "precision": 0.8451,
+      "recall": 0.9569,
+      "f1": 0.8975,
+      "tp": 311,
+      "fp": 57,
+      "fn": 14,
+      "support": 325
+    },
+    "overall": {
+      "precision": 0.6888,
+      "recall": 0.7909,
+      "f1": 0.7363,
+      "tp": 1180,
+      "fp": 533,
+      "fn": 312,
+      "support": 1492
+    },
+    "organization": {
+      "precision": 0.813,
+      "recall": 0.6504,
+      "f1": 0.7226,
+      "tp": 426,
+      "fp": 98,
+      "fn": 229,
+      "support": 655
+    },
+    "location": {
+      "precision": 0.5396,
+      "recall": 0.8652,
+      "f1": 0.6647,
+      "tp": 443,
+      "fp": 378,
+      "fn": 69,
+      "support": 512
+    }
+  },
+  "coverage": {
+    "overall": {
+      "aligned_articles": 150,
+      "missing_in_predictions": 0,
+      "articles_with_any_pred": 150,
+      "articles_with_any_gold": 150,
+      "pct_articles_with_any_pred": 1.0,
+      "pct_articles_with_any_gold": 1.0,
+      "avg_pred_entities_any": 11.42,
+      "avg_gold_entities_any": 9.9467,
+      "pct_articles_pred_empty_all_types": 0.0
+    },
+    "per_type": {
+      "persons": {
+        "articles_with_pred": 117,
+        "articles_with_gold": 118,
+        "pct_articles_with_pred": 0.78,
+        "pct_articles_with_gold": 0.7867,
+        "avg_pred_per_article": 2.4533,
+        "avg_gold_per_article": 2.1667
+      },
+      "organizations": {
+        "articles_with_pred": 143,
+        "articles_with_gold": 150,
+        "pct_articles_with_pred": 0.9533,
+        "pct_articles_with_gold": 1.0,
+        "avg_pred_per_article": 3.4933,
+        "avg_gold_per_article": 4.3667
+      },
+      "locations": {
+        "articles_with_pred": 145,
+        "articles_with_gold": 147,
+        "pct_articles_with_pred": 0.9667,
+        "pct_articles_with_gold": 0.98,
+        "avg_pred_per_article": 5.4733,
+        "avg_gold_per_article": 3.4133
+      }
+    }
+  },
+  "errors_sample": [
+    {
+      "article_id": "report.az::2596",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report",
+        "şuşa media forumu"
+      ]
+    },
+    {
+      "article_id": "report.az::2596",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "şuşa"
+      ]
+    },
+    {
+      "article_id": "report.az::1006",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::2845",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "ntv",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::2732",
+      "entity_type": "organizations",
+      "false_positives": [
+        "berqamo"
+      ],
+      "false_negatives": [
+        "leççe",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::2732",
+      "entity_type": "locations",
+      "false_positives": [
+        "leççenin"
+      ],
+      "false_negatives": [
+        "berqamo",
+        "monteneqro"
+      ]
+    },
+    {
+      "article_id": "report.az::2638",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::2638",
+      "entity_type": "locations",
+      "false_positives": [
+        "sındırqı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1463",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report",
+        "çempionlar turniri"
+      ]
+    },
+    {
+      "article_id": "report.az::1463",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2479",
+      "entity_type": "persons",
+      "false_positives": [
+        "van"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2479",
+      "entity_type": "organizations",
+      "false_positives": [
+        "yevlax"
+      ],
+      "false_negatives": [
+        "aue",
+        "karvan"
+      ]
+    },
+    {
+      "article_id": "report.az::2479",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "lüksenburq",
+        "münhenqladbax",
+        "yevlax"
+      ]
+    },
+    {
+      "article_id": "report.az::698",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "rusiya"
+      ]
+    },
+    {
+      "article_id": "report.az::3701",
+      "entity_type": "locations",
+      "false_positives": [
+        "qərb"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3818",
+      "entity_type": "persons",
+      "false_positives": [
+        "tramp"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3818",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "ağ ev",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::3818",
+      "entity_type": "locations",
+      "false_positives": [
+        "ağ ev"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::830",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::837",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "mülki müdafiə qüvvələri",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::837",
+      "entity_type": "locations",
+      "false_positives": [
+        "həllə"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1256",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "polis"
+      ]
+    },
+    {
+      "article_id": "report.az::1256",
+      "entity_type": "locations",
+      "false_positives": [
+        "qərb"
+      ],
+      "false_negatives": [
+        "ağstafa rayonu"
+      ]
+    },
+    {
+      "article_id": "report.az::3109",
+      "entity_type": "organizations",
+      "false_positives": [
+        "tehran atom enerjisi üzrə beynəlxalq agentliyi"
+      ],
+      "false_negatives": [
+        "ai3",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::3109",
+      "entity_type": "locations",
+      "false_positives": [
+        "avropa"
+      ],
+      "false_negatives": [
+        "tehran"
+      ]
+    },
+    {
+      "article_id": "report.az::2586",
+      "entity_type": "persons",
+      "false_positives": [
+        "coş şapiro"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2586",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::2586",
+      "entity_type": "locations",
+      "false_positives": [
+        "pensilvaniya",
+        "ştat"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::771",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "abşeron",
+        "azərbaycan basketbol liqası",
+        "lənkəran",
+        "neftçi",
+        "ntd",
+        "ordu",
+        "quba",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::771",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "abşeron",
+        "azərbaycan",
+        "gəncə",
+        "lənkəran",
+        "naxçıvan",
+        "quba",
+        "sumqayıt",
+        "şəki"
+      ]
+    },
+    {
+      "article_id": "report.az::3082",
+      "entity_type": "organizations",
+      "false_positives": [
+        "noaa",
+        "okean və atmosfer üzrə milli idarəsi"
+      ],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::3082",
+      "entity_type": "locations",
+      "false_positives": [
+        "kamçatkanın"
+      ],
+      "false_negatives": [
+        "abş"
+      ]
+    },
+    {
+      "article_id": "report.az::3933",
+      "entity_type": "persons",
+      "false_positives": [
+        "abbas əraqçi"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3933",
+      "entity_type": "organizations",
+      "false_positives": [
+        "iran xin"
+      ],
+      "false_negatives": [
+        "iran xarici işlər nazirliyi xin"
+      ]
+    },
+    {
+      "article_id": "report.az::3933",
+      "entity_type": "locations",
+      "false_positives": [
+        "iranın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3501",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report",
+        "u23 dünya çempionatı"
+      ]
+    },
+    {
+      "article_id": "report.az::3501",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "roma"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::919",
+      "entity_type": "persons",
+      "false_positives": [
+        "tramp"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::919",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "ağ ev",
+        "ngad nextgeneration air dominance",
+        "oval kabinet",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::919",
+      "entity_type": "locations",
+      "false_positives": [
+        "amerika",
+        "ağ evin",
+        "oval"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2434",
+      "entity_type": "persons",
+      "false_positives": [
+        "tramp"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2434",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::2434",
+      "entity_type": "locations",
+      "false_positives": [
+        "qəzza",
+        "şotlandi",
+        "şotlandiyada"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3240",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report",
+        "uefa çempionlar liqası"
+      ]
+    },
+    {
+      "article_id": "report.az::2800",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report",
+        "u20 dünya çempionatı"
+      ]
+    },
+    {
+      "article_id": "report.az::2800",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "roma"
+      ],
+      "false_negatives": [
+        "ermənistan"
+      ]
+    },
+    {
+      "article_id": "report.az::1861",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::1861",
+      "entity_type": "locations",
+      "false_positives": [
+        "qəzza zolağını"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::121",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report",
+        "türkiyə xarici işlər nazirliyi"
+      ]
+    },
+    {
+      "article_id": "report.az::121",
+      "entity_type": "locations",
+      "false_positives": [
+        "türkiyənin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::700",
+      "entity_type": "locations",
+      "false_positives": [
+        "avropanın",
+        "türkiyənin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1278",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "misli premyer liqası",
+        "neftçi",
+        "report",
+        "sumqayıt",
+        "səbail"
+      ]
+    },
+    {
+      "article_id": "report.az::1278",
+      "entity_type": "locations",
+      "false_positives": [
+        "gənclik şəhəri"
+      ],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "report.az::543",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "uqanda silahlı qüvvələri"
+      ]
+    },
+    {
+      "article_id": "report.az::543",
+      "entity_type": "locations",
+      "false_positives": [
+        "konqo demokratik respublikasının",
+        "uqandada"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::956",
+      "entity_type": "persons",
+      "false_positives": [
+        "volodimir zelenski"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::956",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::956",
+      "entity_type": "locations",
+      "false_positives": [
+        "səudiyyə ərəbistanı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::4036",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "bbc"
+      ]
+    },
+    {
+      "article_id": "report.az::4036",
+      "entity_type": "locations",
+      "false_positives": [
+        "gürcüstan"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2004",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report",
+        "sənaye və təhlükəsizlik bürosu"
+      ]
+    },
+    {
+      "article_id": "report.az::3216",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "bmt",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::1216",
+      "entity_type": "persons",
+      "false_positives": [
+        "rutte",
+        "rutten",
+        "volodimir zelenski"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1216",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "rbkukrayna"
+      ]
+    },
+    {
+      "article_id": "report.az::1216",
+      "entity_type": "locations",
+      "false_positives": [
+        "ukraynaya"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2955",
+      "entity_type": "locations",
+      "false_positives": [
+        "qərb"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2808",
+      "entity_type": "persons",
+      "false_positives": [
+        "axiosun"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2808",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "axios",
+        "bmt təhlükəsizlik şurası",
+        "report",
+        "snapback"
+      ]
+    },
+    {
+      "article_id": "report.az::2808",
+      "entity_type": "locations",
+      "false_positives": [
+        "avropa",
+        "axiosun",
+        "iranın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2336",
+      "entity_type": "persons",
+      "false_positives": [],
+      "false_negatives": [
+        "ae",
+        "mj"
+      ]
+    },
+    {
+      "article_id": "report.az::2336",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "cinayət məcəlləsi",
+        "hüquqmühafizə orqanları"
+      ]
+    },
+    {
+      "article_id": "report.az::2336",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "acarıstan",
+        "gürcüstan"
+      ]
+    },
+    {
+      "article_id": "report.az::719",
+      "entity_type": "persons",
+      "false_positives": [
+        "rəcəb tayyib ərdoğan"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::719",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::719",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "türkiyədə",
+        "türkiyənin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3699",
+      "entity_type": "persons",
+      "false_positives": [
+        "fitso",
+        "fridrix merts"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3699",
+      "entity_type": "locations",
+      "false_positives": [
+        "slovakiyanın",
+        "slovakiyay"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1514",
+      "entity_type": "persons",
+      "false_positives": [
+        "emmanuel makron"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1514",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::1514",
+      "entity_type": "locations",
+      "false_positives": [
+        "ukraynaya"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1677",
+      "entity_type": "persons",
+      "false_positives": [
+        "volodimir zelenski"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1677",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::1677",
+      "entity_type": "locations",
+      "false_positives": [
+        "rusiya"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3036",
+      "entity_type": "persons",
+      "false_positives": [
+        "fidan"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3036",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::3036",
+      "entity_type": "locations",
+      "false_positives": [
+        "fələsti",
+        "fələstin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1838",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan milli komandası",
+        "azərbaycanın u17 milli",
+        "mətbuat xidmət"
+      ],
+      "false_negatives": [
+        "avropa çempionatı",
+        "azərbaycan u17 millisi",
+        "report",
+        "uefa inkişaf turniri"
+      ]
+    },
+    {
+      "article_id": "report.az::1838",
+      "entity_type": "locations",
+      "false_positives": [
+        "avropa",
+        "qəbələ şəhər stadionu"
+      ],
+      "false_negatives": [
+        "gürcüstan"
+      ]
+    },
+    {
+      "article_id": "report.az::1783",
+      "entity_type": "locations",
+      "false_positives": [
+        "rusiya",
+        "rusiyanın",
+        "ukraynaya"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::149",
+      "entity_type": "persons",
+      "false_positives": [
+        "bzişvili",
+        "giorgi kirtadze",
+        "irakli dqebuadze",
+        "xoştariya"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::149",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "babilo",
+        "gürcüstan polisi",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::149",
+      "entity_type": "locations",
+      "false_positives": [
+        "acarıstan",
+        "babilo restoran",
+        "batumi şəhərində",
+        "gürcüstan",
+        "tbilisidə",
+        "tbilisinin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1453",
+      "entity_type": "persons",
+      "false_positives": [
+        "mmyatlikovun"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::1453",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "belagro",
+        "belarus ticarətsənaye palatası",
+        "caspian agro",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::347",
+      "entity_type": "persons",
+      "false_positives": [
+        "rmobili"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::347",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "eçmiədzin",
+        "matenadaran",
+        "qərbi azərbaycan xronikası"
+      ]
+    },
+    {
+      "article_id": "report.az::347",
+      "entity_type": "locations",
+      "false_positives": [
+        "alban",
+        "alban kilsəsinin",
+        "alban kilsəsinə",
+        "eçmiədzin",
+        "matenadaranda"
+      ],
+      "false_negatives": [
+        "qərbi azərbaycan"
+      ]
+    },
+    {
+      "article_id": "report.az::431",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "türkiyə hakimiyyəti"
+      ]
+    },
+    {
+      "article_id": "report.az::431",
+      "entity_type": "locations",
+      "false_positives": [
+        "qaziantepin",
+        "türkiyədə",
+        "türkiyəyə"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::4031",
+      "entity_type": "persons",
+      "false_positives": [
+        "qosmanov",
+        "qüdsi osmanov"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::4031",
+      "entity_type": "organizations",
+      "false_positives": [
+        "qocalar evin",
+        "rumıniya xilaskarlar birliyi partiyasının usr"
+      ],
+      "false_negatives": [
+        "avropa dəyərləri mükafatı",
+        "azərbaycanın rumıniyadakı səfirliyi",
+        "inokentsiu klein",
+        "müqəddəs üç hiyerarx kilsəsi",
+        "rumıniya xilaskarlar birliyi partiyası usr",
+        "timişoara şəhər sammiti"
+      ]
+    },
+    {
+      "article_id": "report.az::4031",
+      "entity_type": "locations",
+      "false_positives": [
+        "avropa",
+        "avropanın",
+        "azərbaycan",
+        "azərbaycanın",
+        "inokentsiu klein qocalar evini",
+        "müqəddəs üç hiyerarx kilsəsini",
+        "rumıniyada",
+        "rumıniyanın",
+        "timişoaranın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::3674",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan milli məclisin",
+        "azərbaycanın milli məclisin",
+        "barədə"
+      ],
+      "false_negatives": [
+        "azərbaycantürkiyəpakistan üçtərəfli zirvəsi",
+        "bmtnin iqlim dəyişmələri üzrə çərçivə konvensiyası",
+        "cop29",
+        "cop30"
+      ]
+    },
+    {
+      "article_id": "report.az::3674",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "ermənistan",
+        "iranın",
+        "pakistan",
+        "rusiyanın",
+        "suriya ərəb respublikasının",
+        "türkiyə respublikasının",
+        "türkiyənin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2062",
+      "entity_type": "persons",
+      "false_positives": [
+        "batmanxəlic"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "report.az::2062",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "alpha omega water",
+        "alpha omeqa water",
+        "nine senses",
+        "report"
+      ]
+    },
+    {
+      "article_id": "report.az::2062",
+      "entity_type": "locations",
+      "false_positives": [
+        "nine senses"
+      ],
+      "false_negatives": [
+        "almaniya",
+        "iran"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::631",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::51",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "konqres mərkəzi",
+        "mərkəzi asiyaazərbaycan formatı"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::51",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "konqres mərkəzi"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::646",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::188",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "düşənbə beynəlxalq aeroportu"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::188",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan respublikasının",
+        "düşənbə beynəlxalq aeroportunda"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::97",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::1047",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan pavilyonu",
+        "bmtnin iqlim dəyişmələri üzrə çərçivə konvensiyası",
+        "cop29",
+        "dünya liderlərinin iqlim fəaliyyəti sammiti"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::1047",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycanın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::72",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərtac"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::72",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "türkiyə respublikasının",
+        "türkiyənin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::482",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "çinə"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::770",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "belarus respublikası"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::770",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "belarus"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::78",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "pakistan",
+        "türkiyə respublikasının",
+        "türkiyənin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::561",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "heydər əliyev sarayı",
+        "muğam aləmi vii beynəlxalq musiqi festivalı"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::561",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "heydər əliyev sarayı"
+      ],
+      "false_negatives": [
+        "bakı"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::1006",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan respublikası prezidentinin xüsusi nümayəndəliyinin"
+      ],
+      "false_negatives": [
+        "cəbrayıl qubadlı və zəngilan rayonlarında azərbaycan respublikası prezidentinin xüsusi nümayəndəliyi"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::1006",
+      "entity_type": "locations",
+      "false_positives": [
+        "cəbrayıl",
+        "cəbrayıl şəhər"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::713",
+      "entity_type": "organizations",
+      "false_positives": [
+        "bərpa tikinti və idarəetmə xidmətinin"
+      ],
+      "false_negatives": [
+        "xankəndi şəhərində xocalı və ağdərə rayonlarında bərpa tikinti və idarəetmə xidməti"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::713",
+      "entity_type": "locations",
+      "false_positives": [
+        "ballıca kənd",
+        "xocalı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::31",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "citrus valley",
+        "təsərrüfatı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::420",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "əməkdaşlıq haqqında memorandum"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::420",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikası",
+        "azərbaycan respublikasının"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::826",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "barselona futbol klubu",
+        "cop29"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::826",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan respublikasının",
+        "azərbaycana",
+        "ölkəmizdə"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::590",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan prezidentinin",
+        "azərbaycan respublikasının"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::5",
+      "entity_type": "organizations",
+      "false_positives": [
+        "siyasi partiyalar və qanunvericilik hakimiyyəti ilə əlaqələr şöbəsinin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::137",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "avropa"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::10",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "1954cü il haaqa konvensiyası"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::10",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan respublikası",
+        "azərbaycanın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::923",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "birləşmiş ərəb əmirlikləri",
+        "zayed dayanıqlılıq mükafatı",
+        "əbudabi dayanıqlılıq həftəsi"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::923",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::492",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycanın",
+        "qədim qəbələ şəhəri",
+        "sil"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::59",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "azərbaycana"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::197",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "qəbələdə"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::761",
+      "entity_type": "persons",
+      "false_positives": [
+        "d dinger"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::761",
+      "entity_type": "organizations",
+      "false_positives": [
+        "almaniya prezidenti administrasiyasının"
+      ],
+      "false_negatives": [
+        "almaniya federativ respublikası",
+        "almaniya federativ respublikasının prezidenti administrasiyası",
+        "federal prezident"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::761",
+      "entity_type": "locations",
+      "false_positives": [
+        "almaniya",
+        "azərbaycanda",
+        "azərbaycanın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::517",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan respublikası prezidentinin",
+        "biznes mərkəzində"
+      ],
+      "false_negatives": [
+        "xankəndi mehmanxana kompleksi"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::517",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "azərbaycanın",
+        "mərkə",
+        "rkə",
+        "xankəndi",
+        "xankəndi mehmanxana kompleksinə",
+        "xankəndinin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::927",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "bmtnin iqlim dəyişmələri üzrə çərçivə konvensiyası",
+        "cop29",
+        "vatikan"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::927",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakının",
+        "müqəddəs taxttac",
+        "roma",
+        "taxttacı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::640",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::362",
+      "entity_type": "persons",
+      "false_positives": [],
+      "false_negatives": [
+        "kənan novruzov",
+        "yusif cəfərbəyli"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::362",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "ix muğam televiziya müsabiqəsi"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::362",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "qarabağ"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::1072",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycana"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::274",
+      "entity_type": "organizations",
+      "false_positives": [
+        "avropa ittifaqı şurasının"
+      ],
+      "false_negatives": [
+        "anama",
+        "avropa komissiyası",
+        "orta dəhliz"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::274",
+      "entity_type": "locations",
+      "false_positives": [
+        "avropanın",
+        "azərbaycan respublikasının",
+        "azərbaycana",
+        "azərbaycanın",
+        "ittifaqı",
+        "orta dəhliz"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::423",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan respublikasının nazirlər kabinet"
+      ],
+      "false_negatives": [
+        "bmt",
+        "iii xəzər iqtisadi forumu",
+        "nazirlər kabineti"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::423",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "dənizə",
+        "xəzər dənizinin"
+      ],
+      "false_negatives": [
+        "avaza",
+        "aşqabad"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::24",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "müqəddəs taxttac"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::24",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan respublikası",
+        "azərbaycan respublikasının",
+        "azərbaycanın",
+        "dəs taxttac",
+        "müqəddəs taxttac",
+        "müqəddəs taxttaca",
+        "müqəddəs taxttacı",
+        "qəddəs taxttac"
+      ],
+      "false_negatives": [
+        "ermənistan",
+        "vaşinqton"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::994",
+      "entity_type": "persons",
+      "false_positives": [
+        "hüseynəli xa"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::994",
+      "entity_type": "organizations",
+      "false_positives": [
+        "abakıxanov adına tarix və etnologiya institutunun",
+        "azadlıq mərkəzinin",
+        "qazaxıstanın mədəniyyət və turizm nazirliyi",
+        "türkiyəazərbaycan parlamentlərarası dostluq qrupunun",
+        "tətbiqi etnosiyasi tədqiqatlar institutunun"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::994",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "irəvan",
+        "türkiyədə",
+        "türkiyənin"
+      ],
+      "false_negatives": [
+        "london",
+        "qazaxıstan"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::117",
+      "entity_type": "organizations",
+      "false_positives": [
+        "ağalı kənd tam orta məktəbin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::117",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "ağalı kənd",
+        "məmmədbəyli kənd"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::311",
+      "entity_type": "persons",
+      "false_positives": [
+        "heydər əliyevin"
+      ],
+      "false_negatives": [
+        "ilham əliyev"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::311",
+      "entity_type": "organizations",
+      "false_positives": [
+        "dövlət agentliyinin",
+        "ictimaiyyətlə əlaqələr şöbəsi"
+      ],
+      "false_negatives": [
+        "asan xidmət",
+        "azərbaycan respublikası hökuməti",
+        "pakistan hökuməti"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::311",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "pakistan"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::840",
+      "entity_type": "persons",
+      "false_positives": [],
+      "false_negatives": [
+        "mehriban əliyeva",
+        "papa fransisk"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::840",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "beynəlxalq qırmızı xaç cəmiyyəti",
+        "bmtnin uşaq fondu"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::840",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::1058",
+      "entity_type": "persons",
+      "false_positives": [
+        "fransiskin",
+        "qucerotti"
+      ],
+      "false_negatives": [
+        "papa fransisk"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::1058",
+      "entity_type": "organizations",
+      "false_positives": [
+        "bmtnin",
+        "üzrə"
+      ],
+      "false_negatives": [
+        "cop29",
+        "dini liderlərin qlobal sammiti",
+        "dünya dinləri yaşıl planet naminə",
+        "müqəddəs pavel bazilikası",
+        "vatikan"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::1058",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikası",
+        "azərbaycana",
+        "azərbaycanın",
+        "kitabxana",
+        "müqəddəs pavel bazilikasında",
+        "roma",
+        "vatikan",
+        "şərq"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::438",
+      "entity_type": "persons",
+      "false_positives": [
+        "ühacıbə"
+      ],
+      "false_negatives": [
+        "aytac şıxəlizadə",
+        "fikrət əmirov"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::438",
+      "entity_type": "organizations",
+      "false_positives": [
+        "detaşesabah violinoçular ansambl",
+        "fikrət əmirov adına əməkdar kollektiv azərbaycan dövlət mahnı və rəqs ansamblının xor qrupunun",
+        "xalq artisti"
+      ],
+      "false_negatives": [
+        "fikrət əmirov adına azərbaycan dövlət mahnı və rəqs ansamblı",
+        "xiv qəbələ beynəlxalq musiqi festivalı",
+        "ühacıbəyli adına azərbaycan dövlət simfonik orkestri"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::438",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "qəbələyə",
+        "çanaqqala"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::507",
+      "entity_type": "organizations",
+      "false_positives": [
+        "islam əməkdaşlıq təşkilatı"
+      ],
+      "false_negatives": [
+        "iran islam respublikası"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::507",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "azərbaycana",
+        "azərbaycanda",
+        "azərbaycanın",
+        "iran",
+        "irana",
+        "iranın",
+        "israil",
+        "xankəndi şəhərində"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::12",
+      "entity_type": "persons",
+      "false_positives": [
+        "allah"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::12",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan respublikası prezidentinin xüsusi nümayəndəliyinin",
+        "azərbaycanın müzəffər ordusu",
+        "horovlu kənd tam orta ümumtəhsil məktəbin"
+      ],
+      "false_negatives": [
+        "cəbrayıl qubadlı və zəngilan rayonlarında azərbaycan respublikası prezidentinin xüsusi nümayəndəliyi"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::12",
+      "entity_type": "locations",
+      "false_positives": [
+        "cəbrayıl",
+        "horovlu kəndində",
+        "horovluya"
+      ],
+      "false_negatives": [
+        "şərqi zəngəzur"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::245",
+      "entity_type": "persons",
+      "false_positives": [
+        "sarı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::245",
+      "entity_type": "organizations",
+      "false_positives": [
+        "birləşmiş millətlər təşkilatı"
+      ],
+      "false_negatives": [
+        "bmt",
+        "bmtnin qaçqınlar üzrə ali komissarlığı",
+        "böyük qayıdış proqramı",
+        "cop29"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::245",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan respublikasının",
+        "azərbaycana",
+        "azərbaycanın"
+      ],
+      "false_negatives": [
+        "bmtnin mənzilqərargahı"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::414",
+      "entity_type": "organizations",
+      "false_positives": [
+        "avropada təhlükəsizlik və əməkdaşlıq təşkilatı"
+      ],
+      "false_negatives": [
+        "almatı bəyannaməsi",
+        "atət",
+        "bmt nizamnaməsi",
+        "tripp"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::414",
+      "entity_type": "locations",
+      "false_positives": [
+        "amerika birləşmiş ştatlarının",
+        "azərbaycan respublikası",
+        "ermənistan respublikası"
+      ],
+      "false_negatives": [
+        "abş"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::129",
+      "entity_type": "persons",
+      "false_positives": [
+        "f şəfiyev",
+        "rövşən sadıqbəyli"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::129",
+      "entity_type": "organizations",
+      "false_positives": [
+        "avropa və təhlükəsizlik siyasəti üzrə avstriya institutunun",
+        "bmtm",
+        "heyətinin",
+        "hərəkata",
+        "ludviq boltsmann institutunun",
+        "müstəqil dövlətlər birliyi",
+        "parlament şəbəkəsinin",
+        "strateji analizlər üzrə mərkəzin"
+      ],
+      "false_negatives": [
+        "azərbaycanın avstriyadakı səfirliyi",
+        "mdb"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::129",
+      "entity_type": "locations",
+      "false_positives": [
+        "avstriyanın",
+        "azərbaycanın",
+        "mdb",
+        "türkiyə"
+      ],
+      "false_negatives": [
+        "vyana"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::926",
+      "entity_type": "persons",
+      "false_positives": [
+        "fqayıbov",
+        "nərmin şərifova",
+        "qaşım maqomedov"
+      ],
+      "false_negatives": [
+        "islam atakişiyev",
+        "nadejda cavad",
+        "zaur mustafayev"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::926",
+      "entity_type": "organizations",
+      "false_positives": [
+        "beynəlxalq avarçəkmə reqatası füzuli və mingəçevir",
+        "heydər əliyev fondunun",
+        "masallı rayon uşaq və gənclər məktəbi",
+        "roeqiug velosiped məktəbi",
+        "ulduz futbol akademiyası"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::926",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan respublikası"
+      ],
+      "false_negatives": [
+        "bakı",
+        "füzuli",
+        "mingəçevir"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::1054",
+      "entity_type": "persons",
+      "false_positives": [
+        "sadır nurqojoyeviç",
+        "sjaparov"
+      ],
+      "false_negatives": [
+        "sadır japarov"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::1054",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan türk dövlətləri təşkilatı",
+        "prezident administrasiya"
+      ],
+      "false_negatives": [
+        "bmtnin iqlim dəyişikliyi üzrə çərçivə konvensiyası",
+        "cop29",
+        "naxçıvan sazişi",
+        "orta dəhliz",
+        "qarabağ bəyannaməsi",
+        "türk dövlətləri təşkilatının katibliyi"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::1054",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan respublikasının",
+        "azərbaycanın",
+        "ermənistan",
+        "mərkəzi asiya",
+        "orta dəhlizin",
+        "qazaxıstan respublikasının",
+        "qazaxıstanı",
+        "qırğız respublikası",
+        "qırğız respublikasının",
+        "qırğızısta",
+        "türkiyəni",
+        "şərqq"
+      ],
+      "false_negatives": [
+        "naxçıvan"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::620",
+      "entity_type": "organizations",
+      "false_positives": [
+        "işçi qrupunun"
+      ],
+      "false_negatives": [
+        "bakı prosesi",
+        "bmt",
+        "naxçıvan sazişi",
+        "türk dünyası xartiyası"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::620",
+      "entity_type": "locations",
+      "false_positives": [
+        "asiyanın",
+        "avropa",
+        "azərbaycan respublikasının",
+        "kipr",
+        "macarısta",
+        "macarıstanın",
+        "qırğız respublikasının",
+        "türkiyənin",
+        "türkmənistan",
+        "şimali kipr türk cümhuriyyəti"
+      ],
+      "false_negatives": [
+        "qırğızıstan"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::50",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "konqres mərkəzi",
+        "mərkəzi asiya dövlət başçılarının məşvərət görüşü"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::50",
+      "entity_type": "locations",
+      "false_positives": [
+        "asiya",
+        "avropanın",
+        "azərbaycanın",
+        "konqres mərkəzi",
+        "mərkəzi asiyanın",
+        "qazaxıstan respublikasının",
+        "qırğız respublikasının",
+        "tacikistan respublikasının",
+        "türkmənistan",
+        "zbə",
+        "özbəkistan"
+      ],
+      "false_negatives": [
+        "çin"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::330",
+      "entity_type": "persons",
+      "false_positives": [
+        "erik qazaryan",
+        "melikset paşayan"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::330",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan ordusu",
+        "paşalı rayonu hərbi komissar"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "azerbaijan.az::330",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycana",
+        "azərbaycanın",
+        "dərələyəz maha",
+        "ermənistan respublikası",
+        "ermənistan respublikasının",
+        "ermənistanın",
+        "vayk rayon",
+        "xankəndi şəhərində"
+      ],
+      "false_negatives": [
+        "bakı"
+      ]
+    },
+    {
+      "article_id": "azerbaijan.az::933",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "azərbaycana",
+        "azərbaycanın",
+        "qarabağın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::8581",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "bakı"
+      ]
+    },
+    {
+      "article_id": "trend.az::8663",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::8412",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::3148",
+      "entity_type": "persons",
+      "false_positives": [
+        "faesi"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::3148",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "türkiyə super liqası"
+      ]
+    },
+    {
+      "article_id": "trend.az::3148",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": [
+        "belçika",
+        "türkiyə"
+      ]
+    },
+    {
+      "article_id": "trend.az::7305",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı",
+        "yer kürəsində"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::4357",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "cop29",
+        "cop30"
+      ]
+    },
+    {
+      "article_id": "trend.az::4357",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": [
+        "braziliya"
+      ]
+    },
+    {
+      "article_id": "trend.az::7405",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "liqa 1",
+        "renn"
+      ]
+    },
+    {
+      "article_id": "trend.az::7405",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::5886",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "dç2026"
+      ]
+    },
+    {
+      "article_id": "trend.az::5886",
+      "entity_type": "locations",
+      "false_positives": [
+        "argentina",
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::3660",
+      "entity_type": "persons",
+      "false_positives": [
+        "avar",
+        "əağayev"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::3660",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "avar",
+        "dç2026",
+        "var"
+      ]
+    },
+    {
+      "article_id": "trend.az::3660",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": [
+        "farer adaları",
+        "portuqaliya"
+      ]
+    },
+    {
+      "article_id": "trend.az::4823",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "abş",
+        "belçikanın federal parlamenti",
+        "f35"
+      ]
+    },
+    {
+      "article_id": "trend.az::4823",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı",
+        "belçika"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::805",
+      "entity_type": "persons",
+      "false_positives": [
+        "vlahoviç"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::805",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "a seriyası"
+      ]
+    },
+    {
+      "article_id": "trend.az::805",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::6825",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan",
+        "bakı"
+      ]
+    },
+    {
+      "article_id": "trend.az::3544",
+      "entity_type": "organizations",
+      "false_positives": [
+        "ərazitəşkilat məsələləri şöbəsinin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::3544",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "nəsimi"
+      ]
+    },
+    {
+      "article_id": "trend.az::5716",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "bakı apellyasiya məhkəməsi",
+        "cinayət məcəlləsi"
+      ]
+    },
+    {
+      "article_id": "trend.az::5716",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "trend.az::2025",
+      "entity_type": "organizations",
+      "false_positives": [
+        "ayntraxtı frankfurt"
+      ],
+      "false_negatives": [
+        "liverpul",
+        "çempionlar liqası"
+      ]
+    },
+    {
+      "article_id": "trend.az::2025",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı",
+        "liverpulla"
+      ],
+      "false_negatives": [
+        "frankfurt"
+      ]
+    },
+    {
+      "article_id": "trend.az::2943",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "27c milli magistral yol"
+      ]
+    },
+    {
+      "article_id": "trend.az::2943",
+      "entity_type": "locations",
+      "false_positives": [
+        "27c milli magistral yolun",
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::510",
+      "entity_type": "organizations",
+      "false_positives": [
+        "brunssum birgə qüvvələr komandanlığının",
+        "trend",
+        "təlim"
+      ],
+      "false_negatives": [
+        "nato",
+        "nato ilə fərdi tərəfdaşlıq üzrə əməkdaşlıq proqramı"
+      ]
+    },
+    {
+      "article_id": "trend.az::510",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "bakı",
+        "brunssum"
+      ]
+    },
+    {
+      "article_id": "trend.az::7990",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::2643",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::5773",
+      "entity_type": "organizations",
+      "false_positives": [
+        "trend",
+        "xətai"
+      ],
+      "false_negatives": [
+        "dədə qorqud qəbiristanlığı",
+        "sabunçu rayon icra hakimiyyəti",
+        "suraxanı rayon icra hakimiyyəti",
+        "şəhidlər xiyabanı"
+      ]
+    },
+    {
+      "article_id": "trend.az::5773",
+      "entity_type": "locations",
+      "false_positives": [
+        "dədə qorqud qəbiristanlığında",
+        "sabunçu",
+        "suraxanı rayonu",
+        "şəhidlər xiyabanında"
+      ],
+      "false_negatives": [
+        "bakı"
+      ]
+    },
+    {
+      "article_id": "trend.az::5073",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "bakı",
+        "ukraynanın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::2115",
+      "entity_type": "persons",
+      "false_positives": [
+        "vopke hoekstra"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::2115",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "cop30"
+      ]
+    },
+    {
+      "article_id": "trend.az::2115",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::6994",
+      "entity_type": "organizations",
+      "false_positives": [
+        "rəqəmsal inkişaf və nəqliyyat nazirliyində"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::6994",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı",
+        "iranın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::7761",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::6693",
+      "entity_type": "organizations",
+      "false_positives": [
+        "ardnf",
+        "dövlət neft fondunun",
+        "fonda"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::6693",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "trend.az::1090",
+      "entity_type": "persons",
+      "false_positives": [
+        "rxalıqov"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1090",
+      "entity_type": "organizations",
+      "false_positives": [
+        "bakı",
+        "iria"
+      ],
+      "false_negatives": [
+        "ikt karyera sərgisi 2025"
+      ]
+    },
+    {
+      "article_id": "trend.az::3025",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "mərkəzi banklar"
+      ]
+    },
+    {
+      "article_id": "trend.az::3025",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1072",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::474",
+      "entity_type": "organizations",
+      "false_positives": [
+        "bakı şəhəri lokal gəlirlər baş idarəsinin",
+        "beynəlxalq vergitutma və vergi monitorinqi baş idarə",
+        "iəit",
+        "milli gəlirlər baş idarəsinin",
+        "tədris mərkəzinin"
+      ],
+      "false_negatives": [
+        "beps"
+      ]
+    },
+    {
+      "article_id": "trend.az::474",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "trend.az::7479",
+      "entity_type": "organizations",
+      "false_positives": [
+        "iqtisadiyyat nazirliyi",
+        "türk dövlətləri təşkilatına"
+      ],
+      "false_negatives": [
+        "türk dövlətləri təşkilatı tdt"
+      ]
+    },
+    {
+      "article_id": "trend.az::3079",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1535",
+      "entity_type": "persons",
+      "false_positives": [
+        "o belozyorov"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1535",
+      "entity_type": "organizations",
+      "false_positives": [
+        "avropa ittifaqı",
+        "mdbnin dəmir yolu nəqliyyatı şurasının",
+        "şuranın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1535",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": [
+        "avropa ittifaqı"
+      ]
+    },
+    {
+      "article_id": "trend.az::2889",
+      "entity_type": "persons",
+      "false_positives": [
+        "anaklaudiya marineyro senteno rosbah"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::2889",
+      "entity_type": "organizations",
+      "false_positives": [
+        "birləşmiş millətlər təşkilatının məskunlaşma proqramı"
+      ],
+      "false_negatives": [
+        "bmt",
+        "ümumdünya şəhərsalma forumu wuf13"
+      ]
+    },
+    {
+      "article_id": "trend.az::2889",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::829",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan mikromaliyyə assosiasiyanın"
+      ],
+      "false_negatives": [
+        "azərbaycan mikromaliyyə assosiasiyası",
+        "bank olmayan kredit təşkilatları bokt"
+      ]
+    },
+    {
+      "article_id": "trend.az::829",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::7323",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "iran"
+      ]
+    },
+    {
+      "article_id": "trend.az::7323",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı",
+        "ermənistanın",
+        "iran",
+        "rusiyanın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::5823",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "bmt",
+        "wtdc25"
+      ]
+    },
+    {
+      "article_id": "trend.az::5823",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1606",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan parkı"
+      ]
+    },
+    {
+      "article_id": "trend.az::1606",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan",
+        "azərbaycan park",
+        "azərbaycanın",
+        "bakı",
+        "odessa",
+        "odessa şəhər",
+        "odessa şəhərində",
+        "odessa şəhərinin"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1655",
+      "entity_type": "persons",
+      "false_positives": [
+        "ahüseynov",
+        "əfqan hüseynov"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1655",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "azəriçıraqgünəşli açg",
+        "bp",
+        "spe xəzər texniki konfransı"
+      ]
+    },
+    {
+      "article_id": "trend.az::1655",
+      "entity_type": "locations",
+      "false_positives": [
+        "azəriçıraqgünəşli açg",
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::5902",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "bp",
+        "socar uniper mmc"
+      ]
+    },
+    {
+      "article_id": "trend.az::5902",
+      "entity_type": "locations",
+      "false_positives": [],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "trend.az::2276",
+      "entity_type": "organizations",
+      "false_positives": [
+        "etihi respublika komitəsinin",
+        "komitə"
+      ],
+      "false_negatives": [
+        "heydər əliyev mərkəzi"
+      ]
+    },
+    {
+      "article_id": "trend.az::2276",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı",
+        "heydər əliyev mərkəzində",
+        "şəki şəhər"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::8176",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "şimalcənub beynəlxalq nəqliyyat dəhlizi"
+      ]
+    },
+    {
+      "article_id": "trend.az::8176",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikası",
+        "azərbaycan respublikasının",
+        "ağbəndkəlalə avtomobil yolları körpü",
+        "bakı",
+        "cənub yük terminalının",
+        "iran",
+        "şimal"
+      ],
+      "false_negatives": [
+        "ağbəndkəlalə körpüsü",
+        "rusiya"
+      ]
+    },
+    {
+      "article_id": "trend.az::5298",
+      "entity_type": "organizations",
+      "false_positives": [
+        "yaradıcılıq mərkəzində"
+      ],
+      "false_negatives": [
+        "art weekend",
+        "bakıya uçuş incəsənət həftəsonu gələcəyimizi indi duy",
+        "zeytun festivalı"
+      ]
+    },
+    {
+      "article_id": "trend.az::5298",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanın",
+        "ibrahimbəyov"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::7457",
+      "entity_type": "persons",
+      "false_positives": [
+        "cihad azur"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::7457",
+      "entity_type": "organizations",
+      "false_positives": [
+        "beynəlxalq valyuta fondunun",
+        "şərq və mərkəzi asiya departament"
+      ],
+      "false_negatives": [
+        "beynəlxalq valyuta fondu bvf"
+      ]
+    },
+    {
+      "article_id": "trend.az::7457",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı",
+        "qafqaz",
+        "yaxın"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::1142",
+      "entity_type": "locations",
+      "false_positives": [
+        "abşeronxızı",
+        "ağcabədi rayonu",
+        "ağdam rayonu",
+        "ağdərə rayonu",
+        "bakı",
+        "bərdə rayonu",
+        "cəbrayıl rayonu",
+        "dağlıq şirvan",
+        "füzuli rayonu",
+        "gəncədaşkəsən",
+        "kəlbəcər rayonu",
+        "laçın rayonunun",
+        "lənkəranastara",
+        "milmuğan",
+        "mərkəzi aran",
+        "qarabağ iqtisadi",
+        "qarabağ iqtisadi rayonu",
+        "qazaxtovuz",
+        "qubadlı rayonu",
+        "qubaxaçmaz",
+        "tərtər rayonu",
+        "xankəndi şəhəri",
+        "xocalı rayonu",
+        "xocavənd rayonu",
+        "zəngilan rayonu",
+        "şirvansalyan",
+        "şuşa rayonu",
+        "şəkizaqatala",
+        "şərqi zəngəzur",
+        "şərqi zəngəzur iqtisadi rayonu",
+        "şərqi zəngəzurda"
+      ],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "trend.az::8902",
+      "entity_type": "organizations",
+      "false_positives": [
+        "aparat",
+        "enerji məsələlərini tənzimləmə agentliyi idarə heyətinin"
+      ],
+      "false_negatives": [
+        "azərbaycan respublikasının cinayət məcəlləsi",
+        "azərbaycan respublikasının dövlət gömrük komitəsi",
+        "azərbaycan respublikasının inzibati xətalar məcəlləsi",
+        "prezidenti yanında antiinhisar və istehlak bazarına nəzarət dövlət agentliyi"
+      ]
+    },
+    {
+      "article_id": "trend.az::8902",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "trend.az::5966",
+      "entity_type": "persons",
+      "false_positives": [
+        "ovəlixanlı",
+        "rəliquliyev"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::5966",
+      "entity_type": "organizations",
+      "false_positives": [
+        "rend"
+      ],
+      "false_negatives": [
+        "azərbaycan respublikasının 20252028ci illər üçün süni intellekt strategiyası",
+        "azərbaycan respublikasının informasiya təhlükəsizliyi və kibertəhlükəsizliyə dair 20232027ci illər üçün strategiyası",
+        "elm və təhsil nazirliyi"
+      ]
+    },
+    {
+      "article_id": "trend.az::5966",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::5981",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycan viza müraciətləri mərkəzi",
+        "azərbaycanən iraq",
+        "səfirliyi"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::5981",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycana",
+        "azərbaycanın",
+        "bakı",
+        "iraq",
+        "iraq respublikası"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::649",
+      "entity_type": "organizations",
+      "false_positives": [
+        "azərbaycanın",
+        "dövlət komitəsi",
+        "türk dövlətləri təşkilatına"
+      ],
+      "false_negatives": [
+        "diaspor üzrə birgə fəaliyyət planı",
+        "naxçıvan sazişi",
+        "türk dövlətləri təşkilatı tdt"
+      ]
+    },
+    {
+      "article_id": "trend.az::649",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycanı",
+        "azərbaycanın",
+        "bakı",
+        "macarısta"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::7208",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "elmitədqiqat travmatologiya və ortopediya institutu"
+      ]
+    },
+    {
+      "article_id": "trend.az::7208",
+      "entity_type": "locations",
+      "false_positives": [
+        "bakı"
+      ],
+      "false_negatives": [
+        "azərbaycan"
+      ]
+    },
+    {
+      "article_id": "trend.az::6040",
+      "entity_type": "persons",
+      "false_positives": [
+        "prezident"
+      ],
+      "false_negatives": []
+    },
+    {
+      "article_id": "trend.az::6040",
+      "entity_type": "organizations",
+      "false_positives": [],
+      "false_negatives": [
+        "dəmir yumruq"
+      ]
+    },
+    {
+      "article_id": "trend.az::6040",
+      "entity_type": "locations",
+      "false_positives": [
+        "azərbaycan respublikasının",
+        "bakı",
+        "dağlıq qarabağ",
+        "rusiyanın"
+      ],
+      "false_negatives": []
+    }
+  ]
+}

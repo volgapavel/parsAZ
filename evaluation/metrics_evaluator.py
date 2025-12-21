@@ -144,10 +144,20 @@ def load_gold(path: Path) -> List[Dict[str, Any]]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def make_key(source: str, article_id: str) -> str:
+    """Составной ключ (source, article_id) для уникальности — разные источники могут иметь одинаковые ID."""
+    source = (source or "").strip()
+    article_id = (article_id or "").strip()
+    if source:
+        return f"{source}::{article_id}"
+    return article_id
+
+
 def load_predictions(path: Path) -> Dict[str, Dict[str, Any]]:
     """
-    Индексируем результаты пайплайна по article_id.
+    Индексируем результаты пайплайна по (source, article_id).
     Поддерживаем формат текущего results_hybrid_final.json (list of dict).
+    Fallback: если source отсутствует, индексируем только по article_id (обратная совместимость).
     """
     data = json.loads(path.read_text(encoding="utf-8"))
     indexed: Dict[str, Dict[str, Any]] = {}
@@ -155,7 +165,16 @@ def load_predictions(path: Path) -> Dict[str, Dict[str, Any]]:
         aid = str(item.get("article_id") or item.get("id") or "")
         if not aid:
             continue
-        indexed[aid] = item.get("entities", {}) or {}
+        source = str(item.get("source") or "")
+        key = make_key(source, aid)
+        entities = item.get("entities", {}) or {}
+        # Поддержка нового формата: entities может быть list[dict] (name/type/...)
+        if isinstance(entities, list):
+            persons = [e for e in entities if isinstance(e, dict) and (e.get("type") or "").lower() == "person"]
+            orgs = [e for e in entities if isinstance(e, dict) and (e.get("type") or "").lower() == "organization"]
+            locs = [e for e in entities if isinstance(e, dict) and (e.get("type") or "").lower() == "location"]
+            entities = {"persons": persons, "organizations": orgs, "locations": locs, "all": entities}
+        indexed[key] = entities if isinstance(entities, dict) else {}
     return indexed
 
 
@@ -192,7 +211,9 @@ def compute_coverage(
     missing = 0
     for a in verified_articles:
         aid = str(a.get("article_id", ""))
-        if not aid or aid not in preds_index:
+        source = str(a.get("source", ""))
+        key = make_key(source, aid)
+        if not aid or key not in preds_index:
             missing += 1
             continue
         aligned.append(a)
@@ -214,7 +235,9 @@ def compute_coverage(
 
         for a in aligned:
             aid = str(a.get("article_id", ""))
-            pred_entities = preds_index.get(aid, {}) or {}
+            source = str(a.get("source", ""))
+            key = make_key(source, aid)
+            pred_entities = preds_index.get(key, {}) or {}
             gold_entities = a.get("gold_entities", {}) or {}
 
             pred_set = evaluator.extract_names(pred_entities.get(et, []))
@@ -243,7 +266,9 @@ def compute_coverage(
     # overall (any type)
     for a in aligned:
         aid = str(a.get("article_id", ""))
-        pred_entities = preds_index.get(aid, {}) or {}
+        source = str(a.get("source", ""))
+        key = make_key(source, aid)
+        pred_entities = preds_index.get(key, {}) or {}
         gold_entities = a.get("gold_entities", {}) or {}
 
         pred_total = 0
@@ -329,10 +354,12 @@ def main() -> None:
 
     for a in verified:
         aid = str(a.get("article_id", ""))
-        if not aid or aid not in preds:
+        source = str(a.get("source", ""))
+        key = make_key(source, aid)
+        if not aid or key not in preds:
             missing += 1
             continue
-        ev.add_article(aid, preds[aid], a.get("gold_entities", {}) or {})
+        ev.add_article(key, preds[key], a.get("gold_entities", {}) or {})
         evaluated += 1
 
     m = ev.metrics()
@@ -359,7 +386,7 @@ def main() -> None:
         "missing_in_predictions": missing,
         "metrics": m,
         "coverage": coverage,
-        "errors_sample": ev.errors[:50],
+        "errors_sample": ev.errors[:100],  # первые 100 ошибок для анализа
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")

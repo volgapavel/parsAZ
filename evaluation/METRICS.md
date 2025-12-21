@@ -2,7 +2,7 @@
 
 ### Входные данные
 - **Gold**: JSON со статьями и ручной разметкой `gold_entities`, учитываются только записи с `manually_verified=true`.
-- **Predictions**: JSON со статьями и предсказанными `entities`, индексируется по `article_id`.
+- **Predictions**: JSON со статьями и предсказанными `entities`, индексируется по составному ключу `(source, article_id)` для корректной работы с дубликатами ID из разных источников.
 
 Запуск:
 - `python evaluation/metrics_evaluator.py --gold <path> --pred <path> --out <path>`
