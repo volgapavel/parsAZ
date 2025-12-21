@@ -1,7 +1,8 @@
 services:
+  # PostgreSQL Database
   db:
     image: postgres:17
-    container_name: report_db
+    container_name: clearpic_db
     restart: unless-stopped
     environment:
       POSTGRES_DB: newsdb
@@ -17,11 +18,13 @@ services:
       timeout: 5s
       retries: 5
 
-  scraper:
+  # API + Web Interface
+  api:
     build:
       context: .
-      dockerfile: docker/Dockerfile.scraper
-    container_name: report_scraper
+      dockerfile: docker/Dockerfile.api
+    container_name: clearpic_api
+    restart: unless-stopped
     depends_on:
       db:
         condition: service_healthy
@@ -31,15 +34,56 @@ services:
       DB_NAME: newsdb
       DB_USER: myuser
       DB_PASS: mypass
-    # Можно переопределить даты через command
-    # command: ["python", "main.py", "--start-date", "2024-01-01", "--log-level", "DEBUG"]
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount model files for updates without rebuild
+      - ./model/person_index.json:/app/model/person_index.json:ro
+
+  # Report.az scraper
+  scraper_report:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.scraper
+    container_name: scraper_report
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: newsdb
+      DB_USER: myuser
+      DB_PASS: mypass
+    command: ["python", "main.py", "--start-date", "2025-01-01"]
+    profiles:
+      - scraper
+
+  # Azerbaijan.az scraper
+  scraper_azerbaijan:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.scraper
+    container_name: scraper_azerbaijan
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: newsdb
+      DB_USER: myuser
+      DB_PASS: mypass
+    command: ["python", "main_azerbaijan.py"]
+    profiles:
+      - scraper
 
   # Trend.az scraper
   scraper_trend:
     build:
       context: .
       dockerfile: docker/Dockerfile.scraper
-    container_name: trend_scraper
+    container_name: scraper_trend
     depends_on:
       db:
         condition: service_healthy
@@ -49,10 +93,9 @@ services:
       DB_NAME: newsdb
       DB_USER: myuser
       DB_PASS: mypass
-    command: ["python", "main_trend.py", "--mode", "id-range", "--start-id", "4126700", "--end-id", "4100000", "--direction", "desc"]
+    command: ["python", "main_trend.py", "--mode", "ajax"]
     profiles:
-      - trend
+      - scraper
 
 volumes:
   pgdata:
-
