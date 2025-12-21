@@ -88,3 +88,4 @@ def get_news_count(conn: Connection) -> int:
         result = cur.fetchone()
         return result[0] if result else 0
 
+
