@@ -9,11 +9,11 @@ class Translator:
     def __init__(self):
         self.cache = {}
         try:
-            from google_trans_new import google_translator
-            self.translator = google_translator()
+            from googletrans import Translator as GoogleTranslator
+            self.translator = GoogleTranslator()
             self.available = True
         except ImportError:
-            print("⚠️  google-trans-new не установлен, перевод отключен")
+            print("⚠️  googletrans не установлен, перевод отключен")
             self.available = False
 
     def translate_text(self, text: str, source_lang='az', target_lang='en') -> str:
@@ -27,8 +27,11 @@ class Translator:
             return self.cache[cache_key]
 
         try:
-            result = self.translator.translate(text, source_language=source_lang, target_language=target_lang)
-            self.cache[cache_key] = result
-            return result
-        except:
+            result = self.translator.translate(text, src=source_lang, dest=target_lang)
+            translated = result.text
+            self.cache[cache_key] = translated
+            return translated
+        except Exception as e:
+            print(f"Translation error: {e}")
             return text
+

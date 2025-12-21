@@ -3,6 +3,7 @@ import logging
 import re
 from dataclasses import dataclass
 from datetime import datetime
+from typing import Optional, List, Tuple
 
 from bs4 import BeautifulSoup, Tag
 
@@ -17,10 +18,10 @@ class NewsListItem:
     """Item from archive listing page."""
     link: str
     title: str
-    pub_date: datetime | None
+    pub_date: Optional[datetime]
 
 
-def parse_az_date(date_str: str, time_str: str) -> datetime | None:
+def parse_az_date(date_str: str, time_str: str) -> Optional[datetime]:
     """
     Parse Azerbaijani date format.
     Example: "01 dekabr, 2024" + "23:43" -> datetime
@@ -56,13 +57,13 @@ def parse_az_date(date_str: str, time_str: str) -> datetime | None:
         return None
 
 
-def parse_archive_page(html: str, base_url: str) -> list[NewsListItem]:
+def parse_archive_page(html: str, base_url: str) -> List[NewsListItem]:
     """
     Parse archive listing page.
     Returns list of news items with links, titles, and dates.
     """
     soup = BeautifulSoup(html, "lxml")
-    items: list[NewsListItem] = []
+    items: List[NewsListItem] = []
     
     # Новая структура: div.index-post-block содержит a.news__item
     news_blocks = soup.find_all('div', class_='index-post-block')
@@ -108,9 +109,9 @@ def parse_archive_page(html: str, base_url: str) -> list[NewsListItem]:
     return items
 
 
-def _parse_archive_page_legacy(soup: BeautifulSoup, base_url: str) -> list[NewsListItem]:
+def _parse_archive_page_legacy(soup: BeautifulSoup, base_url: str) -> List[NewsListItem]:
     """Legacy parser for older archive pages."""
-    items: list[NewsListItem] = []
+    items: List[NewsListItem] = []
     date_pattern = re.compile(r'(\d{1,2}\s+[^\d,]+,\s*\d{4})\s+(\d{1,2}:\d{2})')
     
     for a in soup.find_all('a', string=date_pattern):
@@ -144,7 +145,7 @@ def _parse_archive_page_legacy(soup: BeautifulSoup, base_url: str) -> list[NewsL
     return items
 
 
-def parse_article_page(html: str) -> tuple[str, str] | None:
+def parse_article_page(html: str) -> Optional[Tuple[str, str]]:
     """
     Parse article page.
     Returns (title, content) or None on failure.
@@ -179,7 +180,7 @@ def parse_article_page(html: str) -> tuple[str, str] | None:
     return title, content
 
 
-def _extract_paragraphs_fallback(soup: BeautifulSoup) -> list[str]:
+def _extract_paragraphs_fallback(soup: BeautifulSoup) -> List[str]:
     """Fallback paragraph extraction."""
     paragraphs = []
     for p in soup.find_all('p'):

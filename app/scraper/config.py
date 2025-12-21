@@ -2,6 +2,7 @@
 import os
 from dataclasses import dataclass
 from datetime import date
+from typing import Optional, Dict
 
 
 @dataclass
@@ -23,7 +24,7 @@ class ScraperConfig:
     """Scraper configuration."""
     base_url: str = "https://report.az"
     start_date: date = date(2014, 1, 1)
-    end_date: date | None = None  # None = today
+    end_date: Optional[date] = None  # None = today
     request_timeout: int = 15
     retry_count: int = 3
     retry_delay: float = 5.0
@@ -40,7 +41,7 @@ class ScraperConfig:
 
 
 # Месяцы на азербайджанском
-AZ_MONTHS: dict[str, int] = {
+AZ_MONTHS: Dict[str, int] = {
     "yanvar": 1, "fevral": 2, "mart": 3, "aprel": 4, "may": 5,
     "iyun": 6, "iyul": 7, "avqust": 8, "sentyabr": 9,
     "oktyabr": 10, "noyabr": 11, "dekabr": 12

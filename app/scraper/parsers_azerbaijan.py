@@ -3,6 +3,7 @@ import logging
 import re
 from dataclasses import dataclass
 from datetime import datetime
+from typing import Optional, Tuple, List
 
 from bs4 import BeautifulSoup, Tag
 
@@ -16,10 +17,10 @@ class AzNewsListItem:
     """Item from news listing page."""
     link: str
     title: str
-    pub_date: datetime | None
+    pub_date: Optional[datetime]
 
 
-def parse_az_date_dmy(date_str: str) -> datetime | None:
+def parse_az_date_dmy(date_str: str) -> Optional[datetime]:
     """Parse date in DD.MM.YYYY format."""
     try:
         date_str = date_str.strip()
@@ -28,7 +29,7 @@ def parse_az_date_dmy(date_str: str) -> datetime | None:
         return None
 
 
-def parse_az_date_ymd(date_str: str) -> datetime | None:
+def parse_az_date_ymd(date_str: str) -> Optional[datetime]:
     """Parse date in YYYY-MM-DD format."""
     try:
         date_str = date_str.strip()
@@ -37,7 +38,7 @@ def parse_az_date_ymd(date_str: str) -> datetime | None:
         return None
 
 
-def parse_news_list_page(html: str, base_url: str) -> list[AzNewsListItem]:
+def parse_news_list_page(html: str, base_url: str) -> List[AzNewsListItem]:
     """
     Parse news listing page from azerbaijan.az.
     Returns list of news items with links, titles, and dates.
@@ -86,7 +87,7 @@ def parse_news_list_page(html: str, base_url: str) -> list[AzNewsListItem]:
     return items
 
 
-def get_next_page_url(html: str, base_url: str) -> str | None:
+def get_next_page_url(html: str, base_url: str) -> Optional[str]:
     """Get next page URL from pagination."""
     soup = BeautifulSoup(html, "lxml")
     
@@ -106,7 +107,7 @@ def get_next_page_url(html: str, base_url: str) -> str | None:
     return None
 
 
-def parse_article_page_az(html: str) -> tuple[str, str, datetime | None] | None:
+def parse_article_page_az(html: str) -> Optional[Tuple[str, str, Optional[datetime]]]:
     """
     Parse article page from azerbaijan.az.
     Returns (title, content, pub_date) or None on failure.
