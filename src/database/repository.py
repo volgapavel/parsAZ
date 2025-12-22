@@ -6,7 +6,7 @@ import psycopg2
 import psycopg2.extras
 from psycopg2.extensions import connection as Connection
 
-from app.db.models import NewsArticle
+from src.database.models import NewsArticle
 
 logger = logging.getLogger(__name__)
 

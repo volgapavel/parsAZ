@@ -3,8 +3,8 @@
 import argparse
 import logging
 
-from app.scraper.config import ScraperConfig, DBConfig
-from app.scraper.pipeline_trend import TrendScraperPipeline
+from src.scrapers.config import ScraperConfig, DBConfig
+from src.scrapers.pipelines.trend import TrendScraperPipeline
 
 # Configure logging
 logging.basicConfig(

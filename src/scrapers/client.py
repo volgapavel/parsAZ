@@ -7,7 +7,7 @@ from typing import Callable, Optional
 import requests
 from requests import Session, Response
 
-from app.scraper.config import ScraperConfig
+from src.scrapers.config import ScraperConfig
 
 logger = logging.getLogger(__name__)
 

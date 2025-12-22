@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 # Импорт переводчика
 try:
-    from translator import Translator
+    from src.core.translator import Translator
     TRANSLATOR_AVAILABLE = True
 except ImportError:
     TRANSLATOR_AVAILABLE = False

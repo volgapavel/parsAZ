@@ -7,7 +7,7 @@ from contextlib import contextmanager
 import psycopg2
 from psycopg2.extensions import connection as Connection
 
-from app.scraper.config import DBConfig
+from src.scrapers.config import DBConfig
 
 logger = logging.getLogger(__name__)
 

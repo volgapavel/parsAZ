@@ -4,8 +4,8 @@
 import logging
 import argparse
 
-from app.scraper.config import ScraperConfig
-from app.scraper.pipeline_azerbaijan import run_azerbaijan_scraper
+from src.scrapers.config import ScraperConfig
+from src.scrapers.pipelines.azerbaijan import run_azerbaijan_scraper
 
 
 def setup_logging(level: str = "INFO") -> None:

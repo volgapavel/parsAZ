@@ -82,6 +82,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Подключение роутеров
+from api.routers import search, process, stats
+
+app.include_router(search.router, prefix="/api/v1", tags=["Search"])
+app.include_router(process.router, prefix="/api/v1", tags=["Process"])
+app.include_router(stats.router, prefix="/api/v1", tags=["Statistics"])
+
 # Инициализация компонентов
 preprocessor = TextPreprocessor()
 ner_extractor = None  # Lazy loading
@@ -125,7 +132,7 @@ class ProcessRequest(BaseModel):
     classify_risks: bool = Field(True, description="Классифицировать риски")
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "text": "Mingəçevirdə 52 yaşlı kişi aldığı xəsarətdən ölüb. İ.Baxışov xəstəxanada vəfat edib.",
                 "title": "Mingəçevirdə hadisə",
@@ -189,7 +196,7 @@ class SearchRequest(BaseModel):
     offset: int = Field(0, ge=0, description="Смещение для пагинации")
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "entity_name": "Baxışov",
                 "entity_type": "person",

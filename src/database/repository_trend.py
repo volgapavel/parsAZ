@@ -5,8 +5,8 @@ from typing import List, Optional
 import psycopg2.extras
 from psycopg2.extensions import connection as Connection
 
-from app.db.connection import get_cursor
-from app.db.models import NewsArticle
+from src.database.connection import get_cursor
+from src.database.models import NewsArticle
 
 logger = logging.getLogger(__name__)
 

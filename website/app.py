@@ -73,8 +73,8 @@ async def add_no_cache_headers(request: Request, call_next):
 
 # Настройка путей
 BASE_DIR = Path(__file__).resolve().parent
-TEMPLATES_DIR = BASE_DIR / "website" / "templates"
-STATIC_DIR = BASE_DIR / "website" / "static"
+TEMPLATES_DIR = BASE_DIR / "templates"
+STATIC_DIR = BASE_DIR / "static"
 
 # Создание директорий если их нет
 TEMPLATES_DIR.mkdir(parents=True, exist_ok=True)
@@ -319,12 +319,12 @@ async def server_error_handler(request: Request, exc: Exception):
 if __name__ == "__main__":
     import uvicorn
     
-    logger.info("Запуск веб-приложения ClearPic Media Monitoring")
+    logger.info("Запуск веб-приложения parsAZ Media Monitoring")
     logger.info("Веб-интерфейс: http://localhost:8002")
     logger.info("API документация: http://localhost:8002/api/v1/docs")
     
     uvicorn.run(
-        "website_app:app",
+        "website.app:app",
         host="0.0.0.0",
         port=8002,
         reload=False,

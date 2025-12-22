@@ -27,6 +27,10 @@
             min-height: 100vh;
         }
         
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-blue) !important;
+        }
+        
         .container-main {
             max-width: 1400px;
             margin: 0 auto;
@@ -34,37 +38,34 @@
         }
         
         .search-section {
-            background: white;
-            border: 1px solid #dee2e6;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         
         .search-input {
-            background: #f8f9fa;
-            border: 2px solid #0d6efd;
-            color: #212529;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
             border-radius: 8px;
             padding: 0.75rem 1rem;
             font-size: 1.1rem;
-            box-shadow: 0 2px 4px rgba(13, 110, 253, 0.1);
         }
         
         .search-input:focus {
             outline: none;
-            border-color: #0b5ed7;
-            background: white;
-            box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.15);
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
         }
         
         .search-input::placeholder {
-            color: #6c757d;
+            color: var(--text-secondary);
         }
         
         .btn-search {
-            background: var(--primary-color);
+            background: var(--accent-blue);
             border: none;
             color: #fff;
             padding: 0.75rem 2rem;
@@ -398,33 +399,16 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <i class="fas fa-newspaper"></i> parsAZ Media Monitor
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/process">Обработка текста</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/search">Поиск</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/entities">Сущности</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/stats">Статистика</a>
-                    </li>
-                </ul>
-            </div>
+            <a class="navbar-brand" href="/"><i class="fas fa-newspaper"></i> parsAZ Media Monitor</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="/process">Обработка текста</a></li>
+                <li class="nav-item"><a class="nav-link" href="/search">Поиск</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/entities">Сущности</a></li>
+                <li class="nav-item"><a class="nav-link" href="/stats">Статистика</a></li>
+            </ul>
         </div>
     </nav>
     

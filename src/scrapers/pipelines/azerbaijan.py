@@ -13,7 +13,7 @@ from src.scrapers.parsers.azerbaijan import (
     AzNewsListItem
 )
 from src.database.models import NewsArticle
-from app.db import repository_azerbaijan as repository
+from src.database import repository_azerbaijan as repository
 
 logger = logging.getLogger(__name__)
 
@@ -128,8 +128,8 @@ class AzerbaijanPipeline:
 
 def run_azerbaijan_scraper(config: Optional[ScraperConfig] = None, max_pages: Optional[int] = None) -> dict:
     """Entry point for azerbaijan.az scraper."""
-    from app.scraper.config import DBConfig
-    from app.db.connection import create_connection
+    from src.scrapers.config import DBConfig
+    from src.database.connection import create_connection
     
     config = config or ScraperConfig()
     db_config = DBConfig()

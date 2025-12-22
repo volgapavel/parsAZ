@@ -4,8 +4,8 @@ import logging
 import argparse
 from datetime import date
 
-from app.scraper.config import ScraperConfig
-from app.scraper.pipeline import run_scraper
+from src.scrapers.config import ScraperConfig
+from src.scrapers.pipelines.main import run_scraper
 
 
 def setup_logging(level: str = "INFO") -> None:

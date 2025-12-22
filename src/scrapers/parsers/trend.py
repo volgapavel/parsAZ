@@ -6,7 +6,7 @@ from typing import List, Optional
 
 from bs4 import BeautifulSoup
 
-from app.db.models import NewsArticle
+from src.database.models import NewsArticle
 
 logger = logging.getLogger(__name__)
 
