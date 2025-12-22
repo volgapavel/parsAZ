@@ -2,7 +2,7 @@
 
 **Версия:** 1.0  
 **Дата:** 17 декабря 2025 г.  
-**Проект:** ClearPic Media Monitoring System
+**Проект:** Media Monitoring System
 
 ## 1. Обзор системы метрик
 
@@ -458,5 +458,4 @@ class MetricsCollector:
 - API response time: **<=10 сек** (PERF-3)
 
 **Контакты для вопросов:**  
-Артем Сенцов, Co-Founder CTO ClearPic  
-sentsov@clearpic.ai
+Для вопросов и предложений обращайтесь через GitHub Issues

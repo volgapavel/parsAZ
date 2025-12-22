@@ -40,7 +40,7 @@ class DatabaseManager:
         Args:
             host: Хост базы данных (default: localhost)
             port: Порт (default: 5432)
-            database: Имя базы данных (default: clearpic)
+            database: Имя базы данных (default: newsdb)
             user: Пользователь (default: admin)
             password: Пароль
             min_connections: Минимум соединений в пуле
@@ -48,7 +48,7 @@ class DatabaseManager:
         """
         self.host = host or os.getenv('DB_HOST', 'localhost')
         self.port = port or int(os.getenv('DB_PORT', '5432'))
-        self.database = database or os.getenv('DB_NAME', 'clearpic')
+        self.database = database or os.getenv('DB_NAME', 'newsdb')
         self.user = user or os.getenv('DB_USER', 'admin')
         self.password = password or os.getenv('DB_PASSWORD', 'secret')
         

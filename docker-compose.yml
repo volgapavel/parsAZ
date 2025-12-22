@@ -2,7 +2,7 @@ services:
   # PostgreSQL Database
   db:
     image: postgres:17
-    container_name: clearpic_db
+    container_name: parsaz_db
     restart: unless-stopped
     environment:
       POSTGRES_DB: newsdb
@@ -23,7 +23,7 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.api
-    container_name: clearpic_api
+    container_name: parsaz_api
     restart: unless-stopped
     depends_on:
       db:
