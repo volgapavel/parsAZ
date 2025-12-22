@@ -392,7 +392,7 @@ def build_knowledge_graph(entities: Dict, relationships: List) -> Dict[str, Any]
 @app.on_event("startup")
 async def startup_event():
     """Инициализация при запуске"""
-    logger.info("Starting ClearPic Media Monitoring API...")
+    logger.info("Starting Media Monitoring API...")
     initialize_database()
     initialize_models()
 
@@ -401,7 +401,7 @@ async def startup_event():
 async def root():
     """Корневой endpoint"""
     return {
-        "message": "ClearPic Media Monitoring API",
+        "message": "Media Monitoring API",
         "version": "1.0.0",
         "docs": "/api/v1/docs",
         "health": "/api/v1/health"

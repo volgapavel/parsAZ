@@ -1,5 +1,5 @@
 # API Documentation
-## ClearPic Media Monitoring System REST API
+## Media Monitoring System REST API
 
 **Версия:** 1.0.0  
 **Base URL:** `http://localhost:8000`  
@@ -19,7 +19,7 @@
 
 ## Введение
 
-ClearPic Media Monitoring API предоставляет программный доступ к системе автоматического мониторинга азербайджанских СМИ для выявления рисков компаний и персон.
+Media Monitoring API предоставляет программный доступ к системе автоматического мониторинга азербайджанских СМИ для выявления рисков компаний и персон.
 
 ### Основные возможности
 
@@ -50,19 +50,19 @@ API требует подключения к PostgreSQL для работы фу
 
 1. Создайте базу данных:
 ```bash
-createdb clearpic_media
+createdb newsdb
 ```
 
 2. Инициализируйте схему из файла database_schema.sql:
 ```bash
-psql -d clearpic_media -f database_schema.sql
+psql -d newsdb -f database_schema.sql
 ```
 
 3. Настройте переменные окружения для подключения к БД:
 ```bash
 export DB_HOST=localhost
 export DB_PORT=5432
-export DB_NAME=clearpic_media
+export DB_NAME=newsdb
 export DB_USER=postgres
 export DB_PASSWORD=your_password
 ```
@@ -77,8 +77,8 @@ python api.py
 uvicorn api:app --host 0.0.0.0 --port 8000 --reload
 
 # Вариант 3: С помощью Docker
-docker build -t clearpic-api .
-docker run -p 8000:8000 clearpic-api
+docker build -t media-monitoring-api .
+docker run -p 8000:8000 media-monitoring-api
 ```
 
 ### Проверка работоспособности
@@ -790,7 +790,7 @@ services:
     environment:
       - DB_HOST=postgres
       - DB_PORT=5432
-      - DB_NAME=clearpic
+      - DB_NAME=newsdb
       - DB_USER=admin
       - DB_PASSWORD=secret
     depends_on:
@@ -801,7 +801,7 @@ services:
   postgres:
     image: postgres:15
     environment:
-      - POSTGRES_DB=clearpic
+      - POSTGRES_DB=newsdb
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=secret
     volumes:
@@ -842,7 +842,7 @@ API_WORKERS=4
 # База данных
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=clearpic
+DB_NAME=newsdb
 DB_USER=admin
 DB_PASSWORD=secret
 
@@ -852,7 +852,7 @@ USE_GPU=false
 
 # Логирование
 LOG_LEVEL=INFO
-LOG_FILE=/var/log/clearpic-api.log
+LOG_FILE=/var/log/media-monitoring-api.log
 ```
 
 ## Версионирование
@@ -867,7 +867,7 @@ API использует семантическое версионировани
 ## Поддержка и контакты
 
 **Техническая поддержка:**  
-Email: support@clearpic.ai  
+Email: support@parsaz.com  
 GitHub Issues: [ссылка на репозиторий]
 
 **Документация:**  
@@ -876,8 +876,7 @@ GitHub Issues: [ссылка на репозиторий]
 - Этот документ: API_DOCUMENTATION.md
 
 **Обратная связь:**  
-Артем Сенцов, Co-Founder CTO ClearPic  
-sentsov@clearpic.ai
+Для вопросов и предложений обращайтесь через GitHub Issues
 
 ## Changelog
 

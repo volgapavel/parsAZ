@@ -1,4 +1,4 @@
-"""FastAPI application for ClearPic Media Monitoring."""
+"""FastAPI application for Media Monitoring."""
 import os
 import sys
 from pathlib import Path
@@ -15,7 +15,7 @@ from fastapi.responses import HTMLResponse
 from api.routers import search, stats, process
 
 app = FastAPI(
-    title="ClearPic Media Monitoring API",
+    title="Media Monitoring API",
     description="API для мониторинга азербайджанских СМИ, поиска персон и анализа рисков",
     version="1.0.0",
     docs_url="/docs",
@@ -70,5 +70,5 @@ async def stats_page(request: Request):
 
 @app.get("/health")
 async def health_check():
-    return {"status": "ok", "service": "clearpic-api"}
+    return {"status": "ok", "service": "media-monitoring-api"}
 

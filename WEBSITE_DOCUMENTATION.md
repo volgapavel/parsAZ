@@ -64,7 +64,7 @@ pip install -r requirements_website.txt
 createdb clearpic_media
 
 # Инициализация схемы
-psql -d clearpic_media -f database_schema.sql
+psql -d newsdb -f database_schema.sql
 ```
 
 Создайте файл .env с настройками:
@@ -72,7 +72,7 @@ psql -d clearpic_media -f database_schema.sql
 ```
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=clearpic_media
+DB_NAME=newsdb
 DB_USER=postgres
 DB_PASSWORD=your_password
 ```
