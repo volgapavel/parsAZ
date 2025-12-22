@@ -116,7 +116,7 @@ async def search_persons(
     if matches:
         return SearchResponse(query=q, matches=matches[:limit], total=len(matches))
     
-    # Substring match
+    # Substring match - поиск по полному имени
     for pk, pdata in persons.items():
         disp = pdata.get("display", "")
         d_norm = normalize_key(disp)
@@ -127,7 +127,46 @@ async def search_persons(
         matches.sort(key=lambda x: x.match_score, reverse=True)
         return SearchResponse(query=q, matches=matches[:limit], total=len(matches))
     
-    # Fuzzy match
+    # Word-level match - поиск по отдельным словам (фамилия/имя)
+    q_words = set(q_norm.split())
+    for pk, pdata in persons.items():
+        disp = pdata.get("display", "")
+        d_norm = normalize_key(disp)
+        d_words = set(d_norm.split())
+        
+        # Если есть пересечение слов
+        common_words = q_words & d_words
+        if common_words:
+            # Оценка: процент совпавших слов
+            match_ratio = len(common_words) / max(len(q_words), len(d_words))
+            matches.append(PersonMatch(person_key=pk, display=disp, match_score=round(0.85 * match_ratio, 3)))
+    
+    if matches:
+        matches.sort(key=lambda x: x.match_score, reverse=True)
+        return SearchResponse(query=q, matches=matches[:limit], total=len(matches))
+    
+    # Partial word match - поиск по части слова (например, "агал" найдет "Агаларов")
+    for pk, pdata in persons.items():
+        disp = pdata.get("display", "")
+        d_norm = normalize_key(disp)
+        d_words = d_norm.split()
+        
+        # Проверяем, содержится ли запрос в начале любого слова
+        for word in d_words:
+            if word.startswith(q_norm):
+                # Высокий score если запрос - начало слова
+                matches.append(PersonMatch(person_key=pk, display=disp, match_score=0.80))
+                break
+            elif q_norm in word and len(q_norm) >= 3:
+                # Средний score если запрос где-то внутри слова
+                matches.append(PersonMatch(person_key=pk, display=disp, match_score=0.70))
+                break
+    
+    if matches:
+        matches.sort(key=lambda x: x.match_score, reverse=True)
+        return SearchResponse(query=q, matches=matches[:limit], total=len(matches))
+    
+    # Fuzzy match - полное нечеткое сравнение
     for pk, pdata in persons.items():
         disp = pdata.get("display", "")
         d_norm = normalize_key(disp)
