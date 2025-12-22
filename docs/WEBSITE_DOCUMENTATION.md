@@ -25,24 +25,24 @@
 
 ```
 parsAZ/
-├── website_app.py                  # Главное приложение FastAPI
-├── requirements_website.txt        # Зависимости
-├── website/
-│   ├── templates/                  # HTML шаблоны
-│   │   ├── index.html             # Главная страница
-│   │   ├── process.html           # Обработка текста
-│   │   ├── search.html            # Поиск
-│   │   ├── entities.html          # Сущности
-│   │   └── stats.html             # Статистика
-│   └── static/                     # Статические файлы
-│       ├── css/
-│       │   └── style.css          # Стили
-│       └── js/
-│           ├── main.js            # Главная страница
-│           ├── process.js         # Обработка
-│           ├── search.js          # Поиск
-│           ├── entities.js        # Сущности
-│           └── stats.js           # Статистика
+ website_app.py                  # Главное приложение FastAPI
+ requirements_website.txt        # Зависимости
+ website/
+    templates/                  # HTML шаблоны
+       index.html             # Главная страница
+       process.html           # Обработка текста
+       search.html            # Поиск
+       entities.html          # Сущности
+       stats.html             # Статистика
+    static/                     # Статические файлы
+        css/
+           style.css          # Стили
+        js/
+            main.js            # Главная страница
+            process.js         # Обработка
+            search.js          # Поиск
+            entities.js        # Сущности
+            stats.js           # Статистика
 ```
 
 ## Установка и запуск

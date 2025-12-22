@@ -52,7 +52,7 @@ def safe_import(module_name: str, class_name: str):
         module = __import__(module_name)
         return getattr(module, class_name)()
     except Exception as e:
-        print(f"⚠️ Не удалось инициализировать {module_name}.{class_name}: {e}")
+        print(f" Не удалось инициализировать {module_name}.{class_name}: {e}")
         return None
 
 
@@ -148,27 +148,27 @@ def main() -> int:
     out_path = Path(args.out)
 
     if not gold_path.exists():
-        print(f"❌ Не найден gold dataset: {gold_path}")
+        print(f" Не найден gold dataset: {gold_path}")
         print("   Сначала запустите: python evaluation/create_gold_dataset.py")
         return 2
 
     # Инициализация модулей проекта
-    text_preprocessor = safe_import("text_preprocessor", "TextPreprocessor")
+    text_preprocessor = safe_import("src.core.text_preprocessor", "TextPreprocessor")
     ner_extractor = None
     try:
-        from entity_extractor_ner_ensemble import NEREnsembleExtractor
+        from src.core.entity_extractor import NEREnsembleExtractor
         ner_extractor = NEREnsembleExtractor(
             use_davlan=not args.disable_davlan,
             use_localdoc=True,
             local_files_only=args.local_files_only,
         )
     except Exception as e:
-        print(f"⚠️ Не удалось инициализировать NEREnsembleExtractor: {e}")
+        print(f" Не удалось инициализировать NEREnsembleExtractor: {e}")
     entity_deduplicator = safe_import("entity_deduplicator", "EntityDeduplicator")
     relation_extractor = safe_import("relationship_extractor_hybrid_pro", "RelationExtractorHybridPro")
 
     if ner_extractor is None:
-        print("\n❌ NEREnsembleExtractor не инициализировался.")
+        print("\n NEREnsembleExtractor не инициализировался.")
         if not check_dependencies():
             print("Похоже, в venv не установлены зависимости NER.")
             print("Установите минимум:")
@@ -185,7 +185,7 @@ def main() -> int:
     results: List[Dict[str, Any]] = []
 
     print("=" * 70)
-    print(f"🚀 Генерация предсказаний на gold-статьях: {len(gold_articles)}")
+    print(f" Генерация предсказаний на gold-статьях: {len(gold_articles)}")
     print("=" * 70)
 
     for idx, a in enumerate(gold_articles, 1):
@@ -234,10 +234,10 @@ def main() -> int:
         )
 
         if idx % 5 == 0 or idx == len(gold_articles):
-            print(f"[{idx}/{len(gold_articles)}] ✅ {article_id} {title}")
+            print(f"[{idx}/{len(gold_articles)}]  {article_id} {title}")
 
     out_path.write_text(json.dumps(to_serializable(results), ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n📁 Предсказания сохранены в: {out_path}")
+    print(f"\n Предсказания сохранены в: {out_path}")
     print("Дальше: запустите подсчёт метрик командой:")
     print("  python evaluation/metrics_evaluator.py")
 

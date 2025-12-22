@@ -199,11 +199,11 @@ class EntityDeduplicator:
         if re.match(r'\d{1,2}\.\d{1,2}\.\d{4}', date_str):
             return True
         
-        # Числа <1900 — скорее всего не дата
+        # Числа <1900 - скорее всего не дата
         if date_str.isdigit() and int(date_str) < 1900:
             return False
         
-        # Одно число без контекста — не дата
+        # Одно число без контекста - не дата
         if date_str.isdigit() and len(date_str) <= 2:
             return False
         

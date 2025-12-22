@@ -7,7 +7,7 @@ from typing import Optional, Tuple, List
 
 from bs4 import BeautifulSoup, Tag
 
-from app.db.models import NewsArticle
+from src.database.models import NewsArticle
 
 logger = logging.getLogger(__name__)
 

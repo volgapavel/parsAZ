@@ -7,8 +7,8 @@ from typing import Optional, List, Tuple
 
 from bs4 import BeautifulSoup, Tag
 
-from app.scraper.config import AZ_MONTHS
-from app.db.models import NewsArticle
+from src.scrapers.config import AZ_MONTHS
+from src.database.models import NewsArticle
 
 logger = logging.getLogger(__name__)
 

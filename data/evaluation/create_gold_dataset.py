@@ -62,7 +62,7 @@ def select_diverse_articles(articles: List[Dict[str, Any]], n: int = 10) -> List
     sorted_articles = sorted(articles, key=lambda x: len(x["content"]))
     m = len(sorted_articles)
 
-    # 10 точек по шкале длины (если статей меньше — возьмём сколько есть)
+    # 10 точек по шкале длины (если статей меньше - возьмём сколько есть)
     raw_positions = [0.10, 0.20, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90, 0.95]
     indices = [min(int(m * p), m - 1) for p in raw_positions]
 
@@ -75,7 +75,7 @@ def select_diverse_articles(articles: List[Dict[str, Any]], n: int = 10) -> List
         selected.append(art)
         seen_ids.add(art["id"])
 
-    # если из-за дублей/малого m не добрали — добираем случайно
+    # если из-за дублей/малого m не добрали - добираем случайно
     if len(selected) < min(n, m):
         pool = [a for a in sorted_articles if a["id"] not in seen_ids]
         need = min(n, m) - len(selected)
@@ -124,15 +124,15 @@ def main() -> None:
     gold_dataset: List[Dict[str, Any]] = []
 
     print("=" * 70)
-    print("🔧 Создание шаблона gold dataset (30 статей)")
+    print(" Создание шаблона gold dataset (30 статей)")
     print("=" * 70)
 
     for source_name, csv_path in sources.items():
         if not csv_path.exists():
-            print(f"⚠️ Не найден файл: {csv_path}")
+            print(f" Не найден файл: {csv_path}")
             continue
 
-        print(f"\n📰 {source_name}: загрузка {csv_path.name} ...")
+        print(f"\n {source_name}: загрузка {csv_path.name} ...")
         articles = load_csv_articles(csv_path, limit=200)
         print(f"   Загружено (после фильтра): {len(articles)}")
 
@@ -145,8 +145,8 @@ def main() -> None:
     out_file = root / "evaluation" / "gold" / "gold_dataset.json"
     out_file.write_text(json.dumps(gold_dataset, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"\n✅ Готово. Статей в шаблоне: {len(gold_dataset)}")
-    print(f"📁 Файл: {out_file}")
+    print(f"\n Готово. Статей в шаблоне: {len(gold_dataset)}")
+    print(f" Файл: {out_file}")
     print("\nДальше: откройте JSON, заполните gold_entities и поставьте manually_verified=true.")
 
 

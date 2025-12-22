@@ -37,7 +37,7 @@ class Entity:
     def to_dict(self):
         return {
             "name": self.name,
-            "confidence": float(self.confidence),  # 🔥 float32 → float
+            "confidence": float(self.confidence),  #  float32 → float
             "context": self.context,
             "type": self.entity_type,
             "source": self.source
@@ -73,7 +73,7 @@ class NEREnsembleExtractor:
         self.device = device
         logger.info(f"Инициализация NER Ensemble на {device}...")
         
-        # 1️⃣ Основная модель: Davlan (3 типа: PER, ORG, LOC)
+        # 1⃣ Основная модель: Davlan (3 типа: PER, ORG, LOC)
         try:
             self.davlan_model_name = "Davlan/xlm-roberta-large-ner-hrl"
             self.davlan_tokenizer = AutoTokenizer.from_pretrained(self.davlan_model_name)
@@ -92,7 +92,7 @@ class NEREnsembleExtractor:
             logger.error(f"Ошибка загрузки Davlan: {e}")
             self.davlan_nlp = None
         
-        # 2️⃣ Расширенная модель: LocalDoc (25 типов, az-специфичная)
+        # 2⃣ Расширенная модель: LocalDoc (25 типов, az-специфичная)
         try:
             self.localdoc_model_name = "LocalDoc/private_ner_azerbaijani_v2"
             self.localdoc_tokenizer = AutoTokenizer.from_pretrained(self.localdoc_model_name)
@@ -166,7 +166,7 @@ class NEREnsembleExtractor:
       return positions
 
     def extract_entities_davlan(self, text: str) -> List[Entity]:
-      """🔧 ФИКС: Davlan extraction с дебагом"""
+      """ ФИКС: Davlan extraction с дебагом"""
       if not self.davlan_nlp:
           return []
       
@@ -176,7 +176,7 @@ class NEREnsembleExtractor:
           print(f"Davlan raw result: {ner_results[:2] if ner_results else 'EMPTY'}")  # ДЕБАГ
           
           for result in ner_results:
-              # 🔥 ФИКС: проверяем все возможные ключи
+              #  ФИКС: проверяем все возможные ключи
               entity_key = None
               for key in ['entity', 'entity_group', 'label', 'type']:
                   if key in result:
@@ -208,7 +208,7 @@ class NEREnsembleExtractor:
       return entities
 
     def extract_entities_localdoc(self, text: str) -> List[Entity]:
-        """🔧 ФИКС: LocalDoc extraction"""
+        """ ФИКС: LocalDoc extraction"""
         if not self.localdoc_nlp:
             return []
         
@@ -325,7 +325,7 @@ class NEREnsembleExtractor:
         # 3. Группировка по типам
         grouped_entities = self._group_entities(all_entities)
 
-        # 4. 🔥 ИЗВЛЕЧЕНИЕ ДОЛЖНОСТЕЙ
+        # 4.  ИЗВЛЕЧЕНИЕ ДОЛЖНОСТЕЙ
         position_entities = self._extract_positions_from_context(grouped_entities, text)
         grouped_entities['position'] = position_entities
 
@@ -353,13 +353,13 @@ class NEREnsembleExtractor:
         }
     
     def _merge_entities(self, davlan: List[Entity], localdoc: List[Entity]) -> List[Entity]:
-        """🔧 ФИКС: безопасное объединение"""
+        """ ФИКС: безопасное объединение"""
         merged = {}
         
         all_entities = davlan + localdoc  # Просто конкатенируем
         
         for ent in all_entities:
-            # 🔥 ФИКС: нормализуем типы
+            #  ФИКС: нормализуем типы
             type_map = {
                 'per': 'person', 'givenname': 'person', 'surname': 'person',
                 'firstname': 'person', 'lastname': 'person',

@@ -3,12 +3,12 @@ import logging
 import re
 from typing import Dict, Optional, List
 
-from app.db.connection import create_connection
-from app.db.repository_trend import TrendNewsRepository
-from app.db.models import NewsArticle
-from app.scraper.client import HttpClient
-from app.scraper.config import ScraperConfig, DBConfig
-from app.scraper.parsers_trend import (
+from src.database.connection import create_connection
+from src.database.repository_trend import TrendNewsRepository
+from src.database.models import NewsArticle
+from src.scrapers.client import HttpClient
+from src.scrapers.config import ScraperConfig, DBConfig
+from src.scrapers.parsers.trend import (
     parse_listing_page_trend,
     parse_article_page_trend,
 )

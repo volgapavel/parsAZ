@@ -176,9 +176,9 @@ class RelationExtractorHybridPro:
             logger.warning(f"BERT init failed: {e}")
             self.zeroshot_pipeline = None
     
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     # ГЛАВНЫЙ МЕТОД
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     
     def extract_relationships(
         self,
@@ -203,9 +203,9 @@ class RelationExtractorHybridPro:
         if self.translator and source_lang != 'en':
             try:
                 text = self.translator.translate_text(text, source_lang=source_lang, target_lang='en')
-                logger.debug(f"📝 Text translated from {source_lang} to en")
+                logger.debug(f" Text translated from {source_lang} to en")
             except Exception as e:
-                logger.warning(f"⚠️ Translation failed: {e}, using original text")
+                logger.warning(f" Translation failed: {e}, using original text")
                 text = original_text
         
         all_relations = []
@@ -214,27 +214,27 @@ class RelationExtractorHybridPro:
         try:
             regex_rels = self._extract_by_regex(text, entities)
             all_relations.extend(regex_rels)
-            logger.debug(f"✅ Regex: {len(regex_rels)} relations")
+            logger.debug(f" Regex: {len(regex_rels)} relations")
         except Exception as e:
-            logger.error(f"❌ Regex extraction failed: {e}")
+            logger.error(f" Regex extraction failed: {e}")
         
         # Метод 2: spaCy (если доступен)
         if self.spacy_nlp:
             try:
                 spacy_rels = self._extract_by_spacy(text, entities)
                 all_relations.extend(spacy_rels)
-                logger.debug(f"✅ spaCy: {len(spacy_rels)} relations")
+                logger.debug(f" spaCy: {len(spacy_rels)} relations")
             except Exception as e:
-                logger.warning(f"⚠️ spaCy extraction failed: {e}")
+                logger.warning(f" spaCy extraction failed: {e}")
         
         # Метод 3: BERT (если доступен)
         if self.zeroshot_pipeline:
             try:
                 bert_rels = self._extract_by_bert(text, entities)
                 all_relations.extend(bert_rels)
-                logger.debug(f"✅ BERT: {len(bert_rels)} relations")
+                logger.debug(f" BERT: {len(bert_rels)} relations")
             except Exception as e:
-                logger.warning(f"⚠️ BERT extraction failed: {e}")
+                logger.warning(f" BERT extraction failed: {e}")
         
         # Дедупликация и сортировка
         final_relations = self._deduplicate_relations(all_relations)
@@ -243,9 +243,9 @@ class RelationExtractorHybridPro:
         logger.info(f"Total relations: {len(final_relations)}")
         return final_relations
     
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     # МЕТОД 1: REGEX ПАТТЕРНЫ
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     
     def _compile_patterns(self) -> Dict[str, Any]:
         """Компилирование regex паттернов"""
@@ -308,9 +308,9 @@ class RelationExtractorHybridPro:
         
         return relations
     
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     # МЕТОД 2: SPACY DEPENDENCY PARSING
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     
     def _extract_by_spacy(
         self,
@@ -367,9 +367,9 @@ class RelationExtractorHybridPro:
         
         return relations
     
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     # МЕТОД 3: BERT ZERO-SHOT CLASSIFICATION
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     
     def _extract_by_bert(
         self,
@@ -452,9 +452,9 @@ class RelationExtractorHybridPro:
         
         return relations
     
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     # УТИЛИТЫ
-    # ═══════════════════════════════════════════════════════════════════════
+    # 
     
     def _normalize_entities(
         self,

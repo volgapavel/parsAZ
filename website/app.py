@@ -15,14 +15,14 @@ import logging
 from datetime import datetime
 
 # Импорт API компонентов
-from api import app as api_app
-from text_preprocessor import TextPreprocessor
-from entity_extractor_ner_ensemble import NEREnsembleExtractor
-from relationship_extractor_hybrid_pro import RelationExtractorHybridPro
-from risk_classifier import RiskClassifier
-from entity_deduplicator import EntityDeduplicator
-from output_formatter import OutputFormatter
-from database import DatabaseManager, get_db_manager
+from api.app import app as api_app
+from src.core.text_preprocessor import TextPreprocessor
+from src.core.entity_extractor import NEREnsembleExtractor
+from src.core.relationship_extractor import RelationExtractorHybridPro
+from src.core.risk_classifier import RiskClassifier
+from src.core.entity_deduplicator import EntityDeduplicator
+from src.utils.output_formatter import OutputFormatter
+from src.database.manager import DatabaseManager, get_db_manager
 
 # ANSI color codes
 COLOR_GREEN = "\033[92m"
@@ -215,9 +215,9 @@ async def fetch_article_from_url(request: Request):
             raise HTTPException(status_code=400, detail="URL не указан")
         
         # Импорт парсеров
-        from app.scraper.client import HttpClient
-        from app.scraper.config import ScraperConfig
-        from app.scraper.parsers_azerbaijan import parse_article_page_az
+        from src.scrapers.client import HttpClient
+        from src.scrapers.config import ScraperConfig
+        from src.scrapers.parsers.azerbaijan import parse_article_page_az
         from bs4 import BeautifulSoup
         from urllib.parse import urlparse
         

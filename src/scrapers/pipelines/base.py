@@ -5,11 +5,11 @@ from typing import Generator, Optional, List
 
 from psycopg2.extensions import connection as Connection
 
-from app.scraper.config import ScraperConfig
-from app.scraper.client import HttpClient
-from app.scraper.parsers import parse_archive_page, parse_article_page, NewsListItem
-from app.db.models import NewsArticle
-from app.db import repository
+from src.scrapers.config import ScraperConfig
+from src.scrapers.client import HttpClient
+from src.scrapers.parsers.base import parse_archive_page, parse_article_page, NewsListItem
+from src.database.models import NewsArticle
+from src.database import repository
 
 logger = logging.getLogger(__name__)
 
@@ -120,8 +120,8 @@ class ScrapingPipeline:
 
 def run_scraper(config: Optional[ScraperConfig] = None) -> dict:
     """Entry point for scraper."""
-    from app.scraper.config import DBConfig
-    from app.db.connection import create_connection
+    from src.scrapers.config import DBConfig
+    from src.database.connection import create_connection
     
     config = config or ScraperConfig()
     db_config = DBConfig()

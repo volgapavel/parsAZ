@@ -163,7 +163,7 @@ def print_table(m: Dict[str, Dict[str, float]]) -> None:
         return f"{name:<15} {x.get('precision',0):>11.1%} {x.get('recall',0):>11.1%} {x.get('f1',0):>11.1%} {int(x.get('support',0)):>10}"
 
     print("\n" + "=" * 70)
-    print("📊 NER METRICS REPORT")
+    print(" NER METRICS REPORT")
     print("=" * 70)
     print(f"{'Entity Type':<15} {'Precision':>12} {'Recall':>12} {'F1':>12} {'Support':>10}")
     print("-" * 70)
@@ -183,19 +183,19 @@ def main() -> None:
     report_path = root / "evaluation" / "reports" / "metrics_report.json"
 
     if not gold_path.exists():
-        print("❌ Не найден gold dataset:", gold_path)
+        print(" Не найден gold dataset:", gold_path)
         print("   Сначала выполните: python3 evaluation/create_gold_dataset.py")
         return
 
     if not pred_path.exists():
-        print("❌ Не найден файл предсказаний:", pred_path)
+        print(" Не найден файл предсказаний:", pred_path)
         print("   Сначала получите results_hybrid_final.json (пайплайн).")
         return
 
     gold = load_gold(gold_path)
     verified = [a for a in gold if a.get("manually_verified") is True]
     if not verified:
-        print("⚠️ В gold dataset нет размеченных статей (manually_verified=true).")
+        print(" В gold dataset нет размеченных статей (manually_verified=true).")
         print("   Откройте evaluation/gold/gold_dataset.json и заполните gold_entities.")
         return
 
@@ -224,7 +224,7 @@ def main() -> None:
     }
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n📁 Отчёт сохранён: {report_path}")
+    print(f"\n Отчёт сохранён: {report_path}")
 
 
 if __name__ == "__main__":

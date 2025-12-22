@@ -4,15 +4,15 @@ from typing import Optional, List
 
 from psycopg2.extensions import connection as Connection
 
-from app.scraper.config import ScraperConfig
-from app.scraper.client import HttpClient
-from app.scraper.parsers_azerbaijan import (
+from src.scrapers.config import ScraperConfig
+from src.scrapers.client import HttpClient
+from src.scrapers.parsers.azerbaijan import (
     parse_news_list_page, 
     parse_article_page_az, 
     get_next_page_url,
     AzNewsListItem
 )
-from app.db.models import NewsArticle
+from src.database.models import NewsArticle
 from app.db import repository_azerbaijan as repository
 
 logger = logging.getLogger(__name__)

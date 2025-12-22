@@ -4,20 +4,20 @@
 
 ### Как использовать
 
-- **Шаг 1 — создать шаблон gold**
+- **Шаг 1 - создать шаблон gold**
 
 Запуск (из корня проекта или из этой папки):
 `python3 evaluation/create_gold_dataset.py`
 
-Будет создан файл `evaluation/gold/gold_dataset.json` — его нужно **заполнить вручную** (списки сущностей) и поставить `manually_verified: true` для размеченных статей.
+Будет создан файл `evaluation/gold/gold_dataset.json` - его нужно **заполнить вручную** (списки сущностей) и поставить `manually_verified: true` для размеченных статей.
 
-- **Шаг 2 — прогнать пайплайн и получить предсказания на этих 30 статьях**
+- **Шаг 2 - прогнать пайплайн и получить предсказания на этих 30 статьях**
 
 `python3 evaluation/run_pipeline_on_gold.py`
 
 Скрипт сохранит предсказания в `evaluation/reports/predictions_on_gold.json`.
 
-- **Шаг 3 — посчитать метрики**
+- **Шаг 3 - посчитать метрики**
 
 По умолчанию `metrics_evaluator.py` читает `results_hybrid_final.json`. Поэтому:
 - либо **скопируйте** `evaluation/reports/predictions_on_gold.json` в `results_hybrid_final.json`,

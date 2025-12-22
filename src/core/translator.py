@@ -13,7 +13,7 @@ class Translator:
             self.translator = GoogleTranslator()
             self.available = True
         except ImportError:
-            print("⚠️  googletrans не установлен, перевод отключен")
+            print("  googletrans не установлен, перевод отключен")
             self.available = False
 
     def translate_text(self, text: str, source_lang='az', target_lang='en') -> str:

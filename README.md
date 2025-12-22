@@ -1,8 +1,8 @@
-# 🛡️ parsAZ - Azerbaijan Media Monitoring System
+#  parsAZ - Azerbaijan Media Monitoring System
 
 Система мониторинга азербайджанских СМИ с извлечением именованных сущностей (NER), анализом рисков и построением графа связей между персонами.
 
-## 📋 Содержание
+##  Содержание
 
 - [Описание проекта](#описание-проекта)
 - [Возможности](#возможности)
@@ -19,13 +19,13 @@
 
 ## Описание проекта
 
-**parsAZ** — это комплексная система для:
+**parsAZ** - это комплексная система для:
 
 1. **Парсинга новостей** с азербайджанских медиа-порталов (report.az, azerbaijan.az, trend.az)
-2. **Извлечения именованных сущностей** (NER) — персоны, организации, локации
-3. **Анализа рисков** — классификация текстов по категориям рисков (коррупция, санкции, криминал)
-4. **Построения графа связей** — кто с кем встречался, где работает, какие отношения
-5. **Семантического анализа** — NLI-модели для определения типа связи (met_with, works_for)
+2. **Извлечения именованных сущностей** (NER) - персоны, организации, локации
+3. **Анализа рисков** - классификация текстов по категориям рисков (коррупция, санкции, криминал)
+4. **Построения графа связей** - кто с кем встречался, где работает, какие отношения
+5. **Семантического анализа** - NLI-модели для определения типа связи (met_with, works_for)
 
 ### Целевая аудитория
 
@@ -38,7 +38,7 @@
 
 ## Возможности
 
-### 📰 Парсинг новостей
+###  Парсинг новостей
 
 | Источник      | Статей  | Период    | Особенности         |
 | ------------- | ------- | --------- | ------------------- |
@@ -46,65 +46,65 @@
 | azerbaijan.az | 7,700+  | 2020-2025 | Официальный портал  |
 | trend.az      | 73,000+ | 2014-2025 | AJAX-пагинация, RSS |
 
-### 🔍 Поиск и анализ
+###  Поиск и анализ
 
 - **713+ персон** в индексе с профилями
 - **3,097 связей** между сущностями
 - **85,000+ статей** для полнотекстового поиска
 - **NLI-метки**: `met_with`, `works_for`, `appointed_to`, `related_to`
 
-### ⚠️ Уровни рисков
+###  Уровни рисков
 
 | Уровень     | Описание         | Количество |
 | ----------- | ---------------- | ---------- |
-| 🟢 LOW      | Минимальный риск | 685        |
-| 🟡 MEDIUM   | Требует внимания | 27         |
-| 🔴 HIGH     | Высокий риск     | 0          |
-| ⚫ CRITICAL | Критический      | 1          |
+|  LOW      | Минимальный риск | 685        |
+|  MEDIUM   | Требует внимания | 27         |
+|  HIGH     | Высокий риск     | 0          |
+|  CRITICAL | Критический      | 1          |
 
 ---
 
 ## Архитектура
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                         WEB UI                                   │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐   │
-│  │  Home   │ │ Search  │ │Entities │ │  Stats  │ │ Process │   │
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘ └─────────┘   │
-└──────────────────────────────┬──────────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────────┐
-│                      FastAPI (REST API)                          │
-│  ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐    │
-│  │ /api/v1/persons │ │  /api/v1/stats  │ │ /api/v1/process │    │
-│  │ /api/v1/search  │ │ /api/v1/index   │ │   /api/v1/top   │    │
-│  └─────────────────┘ └─────────────────┘ └─────────────────┘    │
-└──────────────────────────────┬──────────────────────────────────┘
-                               │
-        ┌──────────────────────┼──────────────────────┐
-        │                      │                      │
-        ▼                      ▼                      ▼
-┌───────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  PostgreSQL   │    │  Person Index   │    │   ML Models     │
-│               │    │  (JSON Graph)   │    │                 │
-│ ┌───────────┐ │    │                 │    │ ┌─────────────┐ │
-│ │  report   │ │    │ • 713 persons   │    │ │ NER Module  │ │
-│ ├───────────┤ │    │ • 3,097 edges   │    │ │ (XLM-R)     │ │
-│ │azerbaijan │ │    │ • NLI labels    │    │ ├─────────────┤ │
-│ ├───────────┤ │    │ • Risk scores   │    │ │ Risk Class. │ │
-│ │   trend   │ │    │ • Evidence      │    │ │ (Keywords)  │ │
-│ └───────────┘ │    └─────────────────┘    │ └─────────────┘ │
-└───────────────┘                           └─────────────────┘
-        ▲
-        │
-┌───────┴─────────────────────────────────────────────────────────┐
-│                         SCRAPERS                                 │
-│  ┌─────────────┐  ┌─────────────────┐  ┌─────────────────────┐  │
-│  │ report.az   │  │  azerbaijan.az  │  │     trend.az        │  │
-│  │ (по датам)  │  │   (по страницам)│  │ (AJAX + RSS)        │  │
-│  └─────────────┘  └─────────────────┘  └─────────────────────┘  │
-└─────────────────────────────────────────────────────────────────┘
+
+                         WEB UI                                   
+         
+    Home     Search   Entities    Stats    Process    
+         
+
+                               
+
+                      FastAPI (REST API)                          
+        
+   /api/v1/persons    /api/v1/stats    /api/v1/process     
+   /api/v1/search    /api/v1/index       /api/v1/top       
+        
+
+                               
+        
+                                                    
+                                                    
+        
+  PostgreSQL         Person Index          ML Models     
+                     (JSON Graph)                        
+                             
+   report         • 713 persons         NER Module   
+       • 3,097 edges         (XLM-R)      
+ azerbaijan       • NLI labels          
+       • Risk scores         Risk Class.  
+    trend         • Evidence            (Keywords)   
+            
+                           
+        
+        
+
+                         SCRAPERS                                 
+        
+   report.az       azerbaijan.az         trend.az          
+   (по датам)       (по страницам)   (AJAX + RSS)          
+        
+
 ```
 
 ---
@@ -153,24 +153,24 @@ curl http://localhost:8000/api/v1/stats/database
 
 | Страница      | URL                            | Описание                            |
 | ------------- | ------------------------------ | ----------------------------------- |
-| 🏠 Главная    | http://localhost:8000          | Обзор системы                       |
-| 🔍 Поиск      | http://localhost:8000/search   | Полнотекстовый поиск по статьям     |
-| 👤 Сущности   | http://localhost:8000/entities | **Карточки персон** с графом связей |
-| 📊 Статистика | http://localhost:8000/stats    | Статистика БД и индекса             |
-| 📝 Обработка  | http://localhost:8000/process  | NER + анализ рисков для текста      |
-| 📖 Swagger    | http://localhost:8000/docs     | Интерактивная API документация      |
+|  Главная    | http://localhost:8000          | Обзор системы                       |
+|  Поиск      | http://localhost:8000/search   | Полнотекстовый поиск по статьям     |
+|  Сущности   | http://localhost:8000/entities | **Карточки персон** с графом связей |
+|  Статистика | http://localhost:8000/stats    | Статистика БД и индекса             |
+|  Обработка  | http://localhost:8000/process  | NER + анализ рисков для текста      |
+|  Swagger    | http://localhost:8000/docs     | Интерактивная API документация      |
 
 ### Карточки персон (`/entities`)
 
 Ключевая функция системы:
 
-1. **Поиск** — введите имя (например: `Ilham Aliyev`, `Agalarov`, `Ceyhun Bayramov`)
-2. **Карточка** — отображает:
+1. **Поиск** - введите имя (например: `Ilham Aliyev`, `Agalarov`, `Ceyhun Bayramov`)
+2. **Карточка** - отображает:
    - Уровень риска (LOW/MEDIUM/HIGH/CRITICAL)
    - Связи по типам (персоны, организации, локации)
    - NLI-метки (`met with`, `works for`) с confidence score
    - Цитаты из статей (evidence) со ссылками
-3. **Семантические связи** — граф отношений
+3. **Семантические связи** - граф отношений
 
 ---
 
@@ -394,59 +394,59 @@ docker exec clearpic_db psql -U myuser -d newsdb -c "SELECT 'report' as source, 
 
 ```
 parsAZ/
-├── api/                        # FastAPI приложение
-│   ├── main.py                 # Точка входа, роуты страниц
-│   └── routers/                # API endpoints
-│       ├── search.py           # /api/v1/persons/*, /api/v1/index/*
-│       ├── stats.py            # /api/v1/stats/*, /api/v1/search
-│       └── process.py          # /api/v1/process/* (NER, Risk)
-│
-├── app/                        # Парсеры новостей
-│   ├── scraper/
-│   │   ├── config.py           # Конфигурация (Pydantic)
-│   │   ├── client.py           # HTTP клиент с ретраями
-│   │   ├── parsers.py          # Парсер report.az
-│   │   ├── parsers_azerbaijan.py
-│   │   ├── parsers_trend.py
-│   │   ├── pipeline.py         # Пайплайн report.az
-│   │   ├── pipeline_azerbaijan.py
-│   │   └── pipeline_trend.py
-│   └── db/
-│       ├── connection.py       # Подключение к PostgreSQL
-│       ├── models.py           # Pydantic модели
-│       ├── repository.py       # CRUD для report
-│       ├── repository_azerbaijan.py
-│       └── repository_trend.py
-│
-├── model/                      # ML модели и индексы
-│   ├── person_index.json       # Граф персон (713 nodes, 3097 edges)
-│   ├── person_search.py        # Поиск и навигация по графу
-│   ├── ner_module.py           # NER (XLM-RoBERTa)
-│   ├── risk_classifier.py      # Классификатор рисков
-│   ├── nli_relation_labeler.py # NLI для связей
-│   └── text_utils.py           # Утилиты текста
-│
-├── website/                    # Web UI
-│   ├── templates/
-│   │   ├── index.html          # Главная
-│   │   ├── search.html         # Поиск по новостям
-│   │   ├── entities.html       # Карточки персон
-│   │   ├── stats.html          # Статистика
-│   │   └── process.html        # NER обработка
-│   └── static/
-│       ├── css/style.css
-│       └── js/search.js
-│
-├── docker/
-│   ├── Dockerfile.api          # API + Web
-│   └── Dockerfile.scraper      # Парсеры
-│
-├── docker-compose.yml          # Оркестрация
-├── requirements.txt            # Зависимости парсеров
-├── requirements-api.txt        # Зависимости API
-├── main.py                     # Entry point report.az
-├── main_azerbaijan.py          # Entry point azerbaijan.az
-└── main_trend.py               # Entry point trend.az
+ api/                        # FastAPI приложение
+    main.py                 # Точка входа, роуты страниц
+    routers/                # API endpoints
+        search.py           # /api/v1/persons/*, /api/v1/index/*
+        stats.py            # /api/v1/stats/*, /api/v1/search
+        process.py          # /api/v1/process/* (NER, Risk)
+
+ app/                        # Парсеры новостей
+    scraper/
+       config.py           # Конфигурация (Pydantic)
+       client.py           # HTTP клиент с ретраями
+       parsers.py          # Парсер report.az
+       parsers_azerbaijan.py
+       parsers_trend.py
+       pipeline.py         # Пайплайн report.az
+       pipeline_azerbaijan.py
+       pipeline_trend.py
+    db/
+        connection.py       # Подключение к PostgreSQL
+        models.py           # Pydantic модели
+        repository.py       # CRUD для report
+        repository_azerbaijan.py
+        repository_trend.py
+
+ model/                      # ML модели и индексы
+    person_index.json       # Граф персон (713 nodes, 3097 edges)
+    person_search.py        # Поиск и навигация по графу
+    ner_module.py           # NER (XLM-RoBERTa)
+    risk_classifier.py      # Классификатор рисков
+    nli_relation_labeler.py # NLI для связей
+    text_utils.py           # Утилиты текста
+
+ website/                    # Web UI
+    templates/
+       index.html          # Главная
+       search.html         # Поиск по новостям
+       entities.html       # Карточки персон
+       stats.html          # Статистика
+       process.html        # NER обработка
+    static/
+        css/style.css
+        js/search.js
+
+ docker/
+    Dockerfile.api          # API + Web
+    Dockerfile.scraper      # Парсеры
+
+ docker-compose.yml          # Оркестрация
+ requirements.txt            # Зависимости парсеров
+ requirements-api.txt        # Зависимости API
+ main.py                     # Entry point report.az
+ main_azerbaijan.py          # Entry point azerbaijan.az
+ main_trend.py               # Entry point trend.az
 ```
 
 ---

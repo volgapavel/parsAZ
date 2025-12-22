@@ -26,13 +26,13 @@ import json
 import logging
 
 # Импорт компонентов системы
-from text_preprocessor import TextPreprocessor
-from entity_extractor_ner_ensemble import NEREnsembleExtractor
-from relationship_extractor_hybrid_pro import RelationExtractorHybridPro
-from risk_classifier import RiskClassifier, RiskLevel
-from entity_deduplicator import EntityDeduplicator
-from output_formatter import OutputFormatter
-from database import DatabaseManager, get_db_manager
+from src.core.text_preprocessor import TextPreprocessor
+from src.core.entity_extractor import NEREnsembleExtractor
+from src.core.relationship_extractor import RelationExtractorHybridPro
+from src.core.risk_classifier import RiskClassifier, RiskLevel
+from src.core.entity_deduplicator import EntityDeduplicator
+from src.utils.output_formatter import OutputFormatter
+from src.database.manager import DatabaseManager, get_db_manager
 
 # ANSI color codes
 COLOR_GREEN = "\033[92m"

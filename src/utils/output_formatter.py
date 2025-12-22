@@ -59,7 +59,7 @@ class OutputFormatter:
             if 'error' in result:
                 continue
 
-            print(f"\n📰 {result['title']}")
+            print(f"\n {result['title']}")
             print(f"   Персоны: {', '.join(result['entities']['persons']) or 'нет'}")
             print(f"   Организации: {', '.join(result['entities']['organizations']) or 'нет'}")
             print(f"   Локации: {', '.join(result['entities']['locations']) or 'нет'}")
