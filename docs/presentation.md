@@ -354,10 +354,6 @@ works_for, owns, manages, located_in, participated_in, competed_with
 
 ### Благодарим за внимание!
 
-**Ментор проекта:**  
-Артем Сенцов, Co-Founder CTO ClearPic  
-sentsov@clearpic.ai
-
 **Команда:** [Имена участников]
 
 **Репозиторий:** [GitHub ссылка]

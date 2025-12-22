@@ -773,8 +773,8 @@ CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
 Сборка и запуск:
 
 ```bash
-docker build -t clearpic-api .
-docker run -p 8000:8000 clearpic-api
+docker build -t parsaz-api .
+docker run -p 8000:8000 parsaz-api
 ```
 
 ### Docker Compose

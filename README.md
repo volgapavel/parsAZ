@@ -137,7 +137,7 @@ docker compose ps
 ```bash
 # Health check
 curl http://localhost:8000/health
-# {"status":"ok","service":"clearpic-api"}
+# {"status":"ok","service":"parsaz-api"}
 
 # Статистика БД
 curl http://localhost:8000/api/v1/stats/database
@@ -385,7 +385,7 @@ docker compose run --rm scraper_trend python main_trend.py --mode ajax --max-pag
 docker logs -f trend_scraper
 
 # Количество статей в БД
-docker exec clearpic_db psql -U myuser -d newsdb -c "SELECT 'report' as source, COUNT(*) FROM report UNION ALL SELECT 'azerbaijan', COUNT(*) FROM azerbaijan UNION ALL SELECT 'trend', COUNT(*) FROM trend;"
+docker exec parsaz_db psql -U myuser -d newsdb -c "SELECT 'report' as source, COUNT(*) FROM report UNION ALL SELECT 'azerbaijan', COUNT(*) FROM azerbaijan UNION ALL SELECT 'trend', COUNT(*) FROM trend;"
 ```
 
 ---
@@ -490,10 +490,10 @@ uvicorn api.main:app --reload --port 8000
 
 ```bash
 # Проверить логи
-docker logs clearpic_api
+docker logs parsaz_api
 
 # Проверить здоровье БД
-docker exec clearpic_db pg_isready -U myuser -d newsdb
+docker exec parsaz_db pg_isready -U myuser -d newsdb
 ```
 
 ### Ошибка подключения к БД
@@ -512,7 +512,7 @@ docker compose restart api
 Убедитесь, что БД создана с UTF-8:
 
 ```bash
-docker exec clearpic_db psql -U myuser -d newsdb -c "SHOW client_encoding;"
+docker exec parsaz_db psql -U myuser -d newsdb -c "SHOW client_encoding;"
 # Должно быть: UTF8
 ```
 

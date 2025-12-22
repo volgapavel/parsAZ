@@ -1,4 +1,4 @@
-# Зависимости для веб-интерфейса ClearPic Media Monitoring
+# Зависимости для веб-интерфейса parsAZ Media Monitoring
 
 # Веб-фреймворк
 fastapi==0.104.1

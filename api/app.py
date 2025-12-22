@@ -66,7 +66,7 @@ logger = logging.getLogger(__name__)
 
 # Инициализация FastAPI
 app = FastAPI(
-    title="ClearPic Media Monitoring API",
+    title="parsAZ Media Monitoring API",
     description="REST API для автоматического мониторинга азербайджанских СМИ",
     version="1.0.0",
     docs_url="/api/v1/docs",

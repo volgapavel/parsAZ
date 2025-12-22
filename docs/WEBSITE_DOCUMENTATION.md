@@ -61,7 +61,7 @@ pip install -r requirements_website.txt
 
 ```bash
 # Создание базы данных PostgreSQL
-createdb clearpic_media
+createdb parsaz_media
 
 # Инициализация схемы
 psql -d newsdb -f database_schema.sql
@@ -453,7 +453,7 @@ app.add_middleware(
 
 ## Лицензия
 
-ClearPic Media Monitoring System © 2025
+parsAZ Media Monitoring System © 2025
 
 ## Контакты
 
