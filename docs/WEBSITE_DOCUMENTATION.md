@@ -1,4 +1,4 @@
-# Документация веб-интерфейса ClearPic Media Monitoring
+# Документация веб-интерфейса parsAZ Media Monitoring
 
 ## Описание
 
