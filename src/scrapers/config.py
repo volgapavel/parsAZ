@@ -12,7 +12,7 @@ class DBConfig:
     port: int = int(os.getenv('DB_PORT', '5432'))
     name: str = os.getenv('DB_NAME', 'newsdb')
     user: str = os.getenv('DB_USER', 'myuser')
-    password: str = os.getenv('DB_PASS', 'mypass')
+    password: str = os.getenv('DB_PASSWORD', 'mypass')
 
     @property
     def dsn(self) -> str:

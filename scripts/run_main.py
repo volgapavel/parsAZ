@@ -2,7 +2,12 @@
 """Main entry point for report.az news scraper."""
 import logging
 import argparse
+import sys
 from datetime import date
+
+# Add current directory and /src to path
+sys.path.insert(0, '/app')
+sys.path.insert(0, '/src')
 
 from src.scrapers.config import ScraperConfig
 from src.scrapers.pipelines.main import run_scraper

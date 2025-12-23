@@ -33,7 +33,7 @@ services:
       DB_PORT: 5432
       DB_NAME: newsdb
       DB_USER: myuser
-      DB_PASS: mypass
+      DB_PASSWORD: mypass
     ports:
       - "8000:8000"
     volumes:
@@ -74,7 +74,7 @@ services:
       DB_NAME: newsdb
       DB_USER: myuser
       DB_PASS: mypass
-    command: ["python", "main_azerbaijan.py"]
+    command: ["python", "run_azerbaijan.py"]
     profiles:
       - scraper
 
@@ -93,7 +93,7 @@ services:
       DB_NAME: newsdb
       DB_USER: myuser
       DB_PASS: mypass
-    command: ["python", "main_trend.py", "--mode", "ajax"]
+    command: ["python", "run_trend.py", "--mode", "ajax"]
     profiles:
       - scraper
 

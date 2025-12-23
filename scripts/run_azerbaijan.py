@@ -3,6 +3,11 @@
 
 import logging
 import argparse
+import sys
+
+# Add current directory and /src to path
+sys.path.insert(0, '/app')
+sys.path.insert(0, '/src')
 
 from src.scrapers.config import ScraperConfig
 from src.scrapers.pipelines.azerbaijan import run_azerbaijan_scraper

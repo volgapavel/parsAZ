@@ -12,11 +12,11 @@ def get_db_connection():
     """Create database connection."""
     try:
         dsn = (
-            f"host={os.getenv('DB_HOST', 'db')} "
+            f"host={os.getenv('DB_HOST', 'localhost')} "
             f"port={os.getenv('DB_PORT', '5432')} "
             f"dbname={os.getenv('DB_NAME', 'newsdb')} "
             f"user={os.getenv('DB_USER', 'myuser')} "
-            f"password={os.getenv('DB_PASS', 'mypass')}"
+            f"password={os.getenv('DB_PASSWORD', 'mypass')}"
         )
         conn = psycopg2.connect(dsn)
         conn.set_client_encoding('UTF8')
@@ -38,26 +38,30 @@ async def get_database_stats():
     try:
         cur = conn.cursor()
         
+        # Get overall stats
+        cur.execute("SELECT COUNT(*) FROM articles")
+        total = cur.fetchone()[0]
+        
+        cur.execute("SELECT MIN(published_date), MAX(published_date) FROM articles")
+        min_date, max_date = cur.fetchone()
+        
+        # Get stats by source
+        cur.execute("""
+            SELECT source, COUNT(*) as count,
+                   MIN(published_date) as min_date,
+                   MAX(published_date) as max_date
+            FROM articles
+            GROUP BY source
+        """)
+        
         stats = {}
-        tables = ["report", "azerbaijan", "trend"]
-        
-        for table in tables:
-            try:
-                cur.execute(f"SELECT COUNT(*) FROM {table}")
-                count = cur.fetchone()[0]
-                
-                cur.execute(f"SELECT MIN(pub_date), MAX(pub_date) FROM {table}")
-                min_date, max_date = cur.fetchone()
-                
-                stats[table] = {
-                    "count": count,
-                    "min_date": str(min_date) if min_date else None,
-                    "max_date": str(max_date) if max_date else None,
-                }
-            except Exception:
-                stats[table] = {"count": 0, "error": "Table not found"}
-        
-        total = sum(s.get("count", 0) for s in stats.values())
+        for row in cur.fetchall():
+            source, count, src_min_date, src_max_date = row
+            stats[source] = {
+                "count": count,
+                "min_date": str(src_min_date) if src_min_date else None,
+                "max_date": str(src_max_date) if src_max_date else None,
+            }
         
         cur.close()
         conn.close()
@@ -87,26 +91,23 @@ async def get_recent_articles(
     try:
         cur = conn.cursor()
         
-        if source and source in ["report", "azerbaijan", "trend"]:
-            query = f"""
-                SELECT id, title, link, pub_date, '{source}' as source
-                FROM {source}
+        if source:
+            query = """
+                SELECT id, title, link, pub_date, source
+                FROM articles
+                WHERE source = %s
+                ORDER BY pub_date DESC NULLS LAST
+                LIMIT %s
+            """
+            cur.execute(query, (source, limit))
+        else:
+            query = """
+                SELECT id, title, link, pub_date, source
+                FROM articles
                 ORDER BY pub_date DESC NULLS LAST
                 LIMIT %s
             """
             cur.execute(query, (limit,))
-        else:
-            # Union from all tables
-            query = """
-                (SELECT id, title, link, pub_date, 'report' as source FROM report ORDER BY pub_date DESC NULLS LAST LIMIT %s)
-                UNION ALL
-                (SELECT id, title, link, pub_date, 'azerbaijan' as source FROM azerbaijan ORDER BY pub_date DESC NULLS LAST LIMIT %s)
-                UNION ALL
-                (SELECT id, title, link, pub_date, 'trend' as source FROM trend ORDER BY pub_date DESC NULLS LAST LIMIT %s)
-                ORDER BY pub_date DESC NULLS LAST
-                LIMIT %s
-            """
-            cur.execute(query, (limit, limit, limit, limit))
         
         rows = cur.fetchall()
         articles = []
@@ -164,44 +165,28 @@ async def search_web(
     try:
         cur = conn.cursor()
         search_pattern = f"%{search_term}%"
-        
-        # Build date filter
-        date_filter = ""
-        params = [search_pattern, search_pattern]
-        
-        if date_from:
-            date_filter += " AND pub_date >= %s"
-            params.append(date_from)
-        if date_to:
-            date_filter += " AND pub_date <= %s"
-            params.append(date_to)
-        
-        params.append(limit)
-        
-        # Search across all tables
-        query_sql = f"""
-            (SELECT id, title, link, pub_date, content, 'report' as source 
-             FROM report WHERE (title ILIKE %s OR content ILIKE %s) {date_filter} LIMIT %s)
+        # Поиск по всем трём таблицам
+        query = """
+            (SELECT id, title, link, pub_date, content, 'report' as source FROM report WHERE title ILIKE %s OR content ILIKE %s)
             UNION ALL
-            (SELECT id, title, link, pub_date, content, 'azerbaijan' as source 
-             FROM azerbaijan WHERE (title ILIKE %s OR content ILIKE %s) {date_filter} LIMIT %s)
+            (SELECT id, title, link, pub_date, content, 'azerbaijan' as source FROM azerbaijan WHERE title ILIKE %s OR content ILIKE %s)
             UNION ALL
-            (SELECT id, title, link, pub_date, content, 'trend' as source 
-             FROM trend WHERE (title ILIKE %s OR content ILIKE %s) {date_filter} LIMIT %s)
+            (SELECT id, title, link, pub_date, content, 'trend' as source FROM trend WHERE title ILIKE %s OR content ILIKE %s)
             ORDER BY pub_date DESC NULLS LAST
             LIMIT %s
         """
-        
-        # Build full params list (3 tables x params + final limit)
-        full_params = params * 3 + [limit]
-        cur.execute(query_sql, full_params)
-        
+        limit_val = limit
+        cur.execute(query, (
+            search_pattern, search_pattern,
+            search_pattern, search_pattern,
+            search_pattern, search_pattern,
+            limit_val
+        ))
         rows = cur.fetchall()
         results = []
         for row in rows:
             content = row[4] or ""
             snippet = content[:200] + "..." if len(content) > 200 else content
-            
             results.append({
                 "article_id": f"{row[5]}_{row[0]}",
                 "title": row[1],
@@ -209,13 +194,11 @@ async def search_web(
                 "published_date": str(row[3]) if row[3] else None,
                 "text": snippet,
                 "source": row[5],
-                "entities": [],  # Would need NER processing
-                "risks": [],     # Would need risk classification
+                "entities": [],
+                "risks": [],
             })
-        
         cur.close()
         conn.close()
-        
         return {"status": "ok", "total": len(results), "results": results}
     except Exception as e:
         return {"status": "error", "error": str(e), "results": [], "total": 0}

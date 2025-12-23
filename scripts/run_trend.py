@@ -2,6 +2,11 @@
 """Main entry point for trend.az scraper."""
 import argparse
 import logging
+import sys
+
+# Add current directory and /src to path
+sys.path.insert(0, '/app')
+sys.path.insert(0, '/src')
 
 from src.scrapers.config import ScraperConfig, DBConfig
 from src.scrapers.pipelines.trend import TrendScraperPipeline
