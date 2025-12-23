@@ -37,6 +37,8 @@ body {
     border: none;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+        background: #fff;
+        color: #212529;
 }
 
 .card:hover {
@@ -99,6 +101,8 @@ body {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
+        color: #212529;
+        background: #e9ecef;
 }
 
 .entity-PERSON {
@@ -172,6 +176,19 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: all 0.3s;
+        color: #212529;
+}
+.person-list, .entity-list {
+    color: #212529;
+}
+
+.person-name, .entity-name {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+.text-muted {
+    color: #6c757d !important;
 }
 
 .result-item:hover {

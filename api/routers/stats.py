@@ -1,11 +1,64 @@
-"""Statistics API router - database stats."""
-import os
-from typing import Any, Dict, List, Optional
-
-import psycopg2
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Path
 
 router = APIRouter()
+
+@router.get("/articles/{article_id}")
+async def get_article_by_id(article_id: str = Path(..., description="ID статьи в формате source_id, например report_1965")):
+    """Получить полную информацию о статье по article_id (например, report_1965) с подробной диагностикой."""
+    debug_info = {}
+    try:
+        debug_info['article_id'] = article_id
+        if '_' not in article_id:
+            debug_info['error'] = 'Некорректный формат article_id'
+            raise HTTPException(status_code=400, detail=debug_info)
+        source, id_str = article_id.split('_', 1)
+        debug_info['source'] = source
+        debug_info['id_str'] = id_str
+        if source not in ("report", "azerbaijan", "trend"):
+            debug_info['error'] = 'Неизвестный источник'
+            raise HTTPException(status_code=404, detail=debug_info)
+        try:
+            id_val = int(id_str)
+            debug_info['id_val'] = id_val
+        except ValueError:
+            debug_info['error'] = 'Некорректный ID статьи'
+            raise HTTPException(status_code=400, detail=debug_info)
+
+        conn = get_db_connection()
+        if not conn:
+            debug_info['error'] = 'Нет соединения с базой данных'
+            raise HTTPException(status_code=500, detail=debug_info)
+        cur = conn.cursor()
+        query = f"SELECT id, title, link, pub_date, content FROM {source} WHERE id = %s"
+        debug_info['query'] = query
+        debug_info['query_param'] = id_val
+        cur.execute(query, (id_val,))
+        row = cur.fetchone()
+        debug_info['row'] = str(row)
+        cur.close()
+        conn.close()
+        if not row:
+            debug_info['error'] = 'Статья не найдена'
+            raise HTTPException(status_code=404, detail=debug_info)
+        return {
+            "article_id": article_id,
+            "title": row[1],
+            "url": row[2],
+            "published_date": str(row[3]) if row[3] else None,
+            "text": row[4],
+            "source": source,
+            "debug": debug_info
+        }
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        debug_info['exception'] = str(e)
+        raise HTTPException(status_code=500, detail=debug_info)
+"""Statistics API router - database stats."""
+
+import os
+from typing import Any, Dict, List, Optional
+import psycopg2
 
 
 def get_db_connection():
