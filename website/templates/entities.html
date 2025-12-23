@@ -3,53 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сущности - ClearPic</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Сущности - parsAZ Media Monitoring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #0d1117;
-            --bg-secondary: #161b22;
-            --bg-tertiary: #21262d;
-            --accent-blue: #58a6ff;
-            --accent-green: #3fb950;
-            --accent-orange: #d29922;
-            --accent-red: #f85149;
-            --accent-purple: #a371f7;
-            --text-primary: #c9d1d9;
-            --text-secondary: #8b949e;
-            --border-color: #30363d;
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --success-color: #198754;
+            --danger-color: #dc3545;
+            --warning-color: #ffc107;
+            --info-color: #0dcaf0;
+            --dark-color: #212529;
+            --light-bg: #f8f9fa;
         }
         
         * { box-sizing: border-box; }
         
         body {
-            font-family: 'Space Grotesk', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
             min-height: 100vh;
-        }
-        
-        .navbar {
-            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%) !important;
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem 0;
-        }
-        
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.4rem;
-            color: var(--accent-blue) !important;
-        }
-        
-        .nav-link {
-            color: var(--text-secondary) !important;
-            transition: color 0.2s;
-        }
-        
-        .nav-link:hover, .nav-link.active {
-            color: var(--accent-blue) !important;
         }
         
         .container-main {
@@ -59,34 +34,37 @@
         }
         
         .search-section {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
+            background: white;
+            border: 1px solid #dee2e6;
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         
         .search-input {
-            background: var(--bg-tertiary);
-            border: 1px solid var(--border-color);
-            color: var(--text-primary);
+            background: #f8f9fa;
+            border: 2px solid #0d6efd;
+            color: #212529;
             border-radius: 8px;
             padding: 0.75rem 1rem;
             font-size: 1.1rem;
+            box-shadow: 0 2px 4px rgba(13, 110, 253, 0.1);
         }
         
         .search-input:focus {
             outline: none;
-            border-color: var(--accent-blue);
-            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
+            border-color: #0b5ed7;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.15);
         }
         
         .search-input::placeholder {
-            color: var(--text-secondary);
+            color: #6c757d;
         }
         
         .btn-search {
-            background: var(--accent-blue);
+            background: var(--primary-color);
             border: none;
             color: #fff;
             padding: 0.75rem 2rem;
@@ -420,16 +398,33 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="/"><i class="fas fa-shield-halved"></i> ClearPic Media Monitor</a>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="/process">Обработка текста</a></li>
-                <li class="nav-item"><a class="nav-link" href="/search">Поиск</a></li>
-                <li class="nav-item"><a class="nav-link active" href="/entities">Сущности</a></li>
-                <li class="nav-item"><a class="nav-link" href="/stats">Статистика</a></li>
-            </ul>
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-newspaper"></i> parsAZ Media Monitor
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/process">Обработка текста</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/search">Поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/entities">Сущности</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stats">Статистика</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     
@@ -537,7 +532,7 @@
     </div>
     
     <footer>
-        <p>ClearPic Media Monitoring System © 2025</p>
+        <p>parsAZ Media Monitoring System © 2025</p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

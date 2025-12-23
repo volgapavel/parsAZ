@@ -1,0 +1,15 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+psycopg2-binary>=2.9.9
+
+# Перевод текстов
+googletrans==4.0.0rc1
+
+# Optional: spaCy для синтаксического анализа отношений
+# Требует Microsoft C++ Build Tools на Windows
+# Установка: pip install --only-binary :all: spacy
+# spacy>=3.7.0
+# en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+# xx-ent-wiki-sm @ https://github.com/explosion/spacy-models/releases/download/xx_ent_wiki_sm-3.8.0/xx_ent_wiki_sm-3.8.0-py3-none-any.whl
+

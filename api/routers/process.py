@@ -36,8 +36,7 @@ def get_risk_classifier():
     global _risk_classifier
     if _risk_classifier is None:
         try:
-            sys.path.insert(0, str(Path(__file__).parent.parent.parent / "model"))
-            from risk_classifier import RiskClassifier
+            from src.core.risk_classifier import RiskClassifier
             _risk_classifier = RiskClassifier()
         except Exception as e:
             print(f"Failed to load risk classifier: {e}")
